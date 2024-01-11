@@ -1,0 +1,48 @@
+/eda/synopsys/2022-23/RHELx86/Z01X_2022.06-SP2/vcs-mx/linux64/bin/vcs1
+-Mcc=gcc
+-Mcplusplus=g++
+-Masflags=
+-Mcfl= -pipe -fPIC -O -I/eda/synopsys/2022-23/RHELx86/Z01X_2022.06-SP2/vcs-mx/include 
+-Mxllcflags=
+-Mxcflags= -pipe -fPIC -I/eda/synopsys/2022-23/RHELx86/Z01X_2022.06-SP2/vcs-mx/include
+-Mldflags= -rdynamic 
+-Mout=zoix.sim
+-Mamsrun=
+-Mvcsaceobjs=
+-Mobjects= /eda/synopsys/2022-23/RHELx86/Z01X_2022.06-SP2/vcs-mx/linux64/lib/libvirsim.so /eda/synopsys/2022-23/RHELx86/Z01X_2022.06-SP2/vcs-mx/linux64/lib/liberrorinf.so /eda/synopsys/2022-23/RHELx86/Z01X_2022.06-SP2/vcs-mx/linux64/lib/libsnpsmalloc.so /eda/synopsys/2022-23/RHELx86/Z01X_2022.06-SP2/vcs-mx/linux64/lib/libvfs.so 
+-Mexternalobj=
+-Msaverestoreobj=/eda/synopsys/2022-23/RHELx86/Z01X_2022.06-SP2/vcs-mx/linux64/lib/vcs_save_restore_new.o
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mdir=sim.csrc
+-Msyslibs=-ldl 
+-l
+zoix_compile.log
+-zoix=DLL=/eda/synopsys/2022-23/RHELx86/Z01X_2022.06-SP2/lib/x86Linux64/libzc.so
+-full64
+-covg_disable_cg
+-zoix=xcombine
+-zoix=warn=none
++warn=none
+-override_timescale=1ps/1ps
+-top
+cv32e40p_top+strobe
++notimingcheck
+-zoix=notimingchecks
++define+ZOIX
++define+TOPLEVEL=cv32e40p_top
+-zoix=suppress+cell
+-zoix=delay_mode_fault
+-zoix=verbose+undriven
+-Xzoixdbg=0x200
+-o
+zoix.sim
+-zoix=arglistfile+./sim.working/zoixarglist.txt
+-picarchive
+-sverilog
+-gen_obj
+-v
+/home/s313207/cv32e40p_ft/syn/techlib/NangateOpenCellLibrary.v
+/home/s313207/cv32e40p_ft/syn/out/cv32e40p_top.v
+/home/s313207/cv32e40p_ft/zoix/strobe.sv

@@ -1,0 +1,196 @@
+Simulating, pass 1...
+
+                                   Z01X (TM)
+
+               Version T-2022.06-SP2 for linux64 - Nov 15, 2022 
+
+                    Copyright (c) 1999 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Z01X (TM) Version: T-2022.06-SP2 (64-bit, Nov 15 2022) for Linux 64-bit
+
+Command: zoix.sim -fault +vcd+file+__tests__/sbst/cv32e40p_top.evcd +vcd+dut+cv32e40p_top+tb_top.wrapper_i.top_i +TESTNAME=sbst -fpp 2048 +limit+hyperfault+0 -testdir __fubs__/design/sbst/ -fdef __fubs__/design/sbst/sbst.fdef -xfidlistout __fubs__/design/sbst/diagnostics/fidlist.0.1 -l __fubs__/design/sbst/simout-N0-1 
+
+Info:    Simulation Started Sun Jan  7 15:33:04 2024
+Info:    Fault Simulation Pass 1  Host po
+
+Info:    Loading ...      (15:33:04)
+Info:    Initializing ... (15:33:05)
+Info:    Fault simulating 2048 faults, starting at fault: 0
+Info:    Simulating ...   (15:33:05)
+
+Info:    Fault Simulation Summary       Prime               Total
+Info:        Faults Simulated            2048                2048
+Info:        Detected Faults                0   (   0%)         0   (   0%)
+Info:        Dropped Detected Faults     1361   (66.5%)      1361   (66.5%)
+Info:        Potential Faults               0   (   0%)         0   (   0%)
+Info:        Dropped Potential Faults       1   (0.04%)         1   (0.04%)
+
+Info:    Last simulation time was at 3210000 ps
+Info:    Logic Events 373123
+Info:    Fault Events 371543
+Info:    Diverge Event Count 204194
+Info:    Peak Diverged Devices 169498
+Info:    Peak Diverged Memory 0 (bytes)
+Info:    CPU Time: 0.6s ; Elapsed Time: 0.7s ; Data Size: 170.4MB 
+Info:    Simulation Completed Sun Jan  7 15:33:05 2024
+Simulating, pass 2...
+
+                                   Z01X (TM)
+
+               Version T-2022.06-SP2 for linux64 - Nov 15, 2022 
+
+                    Copyright (c) 1999 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Z01X (TM) Version: T-2022.06-SP2 (64-bit, Nov 15 2022) for Linux 64-bit
+
+Command: zoix.sim -xcode 1 -fault +vcd+file+__tests__/sbst/cv32e40p_top.evcd +vcd+dut+cv32e40p_top+tb_top.wrapper_i.top_i +TESTNAME=sbst -fpp 2048 +limit+hyperfault+0 -testdir __fubs__/design/sbst/ -fdef __fubs__/design/sbst/sbst.fdef -xfidlistout __fubs__/design/sbst/diagnostics/fidlist.0.2 -l __fubs__/design/sbst/simout-N0-2 
+
+Info:    Simulation Started Sun Jan  7 15:33:05 2024
+Info:    Fault Simulation Pass 2  Host po
+
+Info:    Loading ...      (15:33:05)
+Info:    Initializing ... (15:33:05)
+Info:    Fault simulating 2048 faults, starting at fault: 2048
+Info:    Simulating ...   (15:33:05)
+
+Info:    Fault Simulation Summary       Prime               Total
+Info:        Faults Simulated            2048                2048
+Info:        Detected Faults                0   (   0%)         0   (   0%)
+Info:        Dropped Detected Faults     1314   (64.2%)      1314   (64.2%)
+Info:        Potential Faults               0   (   0%)         0   (   0%)
+Info:        Dropped Potential Faults       0   (   0%)         0   (   0%)
+
+Info:    Last simulation time was at 3210000 ps
+Info:    Logic Events 373123
+Info:    Fault Events 397445
+Info:    Diverge Event Count 206619
+Info:    Peak Diverged Devices 197331
+Info:    Peak Diverged Memory 0 (bytes)
+Info:    CPU Time: 0.8s ; Elapsed Time: 0.8s ; Data Size: 170.7MB 
+Info:    Simulation Completed Sun Jan  7 15:33:06 2024
+Simulating, pass 3...
+
+                                   Z01X (TM)
+
+               Version T-2022.06-SP2 for linux64 - Nov 15, 2022 
+
+                    Copyright (c) 1999 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Z01X (TM) Version: T-2022.06-SP2 (64-bit, Nov 15 2022) for Linux 64-bit
+
+Command: zoix.sim -xcode 1 -fault +vcd+file+__tests__/sbst/cv32e40p_top.evcd +vcd+dut+cv32e40p_top+tb_top.wrapper_i.top_i +TESTNAME=sbst -fpp 2048 +limit+hyperfault+0 -testdir __fubs__/design/sbst/ -fdef __fubs__/design/sbst/sbst.fdef -xfidlistout __fubs__/design/sbst/diagnostics/fidlist.0.3 -l __fubs__/design/sbst/simout-N0-3 
+
+Info:    Simulation Started Sun Jan  7 15:33:06 2024
+Info:    Fault Simulation Pass 3  Host po
+
+Info:    Loading ...      (15:33:06)
+Info:    Initializing ... (15:33:06)
+Info:    Fault simulating 2048 faults, starting at fault: 4096
+Info:    Simulating ...   (15:33:06)
+
+Info:    Fault Simulation Summary       Prime               Total
+Info:        Faults Simulated            2048                2048
+Info:        Detected Faults                0   (   0%)         0   (   0%)
+Info:        Dropped Detected Faults     1336   (65.2%)      1336   (65.2%)
+Info:        Potential Faults               0   (   0%)         0   (   0%)
+Info:        Dropped Potential Faults       0   (   0%)         0   (   0%)
+
+Info:    Last simulation time was at 3210000 ps
+Info:    Logic Events 373123
+Info:    Fault Events 358550
+Info:    Diverge Event Count 198572
+Info:    Peak Diverged Devices 197354
+Info:    Peak Diverged Memory 0 (bytes)
+Info:    CPU Time: 0.7s ; Elapsed Time: 0.7s ; Data Size: 169.7MB 
+Info:    Simulation Completed Sun Jan  7 15:33:07 2024
+Simulating, pass 4...
+
+                                   Z01X (TM)
+
+               Version T-2022.06-SP2 for linux64 - Nov 15, 2022 
+
+                    Copyright (c) 1999 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Z01X (TM) Version: T-2022.06-SP2 (64-bit, Nov 15 2022) for Linux 64-bit
+
+Command: zoix.sim -xcode 1 -fault +vcd+file+__tests__/sbst/cv32e40p_top.evcd +vcd+dut+cv32e40p_top+tb_top.wrapper_i.top_i +TESTNAME=sbst -fpp 2048 +limit+hyperfault+0 -testdir __fubs__/design/sbst/ -fdef __fubs__/design/sbst/sbst.fdef -xfidlistout __fubs__/design/sbst/diagnostics/fidlist.0.4 -l __fubs__/design/sbst/simout-N0-4 
+
+Info:    Simulation Started Sun Jan  7 15:33:07 2024
+Info:    Fault Simulation Pass 4  Host po
+
+Info:    Loading ...      (15:33:07)
+Info:    Initializing ... (15:33:07)
+Info:    Fault simulating 1095 faults, starting at fault: 6144
+Info:    Simulating ...   (15:33:07)
+
+Info:    Fault Simulation Summary       Prime               Total
+Info:        Faults Simulated            1095                1095
+Info:        Detected Faults                0   (   0%)         0   (   0%)
+Info:        Dropped Detected Faults      677   (61.8%)       677   (61.8%)
+Info:        Potential Faults               0   (   0%)         0   (   0%)
+Info:        Dropped Potential Faults       2   (0.18%)         2   (0.18%)
+
+Info:    Last simulation time was at 3210000 ps
+Info:    Logic Events 373123
+Info:    Fault Events 194900
+Info:    Diverge Event Count 96871
+Info:    Peak Diverged Devices 82649
+Info:    Peak Diverged Memory 0 (bytes)
+Info:    CPU Time: 0.6s ; Elapsed Time: 0.6s ; Data Size: 167.9MB 
+Info:    Simulation Completed Sun Jan  7 15:33:07 2024

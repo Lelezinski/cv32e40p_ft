@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1704637949.462718404, "rt":3.06, "ut":2.67, "st":0.14}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1704637948.855442371}
+{"VCS_COMP_START_TIME": 1704637948.855442371}
+{"VCS_COMP_END_TIME": 1704637952.565629765}
+{"VCS_USER_OPTIONS": "-zoix=DLL=/eda/synopsys/2022-23/RHELx86/Z01X_2022.06-SP2/lib/x86Linux64/libzc.so -full64 -covg_disable_cg -zoix=xcombine -file sim.working/zvcs_run.f"}
+{"vcs1": {"peak_mem": 472888}}

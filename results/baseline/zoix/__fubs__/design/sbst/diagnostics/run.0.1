@@ -1,0 +1,3 @@
+/eda/synopsys/2022-23/RHELx86/Z01X_2022.06-SP2/bin/fault_report -fdef __fubs__/design/sbst/sbst.fdef -l fr2fdef.0.1.log -xfidlist __fubs__/design/sbst/diagnostics/fidlist.0.1 -out fault.0.1.rpt
+/eda/synopsys/2022-23/RHELx86/Z01X_2022.06-SP2/bin/fr2fdef fault.0.1.rpt -fdef sim.0.1.fdef +status+DG+PG+OG+IG+NG=NA
+./zoix.sim     -fault +vcd+file+__tests__/sbst/cv32e40p_top.evcd +vcd+dut+cv32e40p_top+tb_top.wrapper_i.top_i +TESTNAME=sbst -fpp 2048 +limit+hyperfault+0 -testdir __fubs__/design/sbst/ -fdef __fubs__/design/sbst/sbst.fdef -fdef sim.0.1.fdef -xnodfl -l fsim.0.1.log

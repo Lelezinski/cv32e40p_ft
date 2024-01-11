@@ -1,0 +1,29 @@
+#                                Prime                  Total
+# Test: sbst
+# Total Faults:                  17992                  17992
+# Detected Faults:                   0     0.00%            0     0.00%
+# Dropped Detected Faults:        4688    26.06%         4688    26.06%
+# Dropped Potential Faults:          3     0.02%            3     0.02%
+# Potential Faults:                  0     0.00%            0     0.00%
+# Not Detected Faults:            2548    14.16%         2548    14.16%
+# Not Strobed:                      62     0.34%           62     0.34%
+# Not Observed:                   9878    54.90%         9878    54.90%
+# Not Controlled:                  813     4.52%          813     4.52%
+# Simulation Times:          
+#   Toggle:                   00:00:01
+#   Fault Cumulative:         00:00:04
+#   Fault Wall Clock:         00:00:04
+#
+# Cumulative Test Results
+# Total Faults:                  17992                  17992
+# Detected Faults:                   0     0.00%            0     0.00%
+# Dropped Detected Faults:        4688    26.06%         4688    26.06%
+# Dropped Potential Faults:          3     0.02%            3     0.02%
+# Potential Faults:                  0     0.00%            0     0.00%
+# Not Detected Faults:            2548    14.16%         2548    14.16%
+# Not Strobed:                      62     0.34%           62     0.34%
+# Not Observed:                   9878    54.90%         9878    54.90%
+# Not Controlled:                  813     4.52%          813     4.52%
+#
+# Test Coverage:                          26.06%                 26.06%
+#

@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+                               Testability Report                               
+                         Basis: Selected fault quality                          
+                    Report Date: Sunday, Jan 07 2024, 15:33
+                    
+                    Total: 17992  Prime: 17992  Collapsed: 0                    
+
+-------------------------------------------------------------------------------
+                         Tests already fault simulated                         
+-------------------------------------------------------------------------------
+ Test    Selected  Selected  Selected  Selected  Selected  
+ Name:   fault     fault     fault     untested  fault     
+         quality:  count:    avg       faults:   avg       
+                             tenacity:           test      
+                                                 count:    
+-------------------------------------------------------------------------------
+ sbst     411.919      7239    118.72      7239      0.00  
+

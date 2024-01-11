@@ -1,0 +1,10 @@
+(15:33:07) Host: po Pass: 4 Simulation Time: 3210000
+Faults Run:1095
+Fault Statuses: ND:416 DD:677 PD:2 N:0
+Last Strobe Time: 3209990
+Last Compare Time: 0
+RunStats: CPU Time: 0.6s ; Elapsed Time: 0.6s ; Data Size: 167.9MB 
+Invalid Iddq Count: 0
+Simulation ran to completion
+(15:33:07) Host: po Pass: 4 Pass Completed
+No more passes needed

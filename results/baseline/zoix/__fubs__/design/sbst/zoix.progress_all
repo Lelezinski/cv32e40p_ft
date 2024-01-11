@@ -1,0 +1,46 @@
+(15:33:04) Part: 0 Host: po Simulation Started
+(15:33:04) Host: po Pass: 1 Simulation Started
+(15:33:05) Host: po Pass: 1 Simulation Time: 3210000
+Faults Run:2048
+Fault Statuses: ND:686 DD:1361 PD:1 N:0
+Last Strobe Time: 3209990
+Last Compare Time: 0
+RunStats: CPU Time: 0.6s ; Elapsed Time: 0.7s ; Data Size: 170.4MB 
+Invalid Iddq Count: 0
+Simulation ran to completion
+(15:33:05) Host: po Pass: 1 Pass Completed
+Run another pass
+(15:33:05) Host: po Pass: 2 Simulation Started
+(15:33:06) Host: po Pass: 2 Simulation Time: 3210000
+Faults Run:2048
+Fault Statuses: ND:734 DD:1314 N:0
+Last Strobe Time: 3209990
+Last Compare Time: 0
+RunStats: CPU Time: 0.8s ; Elapsed Time: 0.8s ; Data Size: 170.7MB 
+Invalid Iddq Count: 0
+Simulation ran to completion
+(15:33:06) Host: po Pass: 2 Pass Completed
+Run another pass
+(15:33:06) Host: po Pass: 3 Simulation Started
+(15:33:07) Host: po Pass: 3 Simulation Time: 3210000
+Faults Run:2048
+Fault Statuses: ND:712 DD:1336 N:0
+Last Strobe Time: 3209990
+Last Compare Time: 0
+RunStats: CPU Time: 0.7s ; Elapsed Time: 0.7s ; Data Size: 169.7MB 
+Invalid Iddq Count: 0
+Simulation ran to completion
+(15:33:07) Host: po Pass: 3 Pass Completed
+Run another pass
+(15:33:07) Host: po Pass: 4 Simulation Started
+(15:33:07) Host: po Pass: 4 Simulation Time: 3210000
+Faults Run:1095
+Fault Statuses: ND:416 DD:677 PD:2 N:0
+Last Strobe Time: 3209990
+Last Compare Time: 0
+RunStats: CPU Time: 0.6s ; Elapsed Time: 0.6s ; Data Size: 167.9MB 
+Invalid Iddq Count: 0
+Simulation ran to completion
+(15:33:07) Host: po Pass: 4 Pass Completed
+No more passes needed
+(15:33:07) Host: po Simulation Completed
