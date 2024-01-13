@@ -178,6 +178,21 @@ module cv32e40p_ex_stage
   logic                        mulh_active;
   logic                        mult_ready;
 
+  // MUL non voted
+  logic [                31:0] mult_result_1;
+  logic [                31:0] mult_result_2;
+  logic [                31:0] mult_result_3;
+  logic                        mult_multicycle_o_1;
+  logic                        mult_multicycle_o_2;
+  logic                        mult_multicycle_o_3;
+  logic                        mulh_active_1;
+  logic                        mult_ready_1;
+  logic                        mulh_active_2;
+  logic                        mult_ready_2;
+  logic                        mulh_active_3;
+  logic                        mult_ready_3;
+
+  
   // APU signals
   logic                        apu_valid;
   logic [                 5:0] apu_waddr;
@@ -193,6 +208,34 @@ module cv32e40p_ex_stage
   logic [                31:0] apu_result_q;
   logic [APU_NUSFLAGS_CPU-1:0] apu_flags_q;
 
+  // MUL voter
+  always_comb begin
+    if (mult_result_1 == mult_result_2) begin
+      mult_result = mult_result_1;
+    end else begin
+      mult_result = mult_result_3;
+    end
+
+    if (mult_multicycle_o_1 == mult_multicycle_o_2) begin
+      mult_multicycle_o = mult_multicycle_o_1;
+    end else begin
+      mult_multicycle_o = mult_multicycle_o_3;
+    end
+
+    if (mulh_active_1 == mulh_active_2) begin
+      mulh_active = mulh_active_1;
+    end else begin
+      mulh_active = mulh_active_3;
+    end
+
+    if (mult_ready_1 == mult_ready_2) begin
+      mult_ready = mult_ready_1;
+    end else begin
+      mult_ready = mult_ready_3;
+    end
+
+  end
+  
   // ALU write port mux
   always_comb begin
     regfile_alu_wdata_fw_o    = '0;
@@ -295,7 +338,7 @@ module cv32e40p_ex_stage
   //                                                            //
   ////////////////////////////////////////////////////////////////
 
-  cv32e40p_mult mult_i (
+  cv32e40p_mult mult_i_1 (
       .clk  (clk),
       .rst_n(rst_n),
 
@@ -318,11 +361,73 @@ module cv32e40p_ex_stage
       .clpx_shift_i(mult_clpx_shift_i),
       .clpx_img_i  (mult_clpx_img_i),
 
-      .result_o(mult_result),
+      .result_o(mult_result_1),
 
-      .multicycle_o (mult_multicycle_o),
-      .mulh_active_o(mulh_active),
-      .ready_o      (mult_ready),
+      .multicycle_o (mult_multicycle_o_1),
+      .mulh_active_o(mulh_active_1),
+      .ready_o      (mult_ready_1),
+      .ex_ready_i   (ex_ready_o)
+  );
+
+  cv32e40p_mult mult_i_2 (
+      .clk  (clk),
+      .rst_n(rst_n),
+
+      .enable_i  (mult_en_i),
+      .operator_i(mult_operator_i),
+
+      .short_subword_i(mult_sel_subword_i),
+      .short_signed_i (mult_signed_mode_i),
+
+      .op_a_i(mult_operand_a_i),
+      .op_b_i(mult_operand_b_i),
+      .op_c_i(mult_operand_c_i),
+      .imm_i (mult_imm_i),
+
+      .dot_op_a_i  (mult_dot_op_a_i),
+      .dot_op_b_i  (mult_dot_op_b_i),
+      .dot_op_c_i  (mult_dot_op_c_i),
+      .dot_signed_i(mult_dot_signed_i),
+      .is_clpx_i   (mult_is_clpx_i),
+      .clpx_shift_i(mult_clpx_shift_i),
+      .clpx_img_i  (mult_clpx_img_i),
+
+      .result_o(mult_result_2),
+
+      .multicycle_o (mult_multicycle_o_2),
+      .mulh_active_o(mulh_active_2),
+      .ready_o      (mult_ready_2),
+      .ex_ready_i   (ex_ready_o)
+  );
+
+cv32e40p_mult mult_i_3 (
+      .clk  (clk),
+      .rst_n(rst_n),
+
+      .enable_i  (mult_en_i),
+      .operator_i(mult_operator_i),
+
+      .short_subword_i(mult_sel_subword_i),
+      .short_signed_i (mult_signed_mode_i),
+
+      .op_a_i(mult_operand_a_i),
+      .op_b_i(mult_operand_b_i),
+      .op_c_i(mult_operand_c_i),
+      .imm_i (mult_imm_i),
+
+      .dot_op_a_i  (mult_dot_op_a_i),
+      .dot_op_b_i  (mult_dot_op_b_i),
+      .dot_op_c_i  (mult_dot_op_c_i),
+      .dot_signed_i(mult_dot_signed_i),
+      .is_clpx_i   (mult_is_clpx_i),
+      .clpx_shift_i(mult_clpx_shift_i),
+      .clpx_img_i  (mult_clpx_img_i),
+
+      .result_o(mult_result_3),
+
+      .multicycle_o (mult_multicycle_o_3),
+      .mulh_active_o(mulh_active_3),
+      .ready_o      (mult_ready_3),
       .ex_ready_i   (ex_ready_o)
   );
 
