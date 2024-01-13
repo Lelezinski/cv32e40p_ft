@@ -350,6 +350,14 @@ module cv32e40p_id_stage
   logic [31:0] regfile_data_rb_id;
   logic [31:0] regfile_data_rc_id;
 
+
+  logic [31:0] regfile_data_rb_id_1;
+  logic [31:0] regfile_data_rc_id_1;
+  logic [31:0] regfile_data_rb_id_2;
+  logic [31:0] regfile_data_rc_id_2;
+  logic [31:0] regfile_data_rb_id_3;
+  logic [31:0] regfile_data_rc_id_3;
+
   // ALU Control
   logic alu_en;
   alu_opcode_e alu_operator;
@@ -928,12 +936,27 @@ module cv32e40p_id_stage
   //                                                     //
   /////////////////////////////////////////////////////////
 
+  always_comb begin
+    if (regfile_data_rb_id_1 == regfile_data_rb_id_2) begin
+      regfile_data_rb_id = regfile_data_rb_id_1;
+    end else begin
+      regfile_data_rb_id = regfile_data_rb_id_3;
+    end
+
+    if ( regfile_data_rc_id_1 == regfile_data_rc_id_2) begin
+      regfile_data_rc_id = regfile_data_rc_id_1;
+    end else begin
+      regfile_data_rc_id = regfile_data_rc_id_3;
+    end
+
+  end
+
   cv32e40p_register_file #(
       .ADDR_WIDTH(6),
       .DATA_WIDTH(32),
       .FPU       (FPU),
       .ZFINX     (ZFINX)
-  ) register_file_i (
+  ) register_file_i_1 (
       .clk  (clk),
       .rst_n(rst_n),
 
@@ -945,11 +968,79 @@ module cv32e40p_id_stage
 
       // Read port b
       .raddr_b_i(regfile_addr_rb_id),
-      .rdata_b_o(regfile_data_rb_id),
+      .rdata_b_o(regfile_data_rb_id_1),
 
       // Read port c
       .raddr_c_i(regfile_addr_rc_id),
-      .rdata_c_o(regfile_data_rc_id),
+      .rdata_c_o(regfile_data_rc_id_1),
+
+      // Write port a
+      .waddr_a_i(regfile_waddr_wb_i),
+      .wdata_a_i(regfile_wdata_wb_i),
+      .we_a_i   (regfile_we_wb_power_i),
+
+      // Write port b
+      .waddr_b_i(regfile_alu_waddr_fw_i),
+      .wdata_b_i(regfile_alu_wdata_fw_i),
+      .we_b_i   (regfile_alu_we_fw_power_i)
+  );
+
+  cv32e40p_register_file#(
+      .ADDR_WIDTH(6),
+      .DATA_WIDTH(32),
+      .FPU       (FPU),
+      .ZFINX     (ZFINX)
+  ) register_file_i_2 (
+      .clk  (clk),
+      .rst_n(rst_n),
+
+      .scan_cg_en_i(scan_cg_en_i),
+
+      // Read port a
+      .raddr_a_i(regfile_addr_ra_id),
+      .rdata_a_o(regfile_data_ra_id),
+
+      // Read port b
+      .raddr_b_i(regfile_addr_rb_id),
+      .rdata_b_o(regfile_data_rb_id_2),
+
+      // Read port c
+      .raddr_c_i(regfile_addr_rc_id),
+      .rdata_c_o(regfile_data_rc_id_2),
+
+      // Write port a
+      .waddr_a_i(regfile_waddr_wb_i),
+      .wdata_a_i(regfile_wdata_wb_i),
+      .we_a_i   (regfile_we_wb_power_i),
+
+      // Write port b
+      .waddr_b_i(regfile_alu_waddr_fw_i),
+      .wdata_b_i(regfile_alu_wdata_fw_i),
+      .we_b_i   (regfile_alu_we_fw_power_i)
+  );
+
+  cv32e40p_register_file #(
+      .ADDR_WIDTH(6),
+      .DATA_WIDTH(32),
+      .FPU       (FPU),
+      .ZFINX     (ZFINX)
+  ) register_file_i_3 (
+      .clk  (clk),
+      .rst_n(rst_n),
+
+      .scan_cg_en_i(scan_cg_en_i),
+
+      // Read port a
+      .raddr_a_i(regfile_addr_ra_id),
+      .rdata_a_o(regfile_data_ra_id),
+
+      // Read port b
+      .raddr_b_i(regfile_addr_rb_id),
+      .rdata_b_o(regfile_data_rb_id_3),
+
+      // Read port c
+      .raddr_c_i(regfile_addr_rc_id),
+      .rdata_c_o(regfile_data_rc_id_3),
 
       // Write port a
       .waddr_a_i(regfile_waddr_wb_i),
