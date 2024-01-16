@@ -1,0 +1,9171 @@
+$comment
+	File created using the following command:
+		vcd file cv32e40p_top.evcd -dumpports
+$end
+$date
+	Sat Jan 13 12:39:26 2024
+$end
+$version
+	dumpports QuestaSim Version 2022.4
+$end
+$timescale
+	1ps
+$end
+
+$scope module tb_top $end
+
+$scope module wrapper_i $end
+
+$scope module top_i $end
+$var port 1 <0 boot_addr_i [31] $end
+$var port 1 <1 boot_addr_i [30] $end
+$var port 1 <2 boot_addr_i [29] $end
+$var port 1 <3 boot_addr_i [28] $end
+$var port 1 <4 boot_addr_i [27] $end
+$var port 1 <5 boot_addr_i [26] $end
+$var port 1 <6 boot_addr_i [25] $end
+$var port 1 <7 boot_addr_i [24] $end
+$var port 1 <8 boot_addr_i [23] $end
+$var port 1 <9 boot_addr_i [22] $end
+$var port 1 <10 boot_addr_i [21] $end
+$var port 1 <11 boot_addr_i [20] $end
+$var port 1 <12 boot_addr_i [19] $end
+$var port 1 <13 boot_addr_i [18] $end
+$var port 1 <14 boot_addr_i [17] $end
+$var port 1 <15 boot_addr_i [16] $end
+$var port 1 <16 boot_addr_i [15] $end
+$var port 1 <17 boot_addr_i [14] $end
+$var port 1 <18 boot_addr_i [13] $end
+$var port 1 <19 boot_addr_i [12] $end
+$var port 1 <20 boot_addr_i [11] $end
+$var port 1 <21 boot_addr_i [10] $end
+$var port 1 <22 boot_addr_i [9] $end
+$var port 1 <23 boot_addr_i [8] $end
+$var port 1 <24 boot_addr_i [7] $end
+$var port 1 <25 boot_addr_i [6] $end
+$var port 1 <26 boot_addr_i [5] $end
+$var port 1 <27 boot_addr_i [4] $end
+$var port 1 <28 boot_addr_i [3] $end
+$var port 1 <29 boot_addr_i [2] $end
+$var port 1 <30 boot_addr_i [1] $end
+$var port 1 <31 boot_addr_i [0] $end
+$var port 1 <32 mtvec_addr_i [31] $end
+$var port 1 <33 mtvec_addr_i [30] $end
+$var port 1 <34 mtvec_addr_i [29] $end
+$var port 1 <35 mtvec_addr_i [28] $end
+$var port 1 <36 mtvec_addr_i [27] $end
+$var port 1 <37 mtvec_addr_i [26] $end
+$var port 1 <38 mtvec_addr_i [25] $end
+$var port 1 <39 mtvec_addr_i [24] $end
+$var port 1 <40 mtvec_addr_i [23] $end
+$var port 1 <41 mtvec_addr_i [22] $end
+$var port 1 <42 mtvec_addr_i [21] $end
+$var port 1 <43 mtvec_addr_i [20] $end
+$var port 1 <44 mtvec_addr_i [19] $end
+$var port 1 <45 mtvec_addr_i [18] $end
+$var port 1 <46 mtvec_addr_i [17] $end
+$var port 1 <47 mtvec_addr_i [16] $end
+$var port 1 <48 mtvec_addr_i [15] $end
+$var port 1 <49 mtvec_addr_i [14] $end
+$var port 1 <50 mtvec_addr_i [13] $end
+$var port 1 <51 mtvec_addr_i [12] $end
+$var port 1 <52 mtvec_addr_i [11] $end
+$var port 1 <53 mtvec_addr_i [10] $end
+$var port 1 <54 mtvec_addr_i [9] $end
+$var port 1 <55 mtvec_addr_i [8] $end
+$var port 1 <56 mtvec_addr_i [7] $end
+$var port 1 <57 mtvec_addr_i [6] $end
+$var port 1 <58 mtvec_addr_i [5] $end
+$var port 1 <59 mtvec_addr_i [4] $end
+$var port 1 <60 mtvec_addr_i [3] $end
+$var port 1 <61 mtvec_addr_i [2] $end
+$var port 1 <62 mtvec_addr_i [1] $end
+$var port 1 <63 mtvec_addr_i [0] $end
+$var port 1 <64 dm_halt_addr_i [31] $end
+$var port 1 <65 dm_halt_addr_i [30] $end
+$var port 1 <66 dm_halt_addr_i [29] $end
+$var port 1 <67 dm_halt_addr_i [28] $end
+$var port 1 <68 dm_halt_addr_i [27] $end
+$var port 1 <69 dm_halt_addr_i [26] $end
+$var port 1 <70 dm_halt_addr_i [25] $end
+$var port 1 <71 dm_halt_addr_i [24] $end
+$var port 1 <72 dm_halt_addr_i [23] $end
+$var port 1 <73 dm_halt_addr_i [22] $end
+$var port 1 <74 dm_halt_addr_i [21] $end
+$var port 1 <75 dm_halt_addr_i [20] $end
+$var port 1 <76 dm_halt_addr_i [19] $end
+$var port 1 <77 dm_halt_addr_i [18] $end
+$var port 1 <78 dm_halt_addr_i [17] $end
+$var port 1 <79 dm_halt_addr_i [16] $end
+$var port 1 <80 dm_halt_addr_i [15] $end
+$var port 1 <81 dm_halt_addr_i [14] $end
+$var port 1 <82 dm_halt_addr_i [13] $end
+$var port 1 <83 dm_halt_addr_i [12] $end
+$var port 1 <84 dm_halt_addr_i [11] $end
+$var port 1 <85 dm_halt_addr_i [10] $end
+$var port 1 <86 dm_halt_addr_i [9] $end
+$var port 1 <87 dm_halt_addr_i [8] $end
+$var port 1 <88 dm_halt_addr_i [7] $end
+$var port 1 <89 dm_halt_addr_i [6] $end
+$var port 1 <90 dm_halt_addr_i [5] $end
+$var port 1 <91 dm_halt_addr_i [4] $end
+$var port 1 <92 dm_halt_addr_i [3] $end
+$var port 1 <93 dm_halt_addr_i [2] $end
+$var port 1 <94 dm_halt_addr_i [1] $end
+$var port 1 <95 dm_halt_addr_i [0] $end
+$var port 1 <96 hart_id_i [31] $end
+$var port 1 <97 hart_id_i [30] $end
+$var port 1 <98 hart_id_i [29] $end
+$var port 1 <99 hart_id_i [28] $end
+$var port 1 <100 hart_id_i [27] $end
+$var port 1 <101 hart_id_i [26] $end
+$var port 1 <102 hart_id_i [25] $end
+$var port 1 <103 hart_id_i [24] $end
+$var port 1 <104 hart_id_i [23] $end
+$var port 1 <105 hart_id_i [22] $end
+$var port 1 <106 hart_id_i [21] $end
+$var port 1 <107 hart_id_i [20] $end
+$var port 1 <108 hart_id_i [19] $end
+$var port 1 <109 hart_id_i [18] $end
+$var port 1 <110 hart_id_i [17] $end
+$var port 1 <111 hart_id_i [16] $end
+$var port 1 <112 hart_id_i [15] $end
+$var port 1 <113 hart_id_i [14] $end
+$var port 1 <114 hart_id_i [13] $end
+$var port 1 <115 hart_id_i [12] $end
+$var port 1 <116 hart_id_i [11] $end
+$var port 1 <117 hart_id_i [10] $end
+$var port 1 <118 hart_id_i [9] $end
+$var port 1 <119 hart_id_i [8] $end
+$var port 1 <120 hart_id_i [7] $end
+$var port 1 <121 hart_id_i [6] $end
+$var port 1 <122 hart_id_i [5] $end
+$var port 1 <123 hart_id_i [4] $end
+$var port 1 <124 hart_id_i [3] $end
+$var port 1 <125 hart_id_i [2] $end
+$var port 1 <126 hart_id_i [1] $end
+$var port 1 <127 hart_id_i [0] $end
+$var port 1 <128 dm_exception_addr_i [31] $end
+$var port 1 <129 dm_exception_addr_i [30] $end
+$var port 1 <130 dm_exception_addr_i [29] $end
+$var port 1 <131 dm_exception_addr_i [28] $end
+$var port 1 <132 dm_exception_addr_i [27] $end
+$var port 1 <133 dm_exception_addr_i [26] $end
+$var port 1 <134 dm_exception_addr_i [25] $end
+$var port 1 <135 dm_exception_addr_i [24] $end
+$var port 1 <136 dm_exception_addr_i [23] $end
+$var port 1 <137 dm_exception_addr_i [22] $end
+$var port 1 <138 dm_exception_addr_i [21] $end
+$var port 1 <139 dm_exception_addr_i [20] $end
+$var port 1 <140 dm_exception_addr_i [19] $end
+$var port 1 <141 dm_exception_addr_i [18] $end
+$var port 1 <142 dm_exception_addr_i [17] $end
+$var port 1 <143 dm_exception_addr_i [16] $end
+$var port 1 <144 dm_exception_addr_i [15] $end
+$var port 1 <145 dm_exception_addr_i [14] $end
+$var port 1 <146 dm_exception_addr_i [13] $end
+$var port 1 <147 dm_exception_addr_i [12] $end
+$var port 1 <148 dm_exception_addr_i [11] $end
+$var port 1 <149 dm_exception_addr_i [10] $end
+$var port 1 <150 dm_exception_addr_i [9] $end
+$var port 1 <151 dm_exception_addr_i [8] $end
+$var port 1 <152 dm_exception_addr_i [7] $end
+$var port 1 <153 dm_exception_addr_i [6] $end
+$var port 1 <154 dm_exception_addr_i [5] $end
+$var port 1 <155 dm_exception_addr_i [4] $end
+$var port 1 <156 dm_exception_addr_i [3] $end
+$var port 1 <157 dm_exception_addr_i [2] $end
+$var port 1 <158 dm_exception_addr_i [1] $end
+$var port 1 <159 dm_exception_addr_i [0] $end
+$var port 1 <160 instr_addr_o [31] $end
+$var port 1 <161 instr_addr_o [30] $end
+$var port 1 <162 instr_addr_o [29] $end
+$var port 1 <163 instr_addr_o [28] $end
+$var port 1 <164 instr_addr_o [27] $end
+$var port 1 <165 instr_addr_o [26] $end
+$var port 1 <166 instr_addr_o [25] $end
+$var port 1 <167 instr_addr_o [24] $end
+$var port 1 <168 instr_addr_o [23] $end
+$var port 1 <169 instr_addr_o [22] $end
+$var port 1 <170 instr_addr_o [21] $end
+$var port 1 <171 instr_addr_o [20] $end
+$var port 1 <172 instr_addr_o [19] $end
+$var port 1 <173 instr_addr_o [18] $end
+$var port 1 <174 instr_addr_o [17] $end
+$var port 1 <175 instr_addr_o [16] $end
+$var port 1 <176 instr_addr_o [15] $end
+$var port 1 <177 instr_addr_o [14] $end
+$var port 1 <178 instr_addr_o [13] $end
+$var port 1 <179 instr_addr_o [12] $end
+$var port 1 <180 instr_addr_o [11] $end
+$var port 1 <181 instr_addr_o [10] $end
+$var port 1 <182 instr_addr_o [9] $end
+$var port 1 <183 instr_addr_o [8] $end
+$var port 1 <184 instr_addr_o [7] $end
+$var port 1 <185 instr_addr_o [6] $end
+$var port 1 <186 instr_addr_o [5] $end
+$var port 1 <187 instr_addr_o [4] $end
+$var port 1 <188 instr_addr_o [3] $end
+$var port 1 <189 instr_addr_o [2] $end
+$var port 1 <190 instr_addr_o [1] $end
+$var port 1 <191 instr_addr_o [0] $end
+$var port 1 <192 instr_rdata_i [31] $end
+$var port 1 <193 instr_rdata_i [30] $end
+$var port 1 <194 instr_rdata_i [29] $end
+$var port 1 <195 instr_rdata_i [28] $end
+$var port 1 <196 instr_rdata_i [27] $end
+$var port 1 <197 instr_rdata_i [26] $end
+$var port 1 <198 instr_rdata_i [25] $end
+$var port 1 <199 instr_rdata_i [24] $end
+$var port 1 <200 instr_rdata_i [23] $end
+$var port 1 <201 instr_rdata_i [22] $end
+$var port 1 <202 instr_rdata_i [21] $end
+$var port 1 <203 instr_rdata_i [20] $end
+$var port 1 <204 instr_rdata_i [19] $end
+$var port 1 <205 instr_rdata_i [18] $end
+$var port 1 <206 instr_rdata_i [17] $end
+$var port 1 <207 instr_rdata_i [16] $end
+$var port 1 <208 instr_rdata_i [15] $end
+$var port 1 <209 instr_rdata_i [14] $end
+$var port 1 <210 instr_rdata_i [13] $end
+$var port 1 <211 instr_rdata_i [12] $end
+$var port 1 <212 instr_rdata_i [11] $end
+$var port 1 <213 instr_rdata_i [10] $end
+$var port 1 <214 instr_rdata_i [9] $end
+$var port 1 <215 instr_rdata_i [8] $end
+$var port 1 <216 instr_rdata_i [7] $end
+$var port 1 <217 instr_rdata_i [6] $end
+$var port 1 <218 instr_rdata_i [5] $end
+$var port 1 <219 instr_rdata_i [4] $end
+$var port 1 <220 instr_rdata_i [3] $end
+$var port 1 <221 instr_rdata_i [2] $end
+$var port 1 <222 instr_rdata_i [1] $end
+$var port 1 <223 instr_rdata_i [0] $end
+$var port 1 <224 data_be_o [3] $end
+$var port 1 <225 data_be_o [2] $end
+$var port 1 <226 data_be_o [1] $end
+$var port 1 <227 data_be_o [0] $end
+$var port 1 <228 data_addr_o [31] $end
+$var port 1 <229 data_addr_o [30] $end
+$var port 1 <230 data_addr_o [29] $end
+$var port 1 <231 data_addr_o [28] $end
+$var port 1 <232 data_addr_o [27] $end
+$var port 1 <233 data_addr_o [26] $end
+$var port 1 <234 data_addr_o [25] $end
+$var port 1 <235 data_addr_o [24] $end
+$var port 1 <236 data_addr_o [23] $end
+$var port 1 <237 data_addr_o [22] $end
+$var port 1 <238 data_addr_o [21] $end
+$var port 1 <239 data_addr_o [20] $end
+$var port 1 <240 data_addr_o [19] $end
+$var port 1 <241 data_addr_o [18] $end
+$var port 1 <242 data_addr_o [17] $end
+$var port 1 <243 data_addr_o [16] $end
+$var port 1 <244 data_addr_o [15] $end
+$var port 1 <245 data_addr_o [14] $end
+$var port 1 <246 data_addr_o [13] $end
+$var port 1 <247 data_addr_o [12] $end
+$var port 1 <248 data_addr_o [11] $end
+$var port 1 <249 data_addr_o [10] $end
+$var port 1 <250 data_addr_o [9] $end
+$var port 1 <251 data_addr_o [8] $end
+$var port 1 <252 data_addr_o [7] $end
+$var port 1 <253 data_addr_o [6] $end
+$var port 1 <254 data_addr_o [5] $end
+$var port 1 <255 data_addr_o [4] $end
+$var port 1 <256 data_addr_o [3] $end
+$var port 1 <257 data_addr_o [2] $end
+$var port 1 <258 data_addr_o [1] $end
+$var port 1 <259 data_addr_o [0] $end
+$var port 1 <260 data_wdata_o [31] $end
+$var port 1 <261 data_wdata_o [30] $end
+$var port 1 <262 data_wdata_o [29] $end
+$var port 1 <263 data_wdata_o [28] $end
+$var port 1 <264 data_wdata_o [27] $end
+$var port 1 <265 data_wdata_o [26] $end
+$var port 1 <266 data_wdata_o [25] $end
+$var port 1 <267 data_wdata_o [24] $end
+$var port 1 <268 data_wdata_o [23] $end
+$var port 1 <269 data_wdata_o [22] $end
+$var port 1 <270 data_wdata_o [21] $end
+$var port 1 <271 data_wdata_o [20] $end
+$var port 1 <272 data_wdata_o [19] $end
+$var port 1 <273 data_wdata_o [18] $end
+$var port 1 <274 data_wdata_o [17] $end
+$var port 1 <275 data_wdata_o [16] $end
+$var port 1 <276 data_wdata_o [15] $end
+$var port 1 <277 data_wdata_o [14] $end
+$var port 1 <278 data_wdata_o [13] $end
+$var port 1 <279 data_wdata_o [12] $end
+$var port 1 <280 data_wdata_o [11] $end
+$var port 1 <281 data_wdata_o [10] $end
+$var port 1 <282 data_wdata_o [9] $end
+$var port 1 <283 data_wdata_o [8] $end
+$var port 1 <284 data_wdata_o [7] $end
+$var port 1 <285 data_wdata_o [6] $end
+$var port 1 <286 data_wdata_o [5] $end
+$var port 1 <287 data_wdata_o [4] $end
+$var port 1 <288 data_wdata_o [3] $end
+$var port 1 <289 data_wdata_o [2] $end
+$var port 1 <290 data_wdata_o [1] $end
+$var port 1 <291 data_wdata_o [0] $end
+$var port 1 <292 data_rdata_i [31] $end
+$var port 1 <293 data_rdata_i [30] $end
+$var port 1 <294 data_rdata_i [29] $end
+$var port 1 <295 data_rdata_i [28] $end
+$var port 1 <296 data_rdata_i [27] $end
+$var port 1 <297 data_rdata_i [26] $end
+$var port 1 <298 data_rdata_i [25] $end
+$var port 1 <299 data_rdata_i [24] $end
+$var port 1 <300 data_rdata_i [23] $end
+$var port 1 <301 data_rdata_i [22] $end
+$var port 1 <302 data_rdata_i [21] $end
+$var port 1 <303 data_rdata_i [20] $end
+$var port 1 <304 data_rdata_i [19] $end
+$var port 1 <305 data_rdata_i [18] $end
+$var port 1 <306 data_rdata_i [17] $end
+$var port 1 <307 data_rdata_i [16] $end
+$var port 1 <308 data_rdata_i [15] $end
+$var port 1 <309 data_rdata_i [14] $end
+$var port 1 <310 data_rdata_i [13] $end
+$var port 1 <311 data_rdata_i [12] $end
+$var port 1 <312 data_rdata_i [11] $end
+$var port 1 <313 data_rdata_i [10] $end
+$var port 1 <314 data_rdata_i [9] $end
+$var port 1 <315 data_rdata_i [8] $end
+$var port 1 <316 data_rdata_i [7] $end
+$var port 1 <317 data_rdata_i [6] $end
+$var port 1 <318 data_rdata_i [5] $end
+$var port 1 <319 data_rdata_i [4] $end
+$var port 1 <320 data_rdata_i [3] $end
+$var port 1 <321 data_rdata_i [2] $end
+$var port 1 <322 data_rdata_i [1] $end
+$var port 1 <323 data_rdata_i [0] $end
+$var port 1 <324 irq_i [31] $end
+$var port 1 <325 irq_i [30] $end
+$var port 1 <326 irq_i [29] $end
+$var port 1 <327 irq_i [28] $end
+$var port 1 <328 irq_i [27] $end
+$var port 1 <329 irq_i [26] $end
+$var port 1 <330 irq_i [25] $end
+$var port 1 <331 irq_i [24] $end
+$var port 1 <332 irq_i [23] $end
+$var port 1 <333 irq_i [22] $end
+$var port 1 <334 irq_i [21] $end
+$var port 1 <335 irq_i [20] $end
+$var port 1 <336 irq_i [19] $end
+$var port 1 <337 irq_i [18] $end
+$var port 1 <338 irq_i [17] $end
+$var port 1 <339 irq_i [16] $end
+$var port 1 <340 irq_i [15] $end
+$var port 1 <341 irq_i [14] $end
+$var port 1 <342 irq_i [13] $end
+$var port 1 <343 irq_i [12] $end
+$var port 1 <344 irq_i [11] $end
+$var port 1 <345 irq_i [10] $end
+$var port 1 <346 irq_i [9] $end
+$var port 1 <347 irq_i [8] $end
+$var port 1 <348 irq_i [7] $end
+$var port 1 <349 irq_i [6] $end
+$var port 1 <350 irq_i [5] $end
+$var port 1 <351 irq_i [4] $end
+$var port 1 <352 irq_i [3] $end
+$var port 1 <353 irq_i [2] $end
+$var port 1 <354 irq_i [1] $end
+$var port 1 <355 irq_i [0] $end
+$var port 1 <356 irq_id_o [4] $end
+$var port 1 <357 irq_id_o [3] $end
+$var port 1 <358 irq_id_o [2] $end
+$var port 1 <359 irq_id_o [1] $end
+$var port 1 <360 irq_id_o [0] $end
+$var port 1 <361 clk_i $end
+$var port 1 <362 rst_ni $end
+$var port 1 <363 pulp_clock_en_i $end
+$var port 1 <364 scan_cg_en_i $end
+$var port 1 <365 instr_gnt_i $end
+$var port 1 <366 instr_rvalid_i $end
+$var port 1 <367 data_gnt_i $end
+$var port 1 <368 data_rvalid_i $end
+$var port 1 <369 debug_req_i $end
+$var port 1 <370 fetch_enable_i $end
+$var port 1 <371 instr_req_o $end
+$var port 1 <372 data_req_o $end
+$var port 1 <373 data_we_o $end
+$var port 1 <374 irq_ack_o $end
+$var port 1 <375 debug_havereset_o $end
+$var port 1 <376 debug_running_o $end
+$var port 1 <377 debug_halted_o $end
+$var port 1 <378 core_sleep_o $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpports
+pU 0 6 <370
+pD 6 0 <362
+pU 0 6 <361
+pD 6 0 <369
+pD 6 0 <339
+pD 6 0 <338
+pD 6 0 <337
+pD 6 0 <336
+pD 6 0 <335
+pD 6 0 <334
+pD 6 0 <333
+pD 6 0 <332
+pD 6 0 <331
+pD 6 0 <330
+pD 6 0 <329
+pD 6 0 <328
+pD 6 0 <327
+pD 6 0 <326
+pD 6 0 <325
+pD 6 0 <324
+pD 6 0 <343
+pD 6 0 <342
+pD 6 0 <341
+pD 6 0 <340
+pD 6 0 <344
+pD 6 0 <347
+pD 6 0 <346
+pD 6 0 <345
+pD 6 0 <348
+pD 6 0 <351
+pD 6 0 <350
+pD 6 0 <349
+pD 6 0 <352
+pD 6 0 <355
+pD 6 0 <354
+pD 6 0 <353
+pD 6 0 <323
+pD 6 0 <322
+pD 6 0 <321
+pD 6 0 <320
+pD 6 0 <319
+pD 6 0 <318
+pD 6 0 <317
+pD 6 0 <316
+pD 6 0 <315
+pD 6 0 <314
+pD 6 0 <313
+pD 6 0 <312
+pD 6 0 <311
+pD 6 0 <310
+pD 6 0 <309
+pD 6 0 <308
+pD 6 0 <307
+pD 6 0 <306
+pD 6 0 <305
+pD 6 0 <304
+pD 6 0 <303
+pD 6 0 <302
+pD 6 0 <301
+pD 6 0 <300
+pD 6 0 <299
+pD 6 0 <298
+pD 6 0 <297
+pD 6 0 <296
+pD 6 0 <295
+pD 6 0 <294
+pD 6 0 <293
+pD 6 0 <292
+pD 6 0 <368
+pD 6 0 <367
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <196
+pD 6 0 <195
+pD 6 0 <194
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+pD 6 0 <365
+pD 6 0 <159
+pD 6 0 <158
+pD 6 0 <157
+pD 6 0 <156
+pD 6 0 <155
+pD 6 0 <154
+pD 6 0 <153
+pD 6 0 <152
+pD 6 0 <151
+pD 6 0 <150
+pD 6 0 <149
+pD 6 0 <148
+pD 6 0 <147
+pD 6 0 <146
+pD 6 0 <145
+pD 6 0 <144
+pD 6 0 <143
+pD 6 0 <142
+pD 6 0 <141
+pD 6 0 <140
+pD 6 0 <139
+pD 6 0 <138
+pD 6 0 <137
+pD 6 0 <136
+pD 6 0 <135
+pD 6 0 <134
+pD 6 0 <133
+pD 6 0 <132
+pD 6 0 <131
+pD 6 0 <130
+pD 6 0 <129
+pD 6 0 <128
+pD 6 0 <127
+pD 6 0 <126
+pD 6 0 <125
+pD 6 0 <124
+pD 6 0 <123
+pD 6 0 <122
+pD 6 0 <121
+pD 6 0 <120
+pD 6 0 <119
+pD 6 0 <118
+pD 6 0 <117
+pD 6 0 <116
+pD 6 0 <115
+pD 6 0 <114
+pD 6 0 <113
+pD 6 0 <112
+pD 6 0 <111
+pD 6 0 <110
+pD 6 0 <109
+pD 6 0 <108
+pD 6 0 <107
+pD 6 0 <106
+pD 6 0 <105
+pD 6 0 <104
+pD 6 0 <103
+pD 6 0 <102
+pD 6 0 <101
+pD 6 0 <100
+pD 6 0 <99
+pD 6 0 <98
+pD 6 0 <97
+pD 6 0 <96
+pD 6 0 <95
+pD 6 0 <94
+pD 6 0 <93
+pD 6 0 <92
+pD 6 0 <91
+pD 6 0 <90
+pD 6 0 <89
+pD 6 0 <88
+pD 6 0 <87
+pD 6 0 <86
+pD 6 0 <85
+pU 0 6 <84
+pD 6 0 <83
+pD 6 0 <82
+pD 6 0 <81
+pD 6 0 <80
+pU 0 6 <79
+pD 6 0 <78
+pD 6 0 <77
+pD 6 0 <76
+pU 0 6 <75
+pD 6 0 <74
+pD 6 0 <73
+pD 6 0 <72
+pD 6 0 <71
+pU 0 6 <70
+pD 6 0 <69
+pU 0 6 <68
+pU 0 6 <67
+pD 6 0 <66
+pD 6 0 <65
+pD 6 0 <64
+pD 6 0 <63
+pD 6 0 <62
+pD 6 0 <61
+pD 6 0 <60
+pD 6 0 <59
+pD 6 0 <58
+pD 6 0 <57
+pD 6 0 <56
+pD 6 0 <55
+pD 6 0 <54
+pD 6 0 <53
+pD 6 0 <52
+pD 6 0 <51
+pD 6 0 <50
+pD 6 0 <49
+pD 6 0 <48
+pD 6 0 <47
+pD 6 0 <46
+pD 6 0 <45
+pD 6 0 <44
+pD 6 0 <43
+pD 6 0 <42
+pD 6 0 <41
+pD 6 0 <40
+pD 6 0 <39
+pD 6 0 <38
+pD 6 0 <37
+pD 6 0 <36
+pD 6 0 <35
+pD 6 0 <34
+pD 6 0 <33
+pD 6 0 <32
+pD 6 0 <31
+pD 6 0 <30
+pD 6 0 <29
+pD 6 0 <28
+pD 6 0 <27
+pD 6 0 <26
+pD 6 0 <25
+pU 0 6 <24
+pU 0 6 <23
+pD 6 0 <22
+pD 6 0 <21
+pD 6 0 <20
+pD 6 0 <19
+pD 6 0 <18
+pD 6 0 <17
+pD 6 0 <16
+pD 6 0 <15
+pD 6 0 <14
+pD 6 0 <13
+pD 6 0 <12
+pD 6 0 <11
+pD 6 0 <10
+pD 6 0 <9
+pD 6 0 <8
+pD 6 0 <7
+pD 6 0 <6
+pD 6 0 <5
+pD 6 0 <4
+pD 6 0 <3
+pD 6 0 <2
+pD 6 0 <1
+pD 6 0 <0
+pD 6 0 <364
+pU 0 6 <363
+pL 6 0 <371
+pL 6 0 <191
+pL 6 0 <190
+pH 0 6 <189
+pL 6 0 <188
+pL 6 0 <187
+pL 6 0 <186
+pL 6 0 <185
+pL 6 0 <184
+pL 6 0 <183
+pL 6 0 <182
+pL 6 0 <181
+pL 6 0 <180
+pL 6 0 <179
+pL 6 0 <178
+pL 6 0 <177
+pL 6 0 <176
+pL 6 0 <175
+pL 6 0 <174
+pL 6 0 <173
+pL 6 0 <172
+pL 6 0 <171
+pL 6 0 <170
+pL 6 0 <169
+pL 6 0 <168
+pL 6 0 <167
+pL 6 0 <166
+pL 6 0 <165
+pL 6 0 <164
+pL 6 0 <163
+pL 6 0 <162
+pL 6 0 <161
+pL 6 0 <160
+pL 6 0 <372
+pL 6 0 <373
+pH 0 6 <227
+pH 0 6 <226
+pH 0 6 <225
+pH 0 6 <224
+pL 6 0 <259
+pL 6 0 <258
+pL 6 0 <257
+pL 6 0 <256
+pL 6 0 <255
+pL 6 0 <254
+pL 6 0 <253
+pL 6 0 <252
+pL 6 0 <251
+pL 6 0 <250
+pL 6 0 <249
+pL 6 0 <248
+pL 6 0 <247
+pL 6 0 <246
+pL 6 0 <245
+pL 6 0 <244
+pL 6 0 <243
+pL 6 0 <242
+pL 6 0 <241
+pL 6 0 <240
+pL 6 0 <239
+pL 6 0 <238
+pL 6 0 <237
+pL 6 0 <236
+pL 6 0 <235
+pL 6 0 <234
+pL 6 0 <233
+pL 6 0 <232
+pL 6 0 <231
+pL 6 0 <230
+pL 6 0 <229
+pL 6 0 <228
+pL 6 0 <291
+pL 6 0 <290
+pL 6 0 <289
+pL 6 0 <288
+pL 6 0 <287
+pL 6 0 <286
+pL 6 0 <285
+pL 6 0 <284
+pL 6 0 <283
+pL 6 0 <282
+pL 6 0 <281
+pL 6 0 <280
+pL 6 0 <279
+pL 6 0 <278
+pL 6 0 <277
+pL 6 0 <276
+pL 6 0 <275
+pL 6 0 <274
+pL 6 0 <273
+pL 6 0 <272
+pL 6 0 <271
+pL 6 0 <270
+pL 6 0 <269
+pL 6 0 <268
+pL 6 0 <267
+pL 6 0 <266
+pL 6 0 <265
+pL 6 0 <264
+pL 6 0 <263
+pL 6 0 <262
+pL 6 0 <261
+pL 6 0 <260
+pL 6 0 <374
+pL 6 0 <360
+pL 6 0 <359
+pL 6 0 <358
+pL 6 0 <357
+pL 6 0 <356
+pL 6 0 <378
+pH 0 6 <375
+pL 6 0 <376
+pL 6 0 <377
+$end
+#5000
+pD 6 0 <361
+#10000
+pU 0 6 <361
+#15000
+pD 6 0 <361
+#20000
+pU 0 6 <361
+#25000
+pD 6 0 <361
+#30000
+pU 0 6 <361
+#35000
+pD 6 0 <361
+#40000
+pU 0 6 <361
+#41000
+pU 0 6 <362
+#45000
+pD 6 0 <361
+#50000
+pU 0 6 <361
+#55000
+pD 6 0 <361
+#60000
+pU 0 6 <361
+pH 0 6 <184
+pH 0 6 <183
+pL 6 0 <189
+pH 0 6 <371
+pU 0 6 <365
+#65000
+pD 6 0 <361
+#70000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <375
+pH 0 6 <376
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <210
+#75000
+pD 6 0 <361
+#80000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pD 6 0 <221
+pD 6 0 <210
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <196
+pU 0 6 <194
+pU 0 6 <193
+#85000
+pD 6 0 <361
+#90000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <252
+pH 0 6 <251
+pH 0 6 <246
+pU 0 6 <221
+pD 6 0 <216
+pU 0 6 <209
+pD 6 0 <208
+pD 6 0 <207
+pD 6 0 <196
+pD 6 0 <194
+pD 6 0 <193
+#95000
+pD 6 0 <361
+#100000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pL 6 0 <252
+pL 6 0 <251
+pH 0 6 <248
+pD 6 0 <221
+pD 6 0 <209
+pU 0 6 <207
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <196
+pU 0 6 <194
+pU 0 6 <193
+#105000
+pD 6 0 <361
+#110000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <248
+pH 0 6 <256
+pL 6 0 <246
+pH 0 6 <245
+pH 0 6 <252
+pH 0 6 <251
+pU 0 6 <221
+pU 0 6 <213
+pD 6 0 <207
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <196
+pD 6 0 <194
+pD 6 0 <193
+#115000
+pD 6 0 <361
+#120000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <251
+pH 0 6 <248
+pL 6 0 <256
+pD 6 0 <221
+pU 0 6 <207
+pU 0 6 <205
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <194
+pU 0 6 <193
+pU 0 6 <192
+#125000
+pD 6 0 <361
+#130000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <248
+pH 0 6 <255
+pL 6 0 <245
+pH 0 6 <251
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <203
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <194
+pD 6 0 <193
+pD 6 0 <192
+#135000
+pD 6 0 <361
+#140000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <186
+pL 6 0 <187
+pL 6 0 <188
+pL 6 0 <255
+pL 6 0 <252
+pL 6 0 <251
+pU 0 6 <218
+pU 0 6 <217
+pD 6 0 <215
+pD 6 0 <213
+pU 0 6 <211
+pD 6 0 <210
+pD 6 0 <209
+pU 0 6 <201
+pU 0 6 <195
+pU 0 6 <194
+#145000
+pD 6 0 <361
+#150000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <227
+pH 0 6 <259
+pU 0 6 <221
+pD 6 0 <218
+pD 6 0 <217
+pU 0 6 <215
+pU 0 6 <213
+pD 6 0 <211
+pU 0 6 <210
+pD 6 0 <207
+pD 6 0 <205
+pD 6 0 <203
+pD 6 0 <201
+pD 6 0 <195
+pD 6 0 <194
+#155000
+pD 6 0 <361
+#160000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <371
+pH 0 6 <257
+pH 0 6 <251
+pH 0 6 <250
+pL 6 0 <259
+pH 0 6 <258
+pL 6 0 <226
+pD 6 0 <365
+pD 6 0 <221
+pD 6 0 <210
+pU 0 6 <207
+pU 0 6 <205
+pU 0 6 <200
+pU 0 6 <198
+pU 0 6 <196
+pU 0 6 <194
+pU 0 6 <193
+#165000
+pD 6 0 <361
+#170000
+pU 0 6 <361
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <219
+pD 6 0 <215
+pD 6 0 <213
+pD 6 0 <207
+pD 6 0 <205
+pD 6 0 <200
+pD 6 0 <198
+pD 6 0 <196
+pD 6 0 <194
+pD 6 0 <193
+pD 6 0 <366
+#175000
+pD 6 0 <361
+#180000
+pU 0 6 <361
+#185000
+pD 6 0 <361
+#190000
+pU 0 6 <361
+pH 0 6 <371
+pU 0 6 <365
+#195000
+pD 6 0 <361
+#200000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pL 6 0 <257
+pL 6 0 <250
+pH 0 6 <254
+pH 0 6 <252
+pH 0 6 <246
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <210
+#205000
+pD 6 0 <361
+#210000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pL 6 0 <254
+pH 0 6 <253
+pL 6 0 <252
+pL 6 0 <251
+pH 0 6 <248
+pH 0 6 <256
+pD 6 0 <221
+pD 6 0 <210
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <197
+pU 0 6 <196
+pU 0 6 <194
+pU 0 6 <193
+#215000
+pD 6 0 <361
+#220000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <248
+pH 0 6 <254
+pL 6 0 <253
+pH 0 6 <252
+pH 0 6 <251
+pD 6 0 <222
+pU 0 6 <220
+pD 6 0 <219
+pU 0 6 <212
+pU 0 6 <208
+pU 0 6 <207
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <196
+pD 6 0 <194
+#225000
+pD 6 0 <361
+#230000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <251
+pH 0 6 <248
+pL 6 0 <256
+pL 6 0 <254
+pU 0 6 <221
+pD 6 0 <220
+pU 0 6 <219
+pU 0 6 <216
+pD 6 0 <212
+pU 0 6 <210
+pD 6 0 <208
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <203
+pD 6 0 <200
+pD 6 0 <193
+#235000
+pD 6 0 <361
+#240000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <371
+pL 6 0 <248
+pH 0 6 <253
+pH 0 6 <256
+pL 6 0 <246
+pH 0 6 <245
+pH 0 6 <247
+pD 6 0 <365
+pD 6 0 <223
+pD 6 0 <221
+pD 6 0 <219
+pD 6 0 <216
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <210
+pD 6 0 <205
+#245000
+pD 6 0 <361
+#250000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <252
+pL 6 0 <247
+pL 6 0 <245
+pL 6 0 <253
+pL 6 0 <256
+pH 0 6 <181
+pL 6 0 <189
+pL 6 0 <186
+pL 6 0 <184
+pU 0 6 <365
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <203
+pD 6 0 <199
+pD 6 0 <197
+pD 6 0 <366
+#255000
+pD 6 0 <361
+#260000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <255
+pH 0 6 <257
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pH 0 6 <254
+pH 0 6 <252
+pH 0 6 <251
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <221
+pU 0 6 <220
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <212
+pU 0 6 <209
+pU 0 6 <206
+pU 0 6 <204
+pU 0 6 <202
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <192
+#265000
+pD 6 0 <361
+#270000
+pU 0 6 <361
+pL 6 0 <189
+pL 6 0 <188
+pH 0 6 <186
+pL 6 0 <187
+pU 0 6 <222
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <219
+pU 0 6 <217
+pU 0 6 <215
+pU 0 6 <214
+pD 6 0 <212
+pU 0 6 <211
+pU 0 6 <210
+pD 6 0 <206
+pD 6 0 <202
+pU 0 6 <201
+pU 0 6 <200
+pD 6 0 <199
+pD 6 0 <197
+pD 6 0 <192
+#275000
+pD 6 0 <361
+#280000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <371
+pL 6 0 <255
+pL 6 0 <225
+pH 0 6 <259
+pL 6 0 <254
+pL 6 0 <252
+pL 6 0 <251
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <219
+pD 6 0 <218
+pD 6 0 <217
+pU 0 6 <216
+pU 0 6 <213
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <205
+pD 6 0 <204
+pU 0 6 <203
+pU 0 6 <202
+pD 6 0 <198
+#285000
+pD 6 0 <361
+#290000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <227
+pL 6 0 <259
+pL 6 0 <257
+pH 0 6 <225
+pL 6 0 <258
+pH 0 6 <226
+pH 0 6 <246
+pH 0 6 <248
+pH 0 6 <253
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <219
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <200
+pD 6 0 <366
+#295000
+pD 6 0 <361
+#300000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <256
+pH 0 6 <257
+pH 0 6 <291
+pH 0 6 <266
+pH 0 6 <289
+pH 0 6 <261
+pL 6 0 <225
+pH 0 6 <258
+pL 6 0 <226
+pL 6 0 <227
+pH 0 6 <259
+pL 6 0 <246
+pL 6 0 <248
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <221
+pU 0 6 <220
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <212
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <202
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <197
+pU 0 6 <194
+pU 0 6 <193
+pU 0 6 <192
+#305000
+pD 6 0 <361
+#310000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <266
+pL 6 0 <261
+pL 6 0 <291
+pL 6 0 <289
+pH 0 6 <255
+pH 0 6 <248
+pH 0 6 <246
+pU 0 6 <222
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <218
+pD 6 0 <215
+pD 6 0 <212
+pU 0 6 <211
+pD 6 0 <208
+pD 6 0 <207
+pU 0 6 <206
+pD 6 0 <204
+pD 6 0 <202
+pD 6 0 <200
+pU 0 6 <198
+pU 0 6 <196
+pU 0 6 <195
+#315000
+pD 6 0 <361
+#320000
+pU 0 6 <361
+pL 6 0 <189
+pL 6 0 <183
+pL 6 0 <188
+pL 6 0 <181
+pL 6 0 <186
+pH 0 6 <266
+pH 0 6 <262
+pH 0 6 <260
+pH 0 6 <291
+pH 0 6 <289
+pH 0 6 <227
+pH 0 6 <283
+pH 0 6 <290
+pH 0 6 <281
+pH 0 6 <286
+pH 0 6 <284
+pL 6 0 <259
+pL 6 0 <257
+pL 6 0 <291
+pL 6 0 <266
+pL 6 0 <289
+pL 6 0 <262
+pL 6 0 <260
+pH 0 6 <225
+pL 6 0 <258
+pH 0 6 <226
+pH 0 6 <181
+pH 0 6 <183
+pH 0 6 <184
+pH 0 6 <186
+pL 6 0 <253
+pL 6 0 <248
+pL 6 0 <246
+pH 0 6 <256
+pL 6 0 <255
+pD 6 0 <222
+pU 0 6 <221
+pU 0 6 <220
+pU 0 6 <218
+pD 6 0 <216
+pD 6 0 <213
+pU 0 6 <212
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <209
+pU 0 6 <208
+pD 6 0 <205
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <200
+pD 6 0 <199
+pD 6 0 <196
+pD 6 0 <194
+pD 6 0 <193
+#325000
+pD 6 0 <361
+#330000
+pU 0 6 <361
+pH 0 6 <189
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <219
+pU 0 6 <217
+pU 0 6 <215
+pU 0 6 <213
+pD 6 0 <212
+pU 0 6 <211
+pU 0 6 <210
+pU 0 6 <207
+pD 6 0 <204
+pD 6 0 <202
+#335000
+pD 6 0 <361
+#340000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pU 0 6 <222
+pU 0 6 <221
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <208
+pU 0 6 <205
+pD 6 0 <197
+pD 6 0 <195
+pD 6 0 <192
+#345000
+pD 6 0 <361
+#350000
+pU 0 6 <361
+pH 0 6 <189
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <218
+pD 6 0 <207
+pU 0 6 <197
+pU 0 6 <195
+pU 0 6 <192
+#355000
+pD 6 0 <361
+#360000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pL 6 0 <290
+pL 6 0 <286
+pL 6 0 <284
+pL 6 0 <283
+pL 6 0 <281
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <216
+pU 0 6 <214
+pU 0 6 <208
+pU 0 6 <207
+pD 6 0 <203
+pU 0 6 <202
+pU 0 6 <201
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <195
+#365000
+pD 6 0 <361
+#370000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <371
+pL 6 0 <256
+pH 0 6 <257
+pH 0 6 <254
+pH 0 6 <252
+pH 0 6 <251
+pH 0 6 <249
+pD 6 0 <365
+pU 0 6 <212
+pU 0 6 <211
+pU 0 6 <210
+pU 0 6 <209
+pD 6 0 <207
+pU 0 6 <203
+pD 6 0 <202
+pD 6 0 <201
+#375000
+pD 6 0 <361
+#380000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <254
+pH 0 6 <253
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <216
+pD 6 0 <214
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <203
+pD 6 0 <200
+pD 6 0 <192
+pD 6 0 <366
+#385000
+pD 6 0 <361
+#390000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <249
+pH 0 6 <255
+pH 0 6 <254
+pL 6 0 <253
+pH 0 6 <185
+pH 0 6 <163
+pH 0 6 <189
+pH 0 6 <160
+pH 0 6 <162
+pH 0 6 <161
+pL 6 0 <187
+pL 6 0 <184
+pL 6 0 <160
+pL 6 0 <163
+pL 6 0 <162
+pL 6 0 <161
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <217
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <207
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <196
+pU 0 6 <192
+#395000
+pD 6 0 <361
+#400000
+pU 0 6 <361
+pH 0 6 <187
+pL 6 0 <189
+pL 6 0 <188
+pL 6 0 <257
+pH 0 6 <249
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <218
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <211
+pU 0 6 <206
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <203
+pU 0 6 <202
+pU 0 6 <200
+pD 6 0 <197
+pD 6 0 <196
+pD 6 0 <192
+#405000
+pD 6 0 <361
+#410000
+pU 0 6 <361
+pH 0 6 <189
+pD 6 0 <200
+#415000
+pD 6 0 <361
+#420000
+pU 0 6 <361
+pH 0 6 <188
+pL 6 0 <187
+pH 0 6 <187
+pL 6 0 <189
+pU 0 6 <200
+pD 6 0 <199
+#425000
+pD 6 0 <361
+#430000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <224
+pH 0 6 <373
+pH 0 6 <372
+pH 0 6 <257
+pH 0 6 <256
+pL 6 0 <255
+pH 0 6 <224
+pL 6 0 <225
+pH 0 6 <259
+pL 6 0 <254
+pH 0 6 <253
+pL 6 0 <252
+pL 6 0 <251
+pL 6 0 <249
+pH 0 6 <248
+pH 0 6 <246
+pU 0 6 <367
+pD 6 0 <200
+#435000
+pD 6 0 <361
+#440000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <184
+pL 6 0 <186
+pL 6 0 <185
+pL 6 0 <187
+pL 6 0 <188
+pL 6 0 <224
+pH 0 6 <225
+pL 6 0 <259
+pU 0 6 <368
+pU 0 6 <200
+pU 0 6 <199
+pD 6 0 <198
+#445000
+pD 6 0 <361
+#450000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <259
+pH 0 6 <226
+pL 6 0 <258
+pL 6 0 <225
+pD 6 0 <200
+#455000
+pD 6 0 <361
+#460000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <227
+pL 6 0 <259
+pL 6 0 <226
+pU 0 6 <200
+pD 6 0 <199
+#465000
+pD 6 0 <361
+#470000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <224
+pH 0 6 <259
+pL 6 0 <257
+pH 0 6 <258
+pL 6 0 <227
+pD 6 0 <200
+#475000
+pD 6 0 <361
+#480000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pL 6 0 <224
+pH 0 6 <225
+pL 6 0 <259
+pD 6 0 <207
+pD 6 0 <202
+pU 0 6 <200
+pU 0 6 <192
+#485000
+pD 6 0 <361
+#490000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <259
+pH 0 6 <226
+pL 6 0 <258
+pL 6 0 <225
+pD 6 0 <221
+pD 6 0 <218
+pU 0 6 <215
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <207
+pD 6 0 <206
+pU 0 6 <205
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <196
+pD 6 0 <192
+#495000
+pD 6 0 <361
+#500000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <186
+pH 0 6 <227
+pL 6 0 <259
+pL 6 0 <226
+pD 6 0 <215
+pU 0 6 <214
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <196
+#505000
+pD 6 0 <361
+#510000
+pU 0 6 <361
+pL 6 0 <372
+pH 0 6 <189
+pL 6 0 <256
+pH 0 6 <255
+pH 0 6 <249
+pH 0 6 <251
+pH 0 6 <252
+pL 6 0 <246
+pL 6 0 <248
+pL 6 0 <253
+pD 6 0 <367
+pD 6 0 <223
+pU 0 6 <221
+pD 6 0 <219
+pD 6 0 <213
+pU 0 6 <212
+pU 0 6 <210
+pU 0 6 <209
+pD 6 0 <207
+pU 0 6 <206
+pU 0 6 <203
+pU 0 6 <192
+#515000
+pD 6 0 <361
+#520000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pD 6 0 <368
+pU 0 6 <223
+pD 6 0 <222
+pD 6 0 <221
+pU 0 6 <217
+pU 0 6 <215
+pU 0 6 <213
+pD 6 0 <212
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <208
+pU 0 6 <207
+pD 6 0 <206
+pU 0 6 <204
+pD 6 0 <200
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <196
+#525000
+pD 6 0 <361
+#530000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <257
+pL 6 0 <249
+pH 0 6 <258
+pL 6 0 <227
+pH 0 6 <225
+pH 0 6 <254
+pD 6 0 <223
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <220
+pU 0 6 <219
+pU 0 6 <218
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <215
+pU 0 6 <208
+pU 0 6 <206
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <203
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <196
+pU 0 6 <195
+pU 0 6 <194
+pU 0 6 <193
+pD 6 0 <192
+#535000
+pD 6 0 <361
+#540000
+pU 0 6 <361
+pL 6 0 <371
+pL 6 0 <189
+pL 6 0 <186
+pH 0 6 <185
+pL 6 0 <187
+pL 6 0 <188
+pH 0 6 <256
+pL 6 0 <257
+pH 0 6 <249
+pH 0 6 <253
+pH 0 6 <250
+pH 0 6 <248
+pH 0 6 <247
+pH 0 6 <246
+pH 0 6 <245
+pH 0 6 <244
+pL 6 0 <258
+pH 0 6 <227
+pL 6 0 <225
+pH 0 6 <239
+pH 0 6 <240
+pH 0 6 <241
+pH 0 6 <242
+pH 0 6 <243
+pH 0 6 <238
+pH 0 6 <237
+pH 0 6 <236
+pH 0 6 <235
+pH 0 6 <234
+pH 0 6 <233
+pH 0 6 <232
+pH 0 6 <231
+pH 0 6 <230
+pH 0 6 <229
+pH 0 6 <228
+pD 6 0 <365
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <219
+pD 6 0 <218
+pU 0 6 <217
+pU 0 6 <216
+pD 6 0 <214
+pD 6 0 <213
+pU 0 6 <212
+pU 0 6 <210
+pU 0 6 <209
+pD 6 0 <206
+pU 0 6 <205
+pD 6 0 <201
+pU 0 6 <199
+pU 0 6 <198
+pD 6 0 <193
+pU 0 6 <192
+#545000
+pD 6 0 <361
+#550000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <256
+pL 6 0 <255
+pL 6 0 <254
+pL 6 0 <252
+pL 6 0 <251
+pL 6 0 <249
+pL 6 0 <250
+pL 6 0 <247
+pL 6 0 <245
+pL 6 0 <241
+pL 6 0 <240
+pL 6 0 <239
+pL 6 0 <238
+pL 6 0 <237
+pL 6 0 <236
+pL 6 0 <235
+pL 6 0 <234
+pL 6 0 <233
+pL 6 0 <232
+pL 6 0 <231
+pL 6 0 <230
+pL 6 0 <228
+pL 6 0 <229
+pL 6 0 <243
+pL 6 0 <244
+pL 6 0 <242
+pU 0 6 <365
+pD 6 0 <220
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <207
+pD 6 0 <205
+pD 6 0 <202
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <195
+pD 6 0 <194
+pD 6 0 <192
+pD 6 0 <366
+#555000
+pD 6 0 <361
+#560000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <255
+pH 0 6 <254
+pL 6 0 <253
+pL 6 0 <246
+pL 6 0 <248
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <220
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <215
+pU 0 6 <211
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <206
+pU 0 6 <202
+pU 0 6 <197
+pU 0 6 <196
+pU 0 6 <195
+pU 0 6 <193
+pU 0 6 <192
+#565000
+pD 6 0 <361
+#570000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <186
+pH 0 6 <189
+pL 6 0 <188
+pL 6 0 <185
+pL 6 0 <184
+pH 0 6 <256
+pH 0 6 <257
+pH 0 6 <224
+pH 0 6 <291
+pH 0 6 <266
+pH 0 6 <289
+pH 0 6 <261
+pH 0 6 <258
+pL 6 0 <227
+pH 0 6 <259
+pD 6 0 <223
+pU 0 6 <222
+pD 6 0 <219
+pD 6 0 <215
+pU 0 6 <213
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <209
+pU 0 6 <208
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <199
+pD 6 0 <196
+pD 6 0 <195
+pD 6 0 <193
+#575000
+pD 6 0 <361
+#580000
+pU 0 6 <361
+pL 6 0 <289
+pL 6 0 <291
+pL 6 0 <261
+pL 6 0 <266
+pH 0 6 <188
+pL 6 0 <189
+pH 0 6 <249
+pH 0 6 <251
+pH 0 6 <252
+pL 6 0 <258
+pH 0 6 <227
+pL 6 0 <257
+pL 6 0 <256
+pL 6 0 <255
+pL 6 0 <254
+pH 0 6 <253
+pL 6 0 <224
+pL 6 0 <259
+pU 0 6 <223
+pD 6 0 <222
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <212
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <207
+pD 6 0 <206
+pU 0 6 <200
+pU 0 6 <194
+pU 0 6 <193
+#585000
+pD 6 0 <361
+#590000
+pU 0 6 <361
+pL 6 0 <188
+pH 0 6 <189
+pH 0 6 <188
+pU 0 6 <222
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <218
+pD 6 0 <215
+pD 6 0 <212
+pU 0 6 <211
+pD 6 0 <208
+pD 6 0 <207
+pU 0 6 <206
+pD 6 0 <204
+pD 6 0 <202
+pD 6 0 <200
+pU 0 6 <198
+pU 0 6 <196
+pU 0 6 <195
+#595000
+pD 6 0 <361
+#600000
+pU 0 6 <361
+pH 0 6 <281
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pH 0 6 <283
+pH 0 6 <284
+pH 0 6 <287
+pL 6 0 <253
+pL 6 0 <252
+pL 6 0 <251
+pL 6 0 <249
+pD 6 0 <222
+pU 0 6 <221
+pU 0 6 <220
+pU 0 6 <218
+pD 6 0 <216
+pD 6 0 <213
+pU 0 6 <212
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <209
+pU 0 6 <208
+pD 6 0 <205
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <200
+pD 6 0 <199
+pD 6 0 <196
+pD 6 0 <194
+pD 6 0 <193
+#605000
+pD 6 0 <361
+#610000
+pU 0 6 <361
+pL 6 0 <281
+pH 0 6 <189
+pL 6 0 <283
+pL 6 0 <284
+pL 6 0 <287
+pH 0 6 <254
+pD 6 0 <223
+pD 6 0 <219
+pD 6 0 <218
+pU 0 6 <215
+pD 6 0 <212
+pU 0 6 <209
+pD 6 0 <206
+pU 0 6 <205
+pD 6 0 <203
+pD 6 0 <202
+pU 0 6 <201
+pD 6 0 <200
+pU 0 6 <199
+pD 6 0 <197
+pD 6 0 <195
+pU 0 6 <193
+#615000
+pD 6 0 <361
+#620000
+pU 0 6 <361
+pL 6 0 <371
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <256
+pH 0 6 <224
+pH 0 6 <258
+pL 6 0 <227
+pH 0 6 <259
+pH 0 6 <255
+pH 0 6 <257
+pD 6 0 <365
+pU 0 6 <213
+pU 0 6 <197
+#625000
+pD 6 0 <361
+#630000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <248
+pH 0 6 <246
+pL 6 0 <257
+pL 6 0 <255
+pL 6 0 <254
+pH 0 6 <252
+pL 6 0 <256
+pL 6 0 <258
+pH 0 6 <227
+pL 6 0 <224
+pL 6 0 <259
+pU 0 6 <365
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <201
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+#635000
+pD 6 0 <361
+#640000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <372
+pH 0 6 <224
+pH 0 6 <226
+pH 0 6 <225
+pL 6 0 <371
+pH 0 6 <253
+pL 6 0 <252
+pH 0 6 <255
+pD 6 0 <365
+pU 0 6 <367
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <217
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <196
+pU 0 6 <194
+pU 0 6 <193
+#645000
+pD 6 0 <361
+#650000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <257
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <196
+pD 6 0 <194
+pD 6 0 <193
+pD 6 0 <366
+pU 0 6 <368
+#655000
+pD 6 0 <361
+#660000
+pU 0 6 <361
+pL 6 0 <189
+pL 6 0 <186
+pH 0 6 <185
+pL 6 0 <187
+pL 6 0 <188
+pL 6 0 <371
+pH 0 6 <256
+pL 6 0 <257
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <217
+pU 0 6 <216
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <212
+pU 0 6 <211
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <203
+pU 0 6 <198
+pU 0 6 <194
+pU 0 6 <193
+pU 0 6 <192
+#665000
+pD 6 0 <361
+#670000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <257
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <219
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <207
+pD 6 0 <203
+pD 6 0 <198
+pD 6 0 <194
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+#675000
+pD 6 0 <361
+#680000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <372
+pL 6 0 <256
+pL 6 0 <255
+pH 0 6 <254
+pL 6 0 <257
+pD 6 0 <367
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <216
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <200
+pU 0 6 <198
+pU 0 6 <197
+#685000
+pD 6 0 <361
+#690000
+pU 0 6 <361
+pH 0 6 <287
+pH 0 6 <286
+pL 6 0 <183
+pL 6 0 <181
+pL 6 0 <185
+pH 0 6 <283
+pH 0 6 <281
+pL 6 0 <189
+pH 0 6 <181
+pH 0 6 <183
+pL 6 0 <246
+pH 0 6 <245
+pL 6 0 <248
+pH 0 6 <247
+pH 0 6 <252
+pH 0 6 <186
+pH 0 6 <187
+pD 6 0 <368
+pD 6 0 <222
+pU 0 6 <220
+pU 0 6 <217
+pU 0 6 <209
+pD 6 0 <208
+pD 6 0 <207
+pU 0 6 <204
+pD 6 0 <203
+pD 6 0 <202
+#695000
+pD 6 0 <361
+#700000
+pU 0 6 <361
+pH 0 6 <189
+pU 0 6 <221
+pD 6 0 <217
+pD 6 0 <216
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <208
+pD 6 0 <206
+pU 0 6 <205
+pU 0 6 <201
+pD 6 0 <200
+pU 0 6 <199
+pD 6 0 <197
+pU 0 6 <193
+pU 0 6 <192
+#705000
+pD 6 0 <361
+#710000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pU 0 6 <213
+pU 0 6 <197
+#715000
+pD 6 0 <361
+#720000
+pU 0 6 <361
+pL 6 0 <371
+pL 6 0 <287
+pL 6 0 <286
+pL 6 0 <283
+pL 6 0 <281
+pH 0 6 <189
+pH 0 6 <372
+pH 0 6 <246
+pL 6 0 <245
+pH 0 6 <248
+pL 6 0 <247
+pL 6 0 <252
+pD 6 0 <365
+pU 0 6 <367
+pU 0 6 <223
+pD 6 0 <221
+pD 6 0 <220
+pU 0 6 <217
+pD 6 0 <209
+pD 6 0 <208
+pU 0 6 <207
+pU 0 6 <206
+pD 6 0 <205
+pD 6 0 <204
+pU 0 6 <202
+pU 0 6 <200
+pD 6 0 <197
+pU 0 6 <196
+pU 0 6 <194
+pD 6 0 <192
+#725000
+pD 6 0 <361
+#730000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <257
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <196
+pD 6 0 <194
+pD 6 0 <193
+pD 6 0 <366
+pU 0 6 <368
+#735000
+pD 6 0 <361
+#740000
+pU 0 6 <361
+pL 6 0 <189
+pL 6 0 <186
+pH 0 6 <185
+pL 6 0 <187
+pL 6 0 <188
+pL 6 0 <371
+pL 6 0 <257
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <217
+pU 0 6 <216
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <212
+pU 0 6 <211
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <203
+pU 0 6 <198
+pU 0 6 <194
+pU 0 6 <193
+pU 0 6 <192
+#745000
+pD 6 0 <361
+#750000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <257
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <219
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <207
+pD 6 0 <203
+pD 6 0 <198
+pD 6 0 <194
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+#755000
+pD 6 0 <361
+#760000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <372
+pL 6 0 <256
+pH 0 6 <255
+pL 6 0 <257
+pD 6 0 <367
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <216
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <200
+pU 0 6 <198
+pU 0 6 <197
+#765000
+pD 6 0 <361
+#770000
+pU 0 6 <361
+pH 0 6 <286
+pH 0 6 <287
+pL 6 0 <183
+pL 6 0 <181
+pL 6 0 <185
+pH 0 6 <283
+pH 0 6 <281
+pL 6 0 <189
+pL 6 0 <246
+pH 0 6 <245
+pL 6 0 <248
+pH 0 6 <247
+pH 0 6 <181
+pH 0 6 <183
+pH 0 6 <252
+pH 0 6 <187
+pH 0 6 <186
+pD 6 0 <368
+pD 6 0 <222
+pU 0 6 <220
+pU 0 6 <217
+pU 0 6 <209
+pD 6 0 <208
+pD 6 0 <207
+pU 0 6 <204
+pD 6 0 <203
+pD 6 0 <202
+#775000
+pD 6 0 <361
+#780000
+pU 0 6 <361
+pH 0 6 <189
+pU 0 6 <221
+pD 6 0 <217
+pD 6 0 <216
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <208
+pD 6 0 <206
+pU 0 6 <205
+pU 0 6 <201
+pD 6 0 <200
+pU 0 6 <199
+pD 6 0 <197
+pU 0 6 <193
+pU 0 6 <192
+#785000
+pD 6 0 <361
+#790000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pU 0 6 <213
+pU 0 6 <197
+#795000
+pD 6 0 <361
+#800000
+pU 0 6 <361
+pL 6 0 <371
+pL 6 0 <287
+pL 6 0 <286
+pL 6 0 <283
+pL 6 0 <281
+pH 0 6 <189
+pH 0 6 <372
+pH 0 6 <246
+pL 6 0 <245
+pH 0 6 <248
+pL 6 0 <247
+pL 6 0 <252
+pD 6 0 <365
+pU 0 6 <367
+pU 0 6 <223
+pD 6 0 <221
+pD 6 0 <220
+pU 0 6 <217
+pD 6 0 <209
+pD 6 0 <208
+pU 0 6 <207
+pU 0 6 <206
+pD 6 0 <205
+pD 6 0 <204
+pU 0 6 <202
+pU 0 6 <200
+pD 6 0 <197
+pU 0 6 <196
+pU 0 6 <194
+pD 6 0 <192
+#805000
+pD 6 0 <361
+#810000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <257
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <196
+pD 6 0 <194
+pD 6 0 <193
+pD 6 0 <366
+pU 0 6 <368
+#815000
+pD 6 0 <361
+#820000
+pU 0 6 <361
+pL 6 0 <189
+pL 6 0 <186
+pH 0 6 <185
+pL 6 0 <187
+pL 6 0 <188
+pL 6 0 <371
+pL 6 0 <257
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <217
+pU 0 6 <216
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <212
+pU 0 6 <211
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <203
+pU 0 6 <198
+pU 0 6 <194
+pU 0 6 <193
+pU 0 6 <192
+#825000
+pD 6 0 <361
+#830000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <257
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <219
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <207
+pD 6 0 <203
+pD 6 0 <198
+pD 6 0 <194
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+#835000
+pD 6 0 <361
+#840000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <372
+pL 6 0 <257
+pL 6 0 <256
+pL 6 0 <255
+pL 6 0 <254
+pL 6 0 <253
+pH 0 6 <252
+pD 6 0 <367
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <216
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <200
+pU 0 6 <198
+pU 0 6 <197
+#845000
+pD 6 0 <361
+#850000
+pU 0 6 <361
+pH 0 6 <286
+pH 0 6 <287
+pH 0 6 <283
+pH 0 6 <281
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <371
+pL 6 0 <252
+pL 6 0 <246
+pH 0 6 <245
+pL 6 0 <248
+pH 0 6 <247
+pH 0 6 <251
+pD 6 0 <365
+pD 6 0 <368
+pD 6 0 <222
+pU 0 6 <220
+pU 0 6 <217
+pU 0 6 <209
+pD 6 0 <208
+pD 6 0 <207
+pU 0 6 <204
+pD 6 0 <203
+pD 6 0 <202
+#855000
+pD 6 0 <361
+#860000
+pU 0 6 <361
+pL 6 0 <287
+pL 6 0 <286
+pH 0 6 <290
+pH 0 6 <285
+pH 0 6 <371
+pH 0 6 <189
+pH 0 6 <186
+pH 0 6 <187
+pH 0 6 <184
+pL 6 0 <188
+pL 6 0 <181
+pL 6 0 <185
+pL 6 0 <247
+pL 6 0 <245
+pL 6 0 <251
+pU 0 6 <365
+pD 6 0 <220
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <204
+pD 6 0 <200
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <366
+#865000
+pD 6 0 <361
+#870000
+pU 0 6 <361
+pL 6 0 <281
+pL 6 0 <283
+pL 6 0 <290
+pL 6 0 <285
+pH 0 6 <188
+pL 6 0 <189
+pH 0 6 <249
+pH 0 6 <251
+pH 0 6 <253
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <216
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <210
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <203
+pU 0 6 <199
+pU 0 6 <197
+#875000
+pD 6 0 <361
+#880000
+pU 0 6 <361
+pH 0 6 <189
+pD 6 0 <223
+pD 6 0 <221
+pD 6 0 <219
+pD 6 0 <216
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <210
+pD 6 0 <205
+#885000
+pD 6 0 <361
+#890000
+pU 0 6 <361
+pL 6 0 <188
+pH 0 6 <185
+pL 6 0 <189
+pL 6 0 <187
+pL 6 0 <186
+pU 0 6 <223
+pU 0 6 <221
+pU 0 6 <217
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <212
+pU 0 6 <210
+pD 6 0 <206
+pD 6 0 <203
+pU 0 6 <201
+pD 6 0 <199
+pU 0 6 <196
+pU 0 6 <194
+#895000
+pD 6 0 <361
+#900000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <253
+pL 6 0 <249
+pH 0 6 <254
+pH 0 6 <252
+pH 0 6 <255
+pH 0 6 <257
+pU 0 6 <218
+pD 6 0 <215
+pD 6 0 <214
+pU 0 6 <213
+pD 6 0 <207
+pU 0 6 <206
+pD 6 0 <201
+pU 0 6 <199
+pD 6 0 <196
+pD 6 0 <194
+pU 0 6 <193
+#905000
+pD 6 0 <361
+#910000
+pU 0 6 <361
+pH 0 6 <188
+pL 6 0 <257
+pH 0 6 <253
+pL 6 0 <252
+pL 6 0 <251
+pH 0 6 <249
+pH 0 6 <181
+pL 6 0 <183
+pL 6 0 <184
+pD 6 0 <223
+pU 0 6 <220
+pD 6 0 <218
+pD 6 0 <216
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <210
+pU 0 6 <207
+pD 6 0 <206
+pD 6 0 <199
+pU 0 6 <198
+#915000
+pD 6 0 <361
+#920000
+pU 0 6 <361
+pH 0 6 <187
+pL 6 0 <189
+pL 6 0 <188
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pL 6 0 <249
+pH 0 6 <252
+pH 0 6 <251
+pL 6 0 <254
+pL 6 0 <255
+pU 0 6 <222
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <217
+pU 0 6 <216
+pU 0 6 <208
+pD 6 0 <207
+pU 0 6 <206
+pU 0 6 <204
+pU 0 6 <202
+pU 0 6 <200
+pU 0 6 <199
+pD 6 0 <198
+pD 6 0 <193
+pU 0 6 <192
+#925000
+pD 6 0 <361
+#930000
+pU 0 6 <361
+pH 0 6 <189
+pU 0 6 <223
+pD 6 0 <222
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <209
+pD 6 0 <208
+pU 0 6 <207
+pD 6 0 <206
+pD 6 0 <204
+pD 6 0 <202
+pD 6 0 <200
+pD 6 0 <199
+pU 0 6 <198
+pU 0 6 <193
+pD 6 0 <192
+#935000
+pD 6 0 <361
+#940000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <254
+pL 6 0 <252
+pL 6 0 <251
+pH 0 6 <249
+pH 0 6 <255
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pD 6 0 <216
+pU 0 6 <215
+pD 6 0 <214
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <201
+pD 6 0 <198
+pU 0 6 <194
+pD 6 0 <193
+pU 0 6 <192
+#945000
+pD 6 0 <361
+#950000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pL 6 0 <254
+pL 6 0 <253
+pL 6 0 <249
+pL 6 0 <255
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pD 6 0 <365
+pU 0 6 <217
+pD 6 0 <213
+pU 0 6 <211
+pD 6 0 <209
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <201
+pU 0 6 <200
+pU 0 6 <199
+pD 6 0 <194
+pU 0 6 <193
+pD 6 0 <192
+#955000
+pD 6 0 <361
+#960000
+pU 0 6 <361
+pH 0 6 <371
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <211
+pD 6 0 <207
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <197
+pD 6 0 <193
+pD 6 0 <366
+#965000
+pD 6 0 <361
+#970000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <186
+pL 6 0 <187
+pL 6 0 <188
+pH 0 6 <182
+pH 0 6 <183
+pH 0 6 <189
+pL 6 0 <186
+pL 6 0 <185
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <218
+pU 0 6 <213
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <193
+pU 0 6 <192
+#975000
+pD 6 0 <361
+#980000
+pU 0 6 <361
+pH 0 6 <188
+pL 6 0 <189
+pH 0 6 <255
+pH 0 6 <249
+pH 0 6 <253
+pH 0 6 <256
+pU 0 6 <223
+pD 6 0 <218
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <210
+pD 6 0 <209
+pU 0 6 <207
+pD 6 0 <206
+pD 6 0 <205
+pU 0 6 <200
+pU 0 6 <199
+pD 6 0 <197
+pD 6 0 <193
+pD 6 0 <192
+#985000
+pD 6 0 <361
+#990000
+pU 0 6 <361
+pH 0 6 <189
+pD 6 0 <223
+pU 0 6 <220
+pU 0 6 <218
+pD 6 0 <213
+pD 6 0 <210
+pU 0 6 <206
+pU 0 6 <197
+pU 0 6 <194
+#995000
+pD 6 0 <361
+#1000000
+pU 0 6 <361
+pL 6 0 <373
+pH 0 6 <372
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pH 0 6 <246
+pH 0 6 <248
+pL 6 0 <249
+pL 6 0 <253
+pH 0 6 <254
+pU 0 6 <367
+pU 0 6 <223
+pU 0 6 <221
+pD 6 0 <220
+pD 6 0 <218
+pU 0 6 <216
+pD 6 0 <215
+pD 6 0 <214
+pU 0 6 <213
+pU 0 6 <211
+pD 6 0 <208
+pD 6 0 <206
+pU 0 6 <204
+pU 0 6 <193
+pU 0 6 <192
+#1005000
+pD 6 0 <361
+#1010000
+pU 0 6 <361
+pL 6 0 <372
+pH 0 6 <189
+pL 6 0 <246
+pL 6 0 <248
+pL 6 0 <256
+pL 6 0 <255
+pL 6 0 <254
+pD 6 0 <367
+pU 0 6 <368
+pD 6 0 <221
+pU 0 6 <219
+pU 0 6 <215
+pU 0 6 <214
+pD 6 0 <211
+pU 0 6 <206
+pU 0 6 <205
+pD 6 0 <204
+pU 0 6 <201
+pD 6 0 <199
+pD 6 0 <198
+pU 0 6 <195
+pD 6 0 <194
+pD 6 0 <193
+pD 6 0 <192
+pN 6 6 <323
+pN 6 6 <322
+pN 6 6 <321
+pN 6 6 <320
+pN 6 6 <319
+pN 6 6 <318
+pN 6 6 <317
+pN 6 6 <316
+pN 6 6 <315
+pN 6 6 <314
+pN 6 6 <313
+pN 6 6 <312
+pN 6 6 <311
+pN 6 6 <310
+pN 6 6 <309
+pN 6 6 <308
+pN 6 6 <307
+pN 6 6 <306
+pN 6 6 <305
+pN 6 6 <304
+pN 6 6 <303
+pN 6 6 <302
+pN 6 6 <301
+pN 6 6 <300
+pN 6 6 <299
+pN 6 6 <298
+pN 6 6 <297
+pN 6 6 <296
+pN 6 6 <295
+pN 6 6 <294
+pN 6 6 <293
+pN 6 6 <292
+pD 6 0 <323
+pD 6 0 <322
+pD 6 0 <321
+pD 6 0 <320
+pD 6 0 <319
+pD 6 0 <318
+pD 6 0 <317
+pD 6 0 <316
+pD 6 0 <315
+pD 6 0 <314
+pD 6 0 <313
+pD 6 0 <312
+pD 6 0 <311
+pU 0 6 <310
+pD 6 0 <309
+pD 6 0 <308
+pD 6 0 <307
+pD 6 0 <306
+pD 6 0 <305
+pD 6 0 <304
+pD 6 0 <303
+pD 6 0 <302
+pD 6 0 <301
+pD 6 0 <300
+pD 6 0 <299
+pD 6 0 <298
+pD 6 0 <297
+pD 6 0 <296
+pD 6 0 <295
+pD 6 0 <294
+pD 6 0 <293
+pD 6 0 <292
+#1015000
+pD 6 0 <361
+#1020000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <372
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <253
+pH 0 6 <251
+pH 0 6 <246
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <367
+pD 6 0 <368
+pD 6 0 <219
+pU 0 6 <218
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <214
+pU 0 6 <210
+pU 0 6 <203
+pU 0 6 <202
+pD 6 0 <310
+#1025000
+pD 6 0 <361
+#1030000
+pU 0 6 <361
+pL 6 0 <372
+pD 6 0 <367
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <218
+pD 6 0 <213
+pD 6 0 <210
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <200
+pD 6 0 <197
+pD 6 0 <195
+pD 6 0 <366
+pU 0 6 <368
+pU 0 6 <310
+pD 6 0 <310
+#1035000
+pD 6 0 <361
+#1040000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <281
+pH 0 6 <282
+pH 0 6 <283
+pH 0 6 <287
+pH 0 6 <288
+pL 6 0 <246
+pL 6 0 <253
+pL 6 0 <251
+pL 6 0 <256
+pU 0 6 <365
+pD 6 0 <368
+#1045000
+pD 6 0 <361
+#1050000
+pU 0 6 <361
+pL 6 0 <281
+pL 6 0 <282
+pL 6 0 <283
+pL 6 0 <287
+pL 6 0 <288
+pH 0 6 <189
+pH 0 6 <246
+pH 0 6 <253
+pH 0 6 <251
+pH 0 6 <256
+pH 0 6 <257
+pU 0 6 <366
+pU 0 6 <220
+pU 0 6 <219
+pU 0 6 <217
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <209
+pU 0 6 <207
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <196
+pU 0 6 <193
+#1055000
+pD 6 0 <361
+#1060000
+pU 0 6 <361
+pH 0 6 <373
+pH 0 6 <372
+pH 0 6 <289
+pH 0 6 <285
+pL 6 0 <189
+pH 0 6 <186
+pL 6 0 <187
+pL 6 0 <188
+pH 0 6 <278
+pH 0 6 <283
+pH 0 6 <288
+pL 6 0 <257
+pU 0 6 <367
+pU 0 6 <223
+pU 0 6 <221
+pU 0 6 <218
+pD 6 0 <216
+pD 6 0 <214
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <206
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <203
+pU 0 6 <198
+pD 6 0 <196
+#1065000
+pD 6 0 <361
+#1070000
+pU 0 6 <361
+pL 6 0 <371
+pL 6 0 <373
+pL 6 0 <289
+pL 6 0 <285
+pH 0 6 <189
+pL 6 0 <278
+pL 6 0 <283
+pL 6 0 <288
+pL 6 0 <256
+pH 0 6 <255
+pD 6 0 <365
+pU 0 6 <368
+pD 6 0 <223
+pD 6 0 <221
+pD 6 0 <219
+pU 0 6 <216
+pD 6 0 <215
+pD 6 0 <211
+pD 6 0 <209
+pU 0 6 <203
+pD 6 0 <202
+pD 6 0 <201
+pU 0 6 <200
+pD 6 0 <198
+pU 0 6 <196
+pU 0 6 <195
+pD 6 0 <193
+#1075000
+pD 6 0 <361
+#1080000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <372
+pL 6 0 <246
+pL 6 0 <225
+pH 0 6 <259
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pH 0 6 <257
+pH 0 6 <256
+pL 6 0 <251
+pL 6 0 <253
+pU 0 6 <365
+pD 6 0 <367
+pD 6 0 <220
+pD 6 0 <218
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <213
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <203
+pD 6 0 <200
+pD 6 0 <196
+pD 6 0 <195
+pD 6 0 <366
+#1085000
+pD 6 0 <361
+#1090000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <248
+pH 0 6 <247
+pH 0 6 <246
+pH 0 6 <245
+pH 0 6 <244
+pH 0 6 <243
+pH 0 6 <242
+pH 0 6 <241
+pH 0 6 <240
+pH 0 6 <239
+pH 0 6 <254
+pH 0 6 <253
+pH 0 6 <252
+pH 0 6 <251
+pH 0 6 <250
+pH 0 6 <249
+pH 0 6 <236
+pH 0 6 <235
+pH 0 6 <234
+pH 0 6 <233
+pH 0 6 <232
+pH 0 6 <231
+pH 0 6 <230
+pH 0 6 <229
+pH 0 6 <228
+pH 0 6 <237
+pH 0 6 <238
+pD 6 0 <368
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <218
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <199
+pU 0 6 <196
+#1095000
+pD 6 0 <361
+#1100000
+pU 0 6 <361
+pH 0 6 <261
+pH 0 6 <262
+pH 0 6 <266
+pH 0 6 <291
+pH 0 6 <290
+pH 0 6 <289
+pH 0 6 <189
+pL 6 0 <248
+pL 6 0 <247
+pL 6 0 <246
+pL 6 0 <245
+pL 6 0 <244
+pL 6 0 <243
+pL 6 0 <242
+pL 6 0 <241
+pL 6 0 <240
+pL 6 0 <239
+pL 6 0 <254
+pL 6 0 <253
+pL 6 0 <252
+pL 6 0 <251
+pL 6 0 <250
+pL 6 0 <249
+pL 6 0 <236
+pL 6 0 <235
+pL 6 0 <234
+pL 6 0 <233
+pL 6 0 <232
+pL 6 0 <231
+pL 6 0 <230
+pL 6 0 <229
+pL 6 0 <228
+pL 6 0 <237
+pL 6 0 <238
+pD 6 0 <221
+pD 6 0 <218
+pU 0 6 <214
+pU 0 6 <203
+pD 6 0 <201
+pU 0 6 <197
+pD 6 0 <196
+pU 0 6 <192
+#1105000
+pD 6 0 <361
+#1110000
+pU 0 6 <361
+pL 6 0 <289
+pL 6 0 <290
+pL 6 0 <291
+pL 6 0 <266
+pL 6 0 <262
+pL 6 0 <261
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pH 0 6 <225
+pL 6 0 <259
+pL 6 0 <257
+pL 6 0 <255
+pL 6 0 <256
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <215
+pD 6 0 <214
+pD 6 0 <203
+pD 6 0 <199
+pU 0 6 <194
+pD 6 0 <192
+#1115000
+pD 6 0 <361
+#1120000
+pU 0 6 <361
+pL 6 0 <183
+pL 6 0 <181
+pL 6 0 <182
+pH 0 6 <265
+pH 0 6 <266
+pH 0 6 <267
+pL 6 0 <186
+pH 0 6 <185
+pL 6 0 <187
+pH 0 6 <188
+pH 0 6 <187
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <283
+pH 0 6 <282
+pH 0 6 <281
+pH 0 6 <288
+pH 0 6 <287
+pH 0 6 <285
+pH 0 6 <226
+pL 6 0 <267
+pL 6 0 <266
+pL 6 0 <265
+pH 0 6 <183
+pH 0 6 <182
+pH 0 6 <181
+pD 6 0 <222
+pD 6 0 <219
+pU 0 6 <217
+pU 0 6 <216
+pD 6 0 <215
+pU 0 6 <212
+pD 6 0 <202
+pD 6 0 <197
+pU 0 6 <196
+pU 0 6 <192
+#1125000
+pD 6 0 <361
+#1130000
+pU 0 6 <361
+pH 0 6 <189
+pD 6 0 <217
+pD 6 0 <216
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <213
+pD 6 0 <212
+pD 6 0 <207
+pD 6 0 <206
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <201
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pD 6 0 <196
+pD 6 0 <194
+pU 0 6 <193
+#1135000
+pD 6 0 <361
+#1140000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <186
+pL 6 0 <187
+pL 6 0 <188
+pD 6 0 <223
+pU 0 6 <222
+pU 0 6 <217
+pU 0 6 <216
+pU 0 6 <211
+pU 0 6 <208
+pU 0 6 <205
+pD 6 0 <203
+pD 6 0 <201
+pU 0 6 <197
+#1145000
+pD 6 0 <361
+#1150000
+pU 0 6 <361
+pL 6 0 <371
+pL 6 0 <288
+pL 6 0 <287
+pL 6 0 <285
+pL 6 0 <283
+pL 6 0 <282
+pL 6 0 <281
+pH 0 6 <189
+pL 6 0 <227
+pH 0 6 <259
+pD 6 0 <365
+pU 0 6 <223
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <214
+pD 6 0 <211
+pU 0 6 <209
+pD 6 0 <208
+pU 0 6 <206
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <193
+#1155000
+pD 6 0 <361
+#1160000
+pU 0 6 <361
+pH 0 6 <373
+pH 0 6 <372
+pH 0 6 <371
+pH 0 6 <227
+pH 0 6 <291
+pL 6 0 <259
+pH 0 6 <246
+pH 0 6 <253
+pH 0 6 <255
+pH 0 6 <251
+pU 0 6 <365
+pU 0 6 <367
+pD 6 0 <223
+pD 6 0 <215
+pD 6 0 <213
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <200
+pD 6 0 <192
+pD 6 0 <366
+#1165000
+pD 6 0 <361
+#1170000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <372
+pL 6 0 <371
+pL 6 0 <291
+pH 0 6 <257
+pH 0 6 <256
+pL 6 0 <255
+pD 6 0 <365
+pD 6 0 <367
+pU 0 6 <368
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <220
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <215
+pU 0 6 <211
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <201
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <196
+pU 0 6 <193
+pU 0 6 <192
+#1175000
+pD 6 0 <361
+#1180000
+pU 0 6 <361
+pH 0 6 <372
+pH 0 6 <281
+pH 0 6 <285
+pH 0 6 <286
+pH 0 6 <287
+pH 0 6 <290
+pH 0 6 <371
+pL 6 0 <256
+pH 0 6 <255
+pU 0 6 <365
+pU 0 6 <367
+pD 6 0 <223
+pD 6 0 <220
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <201
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+pD 6 0 <368
+#1185000
+pD 6 0 <361
+#1190000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <372
+pL 6 0 <281
+pL 6 0 <285
+pL 6 0 <286
+pL 6 0 <287
+pL 6 0 <290
+pL 6 0 <255
+pL 6 0 <246
+pL 6 0 <257
+pH 0 6 <184
+pL 6 0 <189
+pL 6 0 <188
+pL 6 0 <181
+pL 6 0 <182
+pL 6 0 <186
+pL 6 0 <251
+pL 6 0 <253
+pD 6 0 <367
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <212
+pU 0 6 <210
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <368
+#1195000
+pD 6 0 <361
+#1200000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <249
+pH 0 6 <250
+pH 0 6 <254
+pH 0 6 <257
+pH 0 6 <251
+pH 0 6 <253
+pD 6 0 <368
+pD 6 0 <222
+pU 0 6 <221
+pU 0 6 <218
+pU 0 6 <217
+pD 6 0 <215
+pU 0 6 <213
+pD 6 0 <208
+pD 6 0 <207
+pU 0 6 <206
+pD 6 0 <200
+pD 6 0 <198
+pU 0 6 <197
+pU 0 6 <193
+#1205000
+pD 6 0 <361
+#1210000
+pU 0 6 <361
+pL 6 0 <189
+pL 6 0 <185
+pL 6 0 <183
+pH 0 6 <181
+pH 0 6 <186
+pH 0 6 <188
+pH 0 6 <187
+pD 6 0 <223
+pU 0 6 <220
+pD 6 0 <218
+pD 6 0 <216
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <210
+pU 0 6 <207
+pD 6 0 <206
+pD 6 0 <199
+pU 0 6 <198
+#1215000
+pD 6 0 <361
+#1220000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pL 6 0 <257
+pH 0 6 <252
+pL 6 0 <254
+pL 6 0 <249
+pL 6 0 <250
+pU 0 6 <223
+pD 6 0 <221
+pD 6 0 <220
+pU 0 6 <215
+pU 0 6 <211
+pD 6 0 <207
+pU 0 6 <206
+pU 0 6 <202
+pD 6 0 <198
+pU 0 6 <192
+#1225000
+pD 6 0 <361
+#1230000
+pU 0 6 <361
+pL 6 0 <189
+pL 6 0 <187
+pL 6 0 <188
+pL 6 0 <186
+pH 0 6 <185
+pD 6 0 <223
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <218
+pD 6 0 <217
+pD 6 0 <215
+pU 0 6 <214
+pD 6 0 <211
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <207
+pD 6 0 <206
+pU 0 6 <204
+pD 6 0 <202
+pU 0 6 <194
+pD 6 0 <192
+#1235000
+pD 6 0 <361
+#1240000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pH 0 6 <254
+pL 6 0 <252
+pL 6 0 <251
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pH 0 6 <255
+pH 0 6 <248
+pH 0 6 <245
+pD 6 0 <365
+pU 0 6 <223
+pD 6 0 <222
+pD 6 0 <221
+pU 0 6 <220
+pD 6 0 <218
+pU 0 6 <216
+pD 6 0 <214
+pU 0 6 <213
+pU 0 6 <210
+pD 6 0 <208
+pU 0 6 <206
+pD 6 0 <204
+pU 0 6 <203
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pD 6 0 <194
+pD 6 0 <193
+pU 0 6 <192
+#1245000
+pD 6 0 <361
+#1250000
+pU 0 6 <361
+pH 0 6 <372
+pH 0 6 <371
+pH 0 6 <256
+pU 0 6 <365
+pU 0 6 <367
+pD 6 0 <223
+pD 6 0 <220
+pD 6 0 <216
+pD 6 0 <213
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <203
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <192
+pD 6 0 <366
+#1255000
+pD 6 0 <361
+#1260000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <371
+pL 6 0 <256
+pH 0 6 <257
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <221
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <203
+pU 0 6 <197
+pU 0 6 <368
+#1265000
+pD 6 0 <361
+#1270000
+pU 0 6 <361
+pL 6 0 <372
+pH 0 6 <371
+pL 6 0 <245
+pL 6 0 <248
+pL 6 0 <257
+pL 6 0 <253
+pL 6 0 <254
+pL 6 0 <255
+pH 0 6 <246
+pU 0 6 <365
+pD 6 0 <367
+pD 6 0 <221
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <203
+pD 6 0 <197
+pD 6 0 <366
+#1275000
+pD 6 0 <361
+#1280000
+pU 0 6 <361
+pH 0 6 <189
+pD 6 0 <368
+pU 0 6 <366
+pU 0 6 <221
+pU 0 6 <207
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <197
+pU 0 6 <196
+pU 0 6 <192
+#1285000
+pD 6 0 <361
+#1290000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pU 0 6 <222
+pD 6 0 <221
+pU 0 6 <220
+pU 0 6 <217
+pU 0 6 <209
+pU 0 6 <208
+pD 6 0 <207
+pU 0 6 <206
+pD 6 0 <204
+pD 6 0 <203
+pU 0 6 <198
+pD 6 0 <196
+pU 0 6 <193
+#1295000
+pD 6 0 <361
+#1300000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pD 6 0 <365
+pU 0 6 <223
+pD 6 0 <222
+pD 6 0 <217
+pU 0 6 <213
+pD 6 0 <209
+pU 0 6 <207
+pD 6 0 <205
+pU 0 6 <203
+pU 0 6 <200
+pD 6 0 <198
+pD 6 0 <193
+#1305000
+pD 6 0 <361
+#1310000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <246
+pH 0 6 <245
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <220
+pD 6 0 <213
+pD 6 0 <208
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <203
+pD 6 0 <200
+pD 6 0 <197
+pD 6 0 <192
+pD 6 0 <366
+#1315000
+pD 6 0 <361
+#1320000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <372
+pL 6 0 <371
+pH 0 6 <248
+pH 0 6 <254
+pH 0 6 <255
+pH 0 6 <253
+pD 6 0 <365
+pU 0 6 <367
+pU 0 6 <366
+pU 0 6 <221
+pU 0 6 <207
+pU 0 6 <199
+pU 0 6 <196
+pU 0 6 <193
+#1325000
+pD 6 0 <361
+#1330000
+pU 0 6 <361
+pH 0 6 <290
+pH 0 6 <285
+pH 0 6 <284
+pH 0 6 <283
+pH 0 6 <371
+pH 0 6 <257
+pH 0 6 <256
+pU 0 6 <365
+pD 6 0 <221
+pD 6 0 <207
+pD 6 0 <199
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <366
+pU 0 6 <368
+#1335000
+pD 6 0 <361
+#1340000
+pU 0 6 <361
+pL 6 0 <290
+pL 6 0 <285
+pL 6 0 <284
+pL 6 0 <283
+pH 0 6 <189
+pL 6 0 <372
+pL 6 0 <245
+pL 6 0 <248
+pL 6 0 <253
+pL 6 0 <254
+pL 6 0 <255
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pH 0 6 <249
+pL 6 0 <257
+pL 6 0 <256
+pD 6 0 <367
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <207
+pU 0 6 <204
+pU 0 6 <200
+pU 0 6 <198
+#1345000
+pD 6 0 <361
+#1350000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <186
+pL 6 0 <187
+pL 6 0 <188
+pL 6 0 <371
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pL 6 0 <249
+pH 0 6 <246
+pD 6 0 <365
+pD 6 0 <368
+pD 6 0 <222
+pU 0 6 <220
+pD 6 0 <218
+pD 6 0 <217
+pU 0 6 <216
+pD 6 0 <214
+pD 6 0 <211
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <205
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <199
+pD 6 0 <198
+pU 0 6 <195
+pU 0 6 <194
+#1355000
+pD 6 0 <361
+#1360000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <246
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <220
+pD 6 0 <216
+pD 6 0 <213
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <207
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <195
+pD 6 0 <194
+pD 6 0 <366
+#1365000
+pD 6 0 <361
+#1370000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <281
+pH 0 6 <289
+pH 0 6 <283
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <220
+pU 0 6 <213
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <203
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <192
+#1375000
+pD 6 0 <361
+#1380000
+pU 0 6 <361
+pH 0 6 <188
+pL 6 0 <281
+pL 6 0 <289
+pL 6 0 <283
+pH 0 6 <183
+pH 0 6 <246
+pL 6 0 <181
+pL 6 0 <186
+pD 6 0 <223
+pU 0 6 <221
+pD 6 0 <220
+pD 6 0 <213
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <192
+#1385000
+pD 6 0 <361
+#1390000
+pU 0 6 <361
+pH 0 6 <187
+pL 6 0 <189
+pL 6 0 <188
+pH 0 6 <249
+pH 0 6 <252
+pH 0 6 <253
+pH 0 6 <254
+pL 6 0 <246
+pU 0 6 <222
+pD 6 0 <221
+pU 0 6 <216
+pU 0 6 <208
+pD 6 0 <206
+pD 6 0 <203
+pU 0 6 <201
+pU 0 6 <199
+pD 6 0 <197
+pU 0 6 <195
+#1395000
+pD 6 0 <361
+#1400000
+pU 0 6 <361
+pL 6 0 <183
+pH 0 6 <186
+pL 6 0 <187
+pH 0 6 <181
+pU 0 6 <221
+pD 6 0 <216
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <209
+pU 0 6 <205
+pU 0 6 <202
+pD 6 0 <201
+pD 6 0 <199
+pU 0 6 <197
+pU 0 6 <196
+pD 6 0 <195
+pU 0 6 <194
+#1405000
+pD 6 0 <361
+#1410000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <251
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pH 0 6 <257
+pH 0 6 <256
+pL 6 0 <254
+pL 6 0 <249
+pU 0 6 <223
+pD 6 0 <222
+pD 6 0 <221
+pU 0 6 <220
+pD 6 0 <214
+pU 0 6 <210
+pD 6 0 <208
+pU 0 6 <206
+pD 6 0 <205
+pU 0 6 <203
+pD 6 0 <202
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pD 6 0 <196
+pD 6 0 <194
+pU 0 6 <192
+#1415000
+pD 6 0 <361
+#1420000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pD 6 0 <223
+pU 0 6 <221
+pD 6 0 <220
+pD 6 0 <213
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <192
+#1425000
+pD 6 0 <361
+#1430000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <246
+pL 6 0 <257
+pL 6 0 <251
+pL 6 0 <252
+pL 6 0 <253
+pL 6 0 <256
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pD 6 0 <206
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <196
+pU 0 6 <192
+#1435000
+pD 6 0 <361
+#1440000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pU 0 6 <223
+pD 6 0 <221
+pU 0 6 <220
+pU 0 6 <213
+pU 0 6 <208
+pU 0 6 <206
+pD 6 0 <205
+pD 6 0 <204
+pU 0 6 <200
+pD 6 0 <196
+#1445000
+pD 6 0 <361
+#1450000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pD 6 0 <365
+pD 6 0 <223
+pU 0 6 <221
+pD 6 0 <220
+pD 6 0 <213
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <203
+pD 6 0 <200
+pU 0 6 <199
+pD 6 0 <197
+pU 0 6 <196
+pU 0 6 <193
+pD 6 0 <192
+#1455000
+pD 6 0 <361
+#1460000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <246
+pH 0 6 <245
+pU 0 6 <365
+pD 6 0 <221
+pD 6 0 <207
+pD 6 0 <199
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <366
+#1465000
+pD 6 0 <361
+#1470000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <245
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pH 0 6 <249
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <215
+pU 0 6 <213
+pU 0 6 <212
+pU 0 6 <211
+pU 0 6 <207
+pU 0 6 <204
+pU 0 6 <200
+#1475000
+pD 6 0 <361
+#1480000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <371
+pH 0 6 <246
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pL 6 0 <249
+pD 6 0 <365
+pD 6 0 <223
+pU 0 6 <219
+pD 6 0 <217
+pU 0 6 <216
+pD 6 0 <215
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <211
+pU 0 6 <209
+pD 6 0 <207
+pU 0 6 <206
+pD 6 0 <204
+pU 0 6 <202
+pD 6 0 <200
+pU 0 6 <197
+pU 0 6 <193
+#1485000
+pD 6 0 <361
+#1490000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <246
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <216
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <202
+pD 6 0 <197
+pD 6 0 <193
+pD 6 0 <366
+#1495000
+pD 6 0 <361
+#1500000
+pU 0 6 <361
+pH 0 6 <183
+pL 6 0 <189
+pL 6 0 <187
+pL 6 0 <188
+pL 6 0 <186
+pL 6 0 <185
+pL 6 0 <184
+pH 0 6 <281
+pH 0 6 <290
+pH 0 6 <283
+pH 0 6 <288
+pH 0 6 <289
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <219
+pU 0 6 <216
+pU 0 6 <213
+pU 0 6 <209
+pU 0 6 <206
+pU 0 6 <199
+pU 0 6 <196
+pU 0 6 <193
+#1505000
+pD 6 0 <361
+#1510000
+pU 0 6 <361
+pH 0 6 <372
+pL 6 0 <373
+pH 0 6 <189
+pL 6 0 <281
+pL 6 0 <290
+pL 6 0 <283
+pL 6 0 <288
+pL 6 0 <289
+pL 6 0 <371
+pH 0 6 <257
+pH 0 6 <253
+pH 0 6 <255
+pH 0 6 <245
+pH 0 6 <254
+pH 0 6 <248
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <367
+pU 0 6 <223
+pD 6 0 <222
+pD 6 0 <219
+pU 0 6 <217
+pD 6 0 <216
+pU 0 6 <215
+pD 6 0 <213
+pD 6 0 <209
+pU 0 6 <200
+pD 6 0 <199
+pD 6 0 <196
+pD 6 0 <193
+pU 0 6 <192
+#1515000
+pD 6 0 <361
+#1520000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <257
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <206
+pD 6 0 <200
+pD 6 0 <192
+pD 6 0 <366
+pU 0 6 <368
+pU 0 6 <322
+pU 0 6 <317
+pU 0 6 <316
+pU 0 6 <315
+#1525000
+pD 6 0 <361
+#1530000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <371
+pL 6 0 <256
+pH 0 6 <257
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <221
+pU 0 6 <220
+pU 0 6 <219
+pU 0 6 <216
+pU 0 6 <209
+pU 0 6 <207
+pU 0 6 <205
+pU 0 6 <199
+pU 0 6 <196
+pD 6 0 <322
+pD 6 0 <317
+pD 6 0 <316
+pD 6 0 <315
+#1535000
+pD 6 0 <361
+#1540000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <257
+pU 0 6 <365
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <219
+pD 6 0 <216
+pD 6 0 <209
+pD 6 0 <207
+pD 6 0 <205
+pD 6 0 <199
+pD 6 0 <196
+pD 6 0 <366
+#1545000
+pD 6 0 <361
+#1550000
+pU 0 6 <361
+pL 6 0 <372
+pL 6 0 <188
+pL 6 0 <255
+pL 6 0 <254
+pL 6 0 <253
+pH 0 6 <252
+pH 0 6 <184
+pH 0 6 <185
+pL 6 0 <181
+pD 6 0 <367
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <219
+pU 0 6 <216
+pU 0 6 <213
+pU 0 6 <206
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <195
+pU 0 6 <192
+#1555000
+pD 6 0 <361
+#1560000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <249
+pH 0 6 <251
+pH 0 6 <257
+pL 6 0 <245
+pL 6 0 <248
+pL 6 0 <252
+pD 6 0 <368
+pU 0 6 <221
+pD 6 0 <219
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <212
+pU 0 6 <210
+pD 6 0 <200
+pD 6 0 <198
+pD 6 0 <195
+pU 0 6 <193
+pD 6 0 <192
+#1565000
+pD 6 0 <361
+#1570000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pD 6 0 <223
+pU 0 6 <220
+pD 6 0 <218
+pD 6 0 <216
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <210
+pU 0 6 <207
+pD 6 0 <206
+pD 6 0 <199
+pU 0 6 <198
+#1575000
+pD 6 0 <361
+#1580000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <372
+pL 6 0 <257
+pH 0 6 <245
+pH 0 6 <248
+pH 0 6 <252
+pL 6 0 <249
+pL 6 0 <251
+pU 0 6 <367
+pU 0 6 <223
+pD 6 0 <221
+pU 0 6 <219
+pD 6 0 <217
+pU 0 6 <210
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <201
+pD 6 0 <198
+pU 0 6 <194
+pD 6 0 <193
+pU 0 6 <192
+#1585000
+pD 6 0 <361
+#1590000
+pU 0 6 <361
+pL 6 0 <371
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pL 6 0 <372
+pH 0 6 <257
+pD 6 0 <365
+pD 6 0 <367
+pD 6 0 <223
+pU 0 6 <222
+pD 6 0 <220
+pD 6 0 <219
+pU 0 6 <216
+pD 6 0 <210
+pU 0 6 <208
+pD 6 0 <204
+pD 6 0 <203
+pD 6 0 <202
+pU 0 6 <199
+pD 6 0 <197
+pU 0 6 <195
+pD 6 0 <194
+pD 6 0 <192
+pU 0 6 <368
+pN 6 6 <323
+pN 6 6 <322
+pN 6 6 <321
+pN 6 6 <320
+pN 6 6 <319
+pN 6 6 <318
+pN 6 6 <317
+pN 6 6 <316
+pN 6 6 <315
+pN 6 6 <314
+pN 6 6 <313
+pN 6 6 <312
+pN 6 6 <311
+pN 6 6 <310
+pN 6 6 <309
+pN 6 6 <308
+pN 6 6 <307
+pN 6 6 <306
+pN 6 6 <305
+pN 6 6 <304
+pN 6 6 <303
+pN 6 6 <302
+pN 6 6 <301
+pN 6 6 <300
+pN 6 6 <299
+pN 6 6 <298
+pN 6 6 <297
+pN 6 6 <296
+pN 6 6 <295
+pN 6 6 <294
+pN 6 6 <293
+pN 6 6 <292
+#1595000
+pD 6 0 <361
+#1600000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <188
+pL 6 0 <257
+pL 6 0 <252
+pL 6 0 <248
+pL 6 0 <245
+pH 0 6 <189
+pL 6 0 <187
+pU 0 6 <365
+pD 6 0 <368
+pD 6 0 <222
+pD 6 0 <216
+pD 6 0 <208
+pD 6 0 <207
+pD 6 0 <201
+pD 6 0 <199
+pD 6 0 <195
+pD 6 0 <323
+pD 6 0 <322
+pD 6 0 <321
+pD 6 0 <320
+pD 6 0 <319
+pD 6 0 <318
+pD 6 0 <317
+pD 6 0 <316
+pD 6 0 <315
+pD 6 0 <314
+pD 6 0 <313
+pD 6 0 <312
+pD 6 0 <311
+pD 6 0 <310
+pD 6 0 <309
+pD 6 0 <308
+pD 6 0 <307
+pD 6 0 <306
+pD 6 0 <305
+pD 6 0 <304
+pD 6 0 <303
+pD 6 0 <302
+pD 6 0 <301
+pD 6 0 <300
+pD 6 0 <299
+pD 6 0 <298
+pD 6 0 <297
+pD 6 0 <296
+pD 6 0 <295
+pD 6 0 <294
+pD 6 0 <293
+pD 6 0 <292
+pD 6 0 <366
+#1605000
+pD 6 0 <361
+#1610000
+pU 0 6 <361
+pH 0 6 <187
+pL 6 0 <189
+pL 6 0 <188
+pH 0 6 <256
+pH 0 6 <251
+pH 0 6 <253
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pH 0 6 <252
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <216
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <201
+pU 0 6 <199
+pU 0 6 <195
+#1615000
+pD 6 0 <361
+#1620000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <188
+pL 6 0 <187
+pH 0 6 <187
+pL 6 0 <188
+pU 0 6 <221
+pD 6 0 <216
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <209
+pU 0 6 <205
+pU 0 6 <202
+pD 6 0 <201
+pD 6 0 <199
+pU 0 6 <197
+pU 0 6 <196
+pD 6 0 <195
+pU 0 6 <194
+#1625000
+pD 6 0 <361
+#1630000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <254
+pH 0 6 <255
+pL 6 0 <256
+pL 6 0 <251
+pH 0 6 <248
+pH 0 6 <245
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pL 6 0 <252
+pD 6 0 <221
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <216
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <208
+pU 0 6 <206
+pU 0 6 <203
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pD 6 0 <196
+pU 0 6 <195
+#1635000
+pD 6 0 <361
+#1640000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <290
+pH 0 6 <288
+pH 0 6 <285
+pH 0 6 <284
+pH 0 6 <283
+pH 0 6 <372
+pH 0 6 <373
+pH 0 6 <181
+pH 0 6 <371
+pL 6 0 <183
+pL 6 0 <187
+pL 6 0 <185
+pL 6 0 <184
+pH 0 6 <256
+pH 0 6 <257
+pU 0 6 <367
+pU 0 6 <223
+pD 6 0 <222
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <216
+pU 0 6 <215
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <210
+pD 6 0 <209
+pD 6 0 <205
+pD 6 0 <202
+pD 6 0 <195
+pD 6 0 <194
+pU 0 6 <192
+#1645000
+pD 6 0 <361
+#1650000
+pU 0 6 <361
+pL 6 0 <372
+pL 6 0 <283
+pL 6 0 <284
+pL 6 0 <285
+pL 6 0 <288
+pL 6 0 <290
+pH 0 6 <189
+pL 6 0 <245
+pL 6 0 <248
+pH 0 6 <251
+pL 6 0 <256
+pL 6 0 <254
+pH 0 6 <252
+pD 6 0 <367
+pU 0 6 <368
+pD 6 0 <223
+pU 0 6 <218
+pD 6 0 <215
+pD 6 0 <213
+pD 6 0 <206
+pU 0 6 <204
+pU 0 6 <201
+pD 6 0 <200
+pD 6 0 <198
+pD 6 0 <197
+pU 0 6 <195
+pU 0 6 <194
+pU 0 6 <193
+pD 6 0 <192
+#1655000
+pD 6 0 <361
+#1660000
+pU 0 6 <361
+pL 6 0 <189
+pL 6 0 <188
+pH 0 6 <187
+pD 6 0 <368
+pU 0 6 <222
+pU 0 6 <221
+pD 6 0 <218
+pU 0 6 <216
+pU 0 6 <213
+pD 6 0 <210
+pU 0 6 <209
+pU 0 6 <208
+pD 6 0 <207
+pU 0 6 <206
+pD 6 0 <204
+pD 6 0 <203
+pU 0 6 <202
+pD 6 0 <201
+pU 0 6 <200
+pD 6 0 <199
+pD 6 0 <194
+pU 0 6 <192
+#1665000
+pD 6 0 <361
+#1670000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <252
+pL 6 0 <251
+pH 0 6 <248
+pH 0 6 <245
+pL 6 0 <257
+pL 6 0 <255
+pL 6 0 <253
+pU 0 6 <218
+pU 0 6 <212
+pD 6 0 <211
+pU 0 6 <204
+pD 6 0 <202
+pU 0 6 <201
+pU 0 6 <196
+pD 6 0 <195
+#1675000
+pD 6 0 <361
+#1680000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <372
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <289
+pH 0 6 <287
+pH 0 6 <284
+pH 0 6 <283
+pH 0 6 <285
+pH 0 6 <253
+pH 0 6 <254
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <367
+pU 0 6 <220
+pD 6 0 <218
+pU 0 6 <217
+pD 6 0 <212
+pD 6 0 <204
+pU 0 6 <203
+pD 6 0 <196
+#1685000
+pD 6 0 <361
+#1690000
+pU 0 6 <361
+pL 6 0 <289
+pL 6 0 <287
+pL 6 0 <284
+pL 6 0 <283
+pL 6 0 <285
+pH 0 6 <371
+pL 6 0 <256
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <213
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <203
+pD 6 0 <201
+pD 6 0 <200
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+pU 0 6 <368
+#1695000
+pD 6 0 <361
+#1700000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pL 6 0 <254
+pH 0 6 <255
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <217
+pU 0 6 <213
+pU 0 6 <212
+pU 0 6 <211
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <206
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <201
+pU 0 6 <196
+pU 0 6 <195
+pU 0 6 <193
+pU 0 6 <192
+#1705000
+pD 6 0 <361
+#1710000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <256
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <219
+pD 6 0 <217
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <204
+pD 6 0 <203
+pD 6 0 <201
+pD 6 0 <196
+pD 6 0 <195
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+#1715000
+pD 6 0 <361
+#1720000
+pU 0 6 <361
+pL 6 0 <371
+pL 6 0 <189
+pH 0 6 <186
+pL 6 0 <187
+pL 6 0 <188
+pL 6 0 <255
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <220
+pU 0 6 <219
+pU 0 6 <217
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <206
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <195
+pU 0 6 <193
+pU 0 6 <192
+#1725000
+pD 6 0 <361
+#1730000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <256
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <219
+pD 6 0 <217
+pD 6 0 <213
+pD 6 0 <211
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <195
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+#1735000
+pD 6 0 <361
+#1740000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pH 0 6 <255
+pL 6 0 <253
+pH 0 6 <254
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <213
+pU 0 6 <212
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <206
+pU 0 6 <204
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <196
+pU 0 6 <193
+pU 0 6 <192
+#1745000
+pD 6 0 <361
+#1750000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <256
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <218
+pD 6 0 <217
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <204
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+#1755000
+pD 6 0 <361
+#1760000
+pU 0 6 <361
+pL 6 0 <371
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <255
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <220
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <213
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <200
+pU 0 6 <196
+pU 0 6 <195
+#1765000
+pD 6 0 <361
+#1770000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <256
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <218
+pD 6 0 <217
+pD 6 0 <213
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <200
+pD 6 0 <196
+pD 6 0 <195
+pD 6 0 <366
+#1775000
+pD 6 0 <361
+#1780000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <371
+pL 6 0 <254
+pH 0 6 <256
+pH 0 6 <255
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <215
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <200
+pU 0 6 <198
+pU 0 6 <196
+pU 0 6 <193
+pU 0 6 <192
+#1785000
+pD 6 0 <361
+#1790000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <256
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <215
+pD 6 0 <213
+pD 6 0 <211
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <200
+pD 6 0 <198
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+#1795000
+pD 6 0 <361
+#1800000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pL 6 0 <371
+pL 6 0 <255
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <219
+pU 0 6 <215
+pU 0 6 <213
+pU 0 6 <207
+pU 0 6 <205
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <196
+pU 0 6 <194
+pU 0 6 <192
+#1805000
+pD 6 0 <361
+#1810000
+pU 0 6 <361
+pL 6 0 <372
+pH 0 6 <371
+pH 0 6 <255
+pL 6 0 <256
+pH 0 6 <253
+pH 0 6 <254
+pU 0 6 <365
+pD 6 0 <367
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <219
+pD 6 0 <215
+pD 6 0 <213
+pD 6 0 <207
+pD 6 0 <205
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <196
+pD 6 0 <194
+pD 6 0 <192
+pD 6 0 <366
+#1815000
+pD 6 0 <361
+#1820000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <255
+pH 0 6 <247
+pH 0 6 <244
+pH 0 6 <242
+pH 0 6 <241
+pH 0 6 <240
+pH 0 6 <239
+pL 6 0 <248
+pL 6 0 <253
+pL 6 0 <254
+pH 0 6 <228
+pH 0 6 <229
+pH 0 6 <232
+pH 0 6 <234
+pH 0 6 <236
+pH 0 6 <237
+pH 0 6 <238
+pD 6 0 <368
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <218
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <213
+pU 0 6 <212
+pU 0 6 <209
+pU 0 6 <206
+pU 0 6 <201
+pU 0 6 <199
+pU 0 6 <197
+pU 0 6 <196
+pU 0 6 <193
+#1825000
+pD 6 0 <361
+#1830000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <255
+pH 0 6 <253
+pH 0 6 <254
+pH 0 6 <248
+pH 0 6 <252
+pH 0 6 <256
+pH 0 6 <257
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pL 6 0 <247
+pH 0 6 <250
+pU 0 6 <217
+pD 6 0 <215
+pD 6 0 <201
+pD 6 0 <199
+pU 0 6 <195
+#1835000
+pD 6 0 <361
+#1840000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pL 6 0 <373
+pH 0 6 <372
+pL 6 0 <255
+pL 6 0 <244
+pL 6 0 <242
+pL 6 0 <241
+pL 6 0 <240
+pL 6 0 <239
+pL 6 0 <253
+pL 6 0 <254
+pL 6 0 <232
+pL 6 0 <228
+pL 6 0 <229
+pL 6 0 <234
+pL 6 0 <238
+pL 6 0 <237
+pL 6 0 <236
+pL 6 0 <252
+pL 6 0 <257
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pL 6 0 <250
+pD 6 0 <365
+pU 0 6 <367
+pD 6 0 <217
+pU 0 6 <215
+pU 0 6 <214
+pD 6 0 <213
+pU 0 6 <211
+pU 0 6 <201
+pU 0 6 <199
+pU 0 6 <198
+pD 6 0 <197
+#1845000
+pD 6 0 <361
+#1850000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <255
+pL 6 0 <256
+pU 0 6 <365
+pU 0 6 <368
+pD 6 0 <222
+pD 6 0 <218
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <201
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <196
+pD 6 0 <195
+pD 6 0 <193
+pD 6 0 <366
+pN 6 6 <323
+pN 6 6 <322
+pN 6 6 <321
+pN 6 6 <320
+pN 6 6 <319
+pN 6 6 <318
+pN 6 6 <317
+pN 6 6 <316
+pN 6 6 <315
+pN 6 6 <314
+pN 6 6 <313
+pN 6 6 <312
+pN 6 6 <311
+pN 6 6 <310
+pN 6 6 <309
+pN 6 6 <308
+pN 6 6 <307
+pN 6 6 <306
+pN 6 6 <305
+pN 6 6 <304
+pN 6 6 <303
+pN 6 6 <302
+pN 6 6 <301
+pN 6 6 <300
+pN 6 6 <299
+pN 6 6 <298
+pN 6 6 <297
+pN 6 6 <296
+pN 6 6 <295
+pN 6 6 <294
+pN 6 6 <293
+pN 6 6 <292
+pD 6 0 <323
+pD 6 0 <322
+pD 6 0 <321
+pD 6 0 <320
+pD 6 0 <319
+pD 6 0 <318
+pD 6 0 <317
+pD 6 0 <316
+pD 6 0 <315
+pD 6 0 <314
+pD 6 0 <313
+pD 6 0 <312
+pD 6 0 <311
+pD 6 0 <310
+pD 6 0 <309
+pD 6 0 <308
+pD 6 0 <307
+pD 6 0 <306
+pD 6 0 <305
+pD 6 0 <304
+pD 6 0 <303
+pD 6 0 <302
+pD 6 0 <301
+pD 6 0 <300
+pD 6 0 <299
+pD 6 0 <298
+pD 6 0 <297
+pD 6 0 <296
+pD 6 0 <295
+pD 6 0 <294
+pD 6 0 <293
+pD 6 0 <292
+#1855000
+pD 6 0 <361
+#1860000
+pU 0 6 <361
+pL 6 0 <189
+pL 6 0 <186
+pH 0 6 <185
+pL 6 0 <187
+pL 6 0 <188
+pL 6 0 <371
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <216
+pU 0 6 <214
+pU 0 6 <212
+pU 0 6 <211
+pU 0 6 <209
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <198
+pU 0 6 <196
+pU 0 6 <193
+#1865000
+pD 6 0 <361
+#1870000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <255
+pH 0 6 <254
+pL 6 0 <256
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <218
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <214
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <198
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <366
+#1875000
+pD 6 0 <361
+#1880000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <218
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <212
+pU 0 6 <209
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <201
+pU 0 6 <199
+pU 0 6 <196
+pU 0 6 <193
+#1885000
+pD 6 0 <361
+#1890000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <255
+pL 6 0 <256
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <218
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <212
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <201
+pD 6 0 <199
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <366
+#1895000
+pD 6 0 <361
+#1900000
+pU 0 6 <361
+pL 6 0 <371
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <216
+pU 0 6 <213
+pU 0 6 <209
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <197
+pU 0 6 <195
+pU 0 6 <193
+#1905000
+pD 6 0 <361
+#1910000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <254
+pL 6 0 <256
+pL 6 0 <255
+pH 0 6 <253
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <218
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <213
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <197
+pD 6 0 <195
+pD 6 0 <193
+pD 6 0 <366
+#1915000
+pD 6 0 <361
+#1920000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <218
+pU 0 6 <216
+pU 0 6 <211
+pU 0 6 <209
+pU 0 6 <207
+pU 0 6 <205
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <199
+pU 0 6 <194
+pU 0 6 <193
+#1925000
+pD 6 0 <361
+#1930000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <255
+pL 6 0 <256
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <218
+pD 6 0 <216
+pD 6 0 <211
+pD 6 0 <209
+pD 6 0 <207
+pD 6 0 <205
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <199
+pD 6 0 <194
+pD 6 0 <193
+pD 6 0 <366
+#1935000
+pD 6 0 <361
+#1940000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pL 6 0 <371
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <216
+pU 0 6 <208
+pU 0 6 <206
+pU 0 6 <204
+pU 0 6 <202
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <197
+pU 0 6 <192
+#1945000
+pD 6 0 <361
+#1950000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <256
+pL 6 0 <255
+pH 0 6 <254
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <216
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <204
+pD 6 0 <202
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <197
+pD 6 0 <192
+pD 6 0 <366
+#1955000
+pD 6 0 <361
+#1960000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <371
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <216
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <209
+pU 0 6 <207
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <193
+#1965000
+pD 6 0 <361
+#1970000
+pU 0 6 <361
+pL 6 0 <372
+pH 0 6 <371
+pL 6 0 <256
+pH 0 6 <255
+pU 0 6 <365
+pD 6 0 <367
+pD 6 0 <223
+pD 6 0 <216
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <209
+pD 6 0 <207
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <193
+pD 6 0 <366
+pU 0 6 <321
+pU 0 6 <319
+pU 0 6 <317
+pU 0 6 <316
+pU 0 6 <315
+#1975000
+pD 6 0 <361
+#1980000
+pU 0 6 <361
+pH 0 6 <184
+pH 0 6 <183
+pL 6 0 <181
+pD 6 0 <368
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <215
+pU 0 6 <213
+pU 0 6 <209
+pU 0 6 <207
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <197
+pU 0 6 <194
+pU 0 6 <192
+pD 6 0 <321
+pD 6 0 <319
+pD 6 0 <317
+pD 6 0 <316
+pD 6 0 <315
+#1985000
+pD 6 0 <361
+#1990000
+pU 0 6 <361
+pH 0 6 <188
+pL 6 0 <189
+pL 6 0 <245
+pL 6 0 <248
+pL 6 0 <255
+pL 6 0 <254
+pH 0 6 <256
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pH 0 6 <257
+pH 0 6 <249
+pD 6 0 <223
+pU 0 6 <222
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <216
+pD 6 0 <215
+pD 6 0 <213
+pU 0 6 <206
+pD 6 0 <204
+pD 6 0 <201
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <195
+pD 6 0 <192
+#1995000
+pD 6 0 <361
+#2000000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <188
+pH 0 6 <188
+pU 0 6 <223
+pD 6 0 <222
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <216
+pU 0 6 <215
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <210
+pD 6 0 <209
+pD 6 0 <205
+pD 6 0 <202
+pD 6 0 <195
+pD 6 0 <194
+pU 0 6 <192
+#2005000
+pD 6 0 <361
+#2010000
+pU 0 6 <361
+pH 0 6 <372
+pL 6 0 <189
+pH 0 6 <186
+pL 6 0 <187
+pL 6 0 <188
+pH 0 6 <245
+pH 0 6 <255
+pH 0 6 <248
+pH 0 6 <254
+pL 6 0 <249
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pU 0 6 <367
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <218
+pD 6 0 <215
+pD 6 0 <213
+pD 6 0 <210
+pU 0 6 <209
+pD 6 0 <207
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <202
+pD 6 0 <200
+pD 6 0 <198
+pU 0 6 <195
+#2015000
+pD 6 0 <361
+#2020000
+pU 0 6 <361
+pL 6 0 <372
+pH 0 6 <189
+pL 6 0 <253
+pL 6 0 <245
+pH 0 6 <247
+pL 6 0 <255
+pL 6 0 <248
+pL 6 0 <254
+pH 0 6 <246
+pH 0 6 <243
+pL 6 0 <257
+pL 6 0 <256
+pH 0 6 <230
+pH 0 6 <231
+pH 0 6 <233
+pH 0 6 <235
+pD 6 0 <367
+pD 6 0 <221
+pU 0 6 <219
+pU 0 6 <215
+pU 0 6 <213
+pU 0 6 <210
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <203
+pU 0 6 <200
+pD 6 0 <199
+pD 6 0 <197
+pD 6 0 <195
+pD 6 0 <192
+pU 0 6 <368
+pU 0 6 <321
+pU 0 6 <319
+pU 0 6 <317
+pU 0 6 <316
+pU 0 6 <315
+pU 0 6 <322
+pD 6 0 <321
+pU 0 6 <320
+pD 6 0 <319
+#2025000
+pD 6 0 <361
+#2030000
+pU 0 6 <361
+pL 6 0 <371
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <249
+pH 0 6 <251
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pD 6 0 <365
+pD 6 0 <368
+pD 6 0 <222
+pD 6 0 <219
+pD 6 0 <218
+pU 0 6 <217
+pD 6 0 <213
+pD 6 0 <211
+pD 6 0 <210
+pU 0 6 <206
+pD 6 0 <202
+pU 0 6 <192
+pD 6 0 <322
+pD 6 0 <320
+pD 6 0 <317
+pD 6 0 <316
+pD 6 0 <315
+#2035000
+pD 6 0 <361
+#2040000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pL 6 0 <247
+pL 6 0 <246
+pL 6 0 <243
+pL 6 0 <233
+pL 6 0 <231
+pL 6 0 <230
+pL 6 0 <235
+pL 6 0 <251
+pL 6 0 <249
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <206
+pD 6 0 <200
+pD 6 0 <192
+pD 6 0 <366
+#2045000
+pD 6 0 <361
+#2050000
+pU 0 6 <361
+pH 0 6 <189
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <210
+#2055000
+pD 6 0 <361
+#2060000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <245
+pL 6 0 <186
+pH 0 6 <248
+pH 0 6 <252
+pD 6 0 <221
+pD 6 0 <218
+pD 6 0 <210
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <201
+pU 0 6 <198
+pU 0 6 <195
+pU 0 6 <194
+pU 0 6 <193
+pU 0 6 <192
+#2065000
+pD 6 0 <361
+#2070000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <251
+pH 0 6 <256
+pL 6 0 <248
+pL 6 0 <245
+pH 0 6 <254
+pH 0 6 <253
+pD 6 0 <222
+pU 0 6 <220
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pU 0 6 <210
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <205
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <202
+pD 6 0 <198
+pU 0 6 <197
+pD 6 0 <195
+pD 6 0 <193
+#2075000
+pD 6 0 <361
+#2080000
+pU 0 6 <361
+pL 6 0 <189
+pL 6 0 <184
+pL 6 0 <183
+pH 0 6 <181
+pH 0 6 <187
+pD 6 0 <223
+pU 0 6 <222
+pD 6 0 <220
+pD 6 0 <219
+pU 0 6 <216
+pD 6 0 <210
+pU 0 6 <208
+pD 6 0 <204
+pD 6 0 <203
+pD 6 0 <202
+pU 0 6 <199
+pD 6 0 <197
+pU 0 6 <195
+pD 6 0 <194
+pD 6 0 <192
+#2085000
+pD 6 0 <361
+#2090000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <257
+pL 6 0 <254
+pU 0 6 <223
+pD 6 0 <222
+pU 0 6 <217
+pD 6 0 <216
+pU 0 6 <215
+pU 0 6 <211
+pD 6 0 <208
+pD 6 0 <201
+pU 0 6 <200
+pU 0 6 <197
+pD 6 0 <195
+pU 0 6 <193
+#2095000
+pD 6 0 <361
+#2100000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <186
+pL 6 0 <188
+pL 6 0 <187
+pD 6 0 <223
+pU 0 6 <222
+pU 0 6 <218
+pD 6 0 <217
+pD 6 0 <215
+pU 0 6 <213
+pD 6 0 <211
+pU 0 6 <209
+pU 0 6 <208
+pD 6 0 <207
+pU 0 6 <206
+pU 0 6 <205
+pD 6 0 <200
+pD 6 0 <199
+pU 0 6 <198
+pU 0 6 <192
+#2105000
+pD 6 0 <361
+#2110000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pH 0 6 <255
+pH 0 6 <254
+pL 6 0 <252
+pL 6 0 <251
+pH 0 6 <248
+pL 6 0 <257
+pL 6 0 <256
+pH 0 6 <245
+pD 6 0 <365
+pU 0 6 <220
+pD 6 0 <209
+pU 0 6 <207
+pD 6 0 <206
+pD 6 0 <205
+pU 0 6 <204
+pU 0 6 <194
+pD 6 0 <193
+pD 6 0 <192
+#2115000
+pD 6 0 <361
+#2120000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <248
+pL 6 0 <245
+pL 6 0 <255
+pL 6 0 <254
+pL 6 0 <253
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <220
+pD 6 0 <218
+pD 6 0 <213
+pD 6 0 <208
+pD 6 0 <207
+pD 6 0 <204
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <194
+pD 6 0 <366
+#2125000
+pD 6 0 <361
+#2130000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <373
+pH 0 6 <372
+pL 6 0 <371
+pH 0 6 <256
+pH 0 6 <255
+pH 0 6 <254
+pH 0 6 <253
+pH 0 6 <245
+pH 0 6 <248
+pD 6 0 <365
+pU 0 6 <367
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <215
+pU 0 6 <213
+pU 0 6 <210
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+#2135000
+pD 6 0 <361
+#2140000
+pU 0 6 <361
+pH 0 6 <283
+pH 0 6 <284
+pH 0 6 <285
+pH 0 6 <288
+pH 0 6 <290
+pH 0 6 <371
+pH 0 6 <257
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <215
+pD 6 0 <213
+pD 6 0 <210
+pD 6 0 <208
+pD 6 0 <207
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <366
+pU 0 6 <368
+#2145000
+pD 6 0 <361
+#2150000
+pU 0 6 <361
+pL 6 0 <284
+pL 6 0 <285
+pL 6 0 <288
+pL 6 0 <290
+pL 6 0 <283
+pH 0 6 <189
+pL 6 0 <188
+pL 6 0 <372
+pH 0 6 <183
+pH 0 6 <182
+pL 6 0 <245
+pL 6 0 <248
+pL 6 0 <253
+pL 6 0 <254
+pL 6 0 <255
+pL 6 0 <256
+pL 6 0 <257
+pD 6 0 <367
+pU 0 6 <366
+pU 0 6 <221
+pU 0 6 <220
+pU 0 6 <219
+pU 0 6 <217
+pU 0 6 <215
+pU 0 6 <213
+pU 0 6 <212
+pU 0 6 <211
+pU 0 6 <209
+pU 0 6 <207
+pU 0 6 <203
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <193
+pU 0 6 <192
+#2155000
+pD 6 0 <361
+#2160000
+pU 0 6 <361
+pH 0 6 <188
+pL 6 0 <189
+pH 0 6 <249
+pH 0 6 <257
+pH 0 6 <253
+pH 0 6 <254
+pD 6 0 <368
+pU 0 6 <223
+pD 6 0 <221
+pU 0 6 <218
+pD 6 0 <213
+pD 6 0 <212
+pU 0 6 <210
+pD 6 0 <207
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <204
+pD 6 0 <203
+pU 0 6 <201
+pD 6 0 <200
+pD 6 0 <199
+pU 0 6 <197
+pU 0 6 <196
+#2165000
+pD 6 0 <361
+#2170000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <188
+pH 0 6 <187
+pH 0 6 <188
+pL 6 0 <187
+pU 0 6 <222
+pD 6 0 <220
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <217
+pU 0 6 <216
+pU 0 6 <212
+pD 6 0 <211
+pD 6 0 <209
+pU 0 6 <208
+pU 0 6 <207
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <201
+pU 0 6 <200
+pU 0 6 <199
+pD 6 0 <197
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <192
+#2175000
+pD 6 0 <361
+#2180000
+pU 0 6 <361
+pL 6 0 <371
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pL 6 0 <249
+pH 0 6 <248
+pH 0 6 <245
+pL 6 0 <254
+pL 6 0 <257
+pD 6 0 <365
+pD 6 0 <223
+pU 0 6 <219
+pU 0 6 <217
+pD 6 0 <216
+pD 6 0 <215
+pU 0 6 <213
+pD 6 0 <210
+pU 0 6 <209
+pD 6 0 <207
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <203
+pU 0 6 <201
+pD 6 0 <200
+pD 6 0 <199
+pU 0 6 <196
+pU 0 6 <193
+pU 0 6 <192
+#2185000
+pD 6 0 <361
+#2190000
+pU 0 6 <361
+pH 0 6 <372
+pH 0 6 <371
+pH 0 6 <256
+pH 0 6 <257
+pH 0 6 <255
+pU 0 6 <365
+pU 0 6 <367
+pD 6 0 <222
+pD 6 0 <219
+pD 6 0 <217
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <203
+pD 6 0 <201
+pD 6 0 <198
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+#2195000
+pD 6 0 <361
+#2200000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <373
+pH 0 6 <246
+pL 6 0 <245
+pL 6 0 <253
+pH 0 6 <254
+pL 6 0 <257
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <220
+pU 0 6 <219
+pU 0 6 <217
+pU 0 6 <212
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <195
+pU 0 6 <193
+pU 0 6 <192
+pU 0 6 <368
+#2205000
+pD 6 0 <361
+#2210000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <371
+pH 0 6 <373
+pL 6 0 <246
+pH 0 6 <245
+pH 0 6 <253
+pL 6 0 <254
+pD 6 0 <365
+pD 6 0 <220
+pD 6 0 <219
+pU 0 6 <218
+pD 6 0 <217
+pU 0 6 <213
+pD 6 0 <212
+pU 0 6 <211
+pU 0 6 <202
+pD 6 0 <197
+pU 0 6 <322
+pU 0 6 <320
+pU 0 6 <317
+pU 0 6 <316
+pU 0 6 <315
+pD 6 0 <322
+pD 6 0 <320
+pD 6 0 <317
+pD 6 0 <316
+pD 6 0 <315
+pU 0 6 <310
+#2215000
+pD 6 0 <361
+#2220000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <256
+pH 0 6 <257
+pU 0 6 <365
+pD 6 0 <366
+pD 6 0 <310
+pD 6 0 <222
+pD 6 0 <218
+pD 6 0 <213
+pD 6 0 <211
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <202
+pD 6 0 <198
+pD 6 0 <195
+pD 6 0 <193
+pD 6 0 <192
+#2225000
+pD 6 0 <361
+#2230000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pL 6 0 <257
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <220
+pU 0 6 <217
+pU 0 6 <211
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <201
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <193
+pU 0 6 <192
+#2235000
+pD 6 0 <361
+#2240000
+pU 0 6 <361
+pH 0 6 <289
+pH 0 6 <286
+pH 0 6 <281
+pH 0 6 <285
+pH 0 6 <371
+pH 0 6 <257
+pH 0 6 <254
+pH 0 6 <256
+pL 6 0 <255
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <220
+pD 6 0 <217
+pD 6 0 <211
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <203
+pD 6 0 <201
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+#2245000
+pD 6 0 <361
+#2250000
+pU 0 6 <361
+pL 6 0 <289
+pL 6 0 <189
+pH 0 6 <184
+pL 6 0 <186
+pL 6 0 <185
+pL 6 0 <187
+pL 6 0 <188
+pL 6 0 <286
+pL 6 0 <281
+pL 6 0 <285
+pL 6 0 <371
+pL 6 0 <257
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <220
+pU 0 6 <218
+pU 0 6 <216
+pU 0 6 <214
+pU 0 6 <212
+pU 0 6 <208
+pU 0 6 <206
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <202
+pU 0 6 <198
+pU 0 6 <196
+pU 0 6 <192
+#2255000
+pD 6 0 <361
+#2260000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <257
+pL 6 0 <256
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <220
+pD 6 0 <218
+pD 6 0 <216
+pD 6 0 <214
+pD 6 0 <212
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <202
+pD 6 0 <198
+pD 6 0 <196
+pD 6 0 <192
+pD 6 0 <366
+#2265000
+pD 6 0 <361
+#2270000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <371
+pL 6 0 <257
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <221
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <212
+pU 0 6 <209
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <200
+pU 0 6 <197
+pU 0 6 <194
+pU 0 6 <192
+#2275000
+pD 6 0 <361
+#2280000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <257
+pH 0 6 <256
+pL 6 0 <254
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <221
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <212
+pD 6 0 <209
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <200
+pD 6 0 <197
+pD 6 0 <194
+pD 6 0 <192
+pD 6 0 <366
+#2285000
+pD 6 0 <361
+#2290000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <372
+pL 6 0 <371
+pL 6 0 <257
+pL 6 0 <248
+pL 6 0 <245
+pL 6 0 <253
+pL 6 0 <256
+pD 6 0 <365
+pD 6 0 <367
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <220
+pU 0 6 <216
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <207
+pU 0 6 <200
+pU 0 6 <196
+pU 0 6 <193
+pU 0 6 <192
+#2295000
+pD 6 0 <361
+#2300000
+pU 0 6 <361
+pH 0 6 <371
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <220
+pD 6 0 <216
+pD 6 0 <213
+pD 6 0 <211
+pD 6 0 <207
+pD 6 0 <200
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+pD 6 0 <368
+#2305000
+pD 6 0 <361
+#2310000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <227
+pH 0 6 <259
+pU 0 6 <366
+pU 0 6 <217
+pU 0 6 <216
+pU 0 6 <209
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <203
+pU 0 6 <199
+pU 0 6 <196
+#2315000
+pD 6 0 <361
+#2320000
+pU 0 6 <361
+pH 0 6 <372
+pL 6 0 <373
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pL 6 0 <371
+pH 0 6 <227
+pL 6 0 <259
+pH 0 6 <253
+pH 0 6 <251
+pH 0 6 <246
+pH 0 6 <256
+pD 6 0 <365
+pU 0 6 <367
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <212
+pU 0 6 <211
+pU 0 6 <210
+pU 0 6 <208
+pD 6 0 <207
+pU 0 6 <204
+pD 6 0 <203
+pD 6 0 <199
+pU 0 6 <197
+pD 6 0 <196
+#2325000
+pD 6 0 <361
+#2330000
+pU 0 6 <361
+pL 6 0 <372
+pD 6 0 <367
+pD 6 0 <221
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <204
+pD 6 0 <197
+pD 6 0 <366
+pU 0 6 <368
+pU 0 6 <310
+pU 0 6 <321
+pU 0 6 <320
+pU 0 6 <317
+pU 0 6 <315
+#2335000
+pD 6 0 <361
+#2340000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <281
+pH 0 6 <282
+pH 0 6 <283
+pH 0 6 <284
+pH 0 6 <287
+pH 0 6 <289
+pH 0 6 <290
+pH 0 6 <257
+pU 0 6 <365
+pD 6 0 <321
+pD 6 0 <320
+pD 6 0 <317
+pD 6 0 <315
+pD 6 0 <310
+pD 6 0 <368
+#2345000
+pD 6 0 <361
+#2350000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <281
+pL 6 0 <282
+pL 6 0 <283
+pL 6 0 <284
+pL 6 0 <287
+pL 6 0 <289
+pL 6 0 <290
+pH 0 6 <372
+pL 6 0 <257
+pL 6 0 <256
+pH 0 6 <255
+pU 0 6 <367
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <218
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <199
+pU 0 6 <197
+pU 0 6 <196
+pU 0 6 <195
+pU 0 6 <193
+#2355000
+pD 6 0 <361
+#2360000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <372
+pL 6 0 <371
+pD 6 0 <365
+pD 6 0 <367
+pU 0 6 <368
+pU 0 6 <223
+pD 6 0 <222
+pD 6 0 <221
+pU 0 6 <220
+pD 6 0 <218
+pD 6 0 <213
+pD 6 0 <211
+pD 6 0 <208
+pD 6 0 <207
+pU 0 6 <203
+pD 6 0 <201
+pU 0 6 <200
+pD 6 0 <199
+pD 6 0 <197
+pD 6 0 <196
+pU 0 6 <321
+pU 0 6 <320
+pU 0 6 <317
+pU 0 6 <315
+pU 0 6 <310
+pU 0 6 <323
+pD 6 0 <321
+pD 6 0 <320
+pD 6 0 <317
+pD 6 0 <315
+pD 6 0 <310
+#2365000
+pD 6 0 <361
+#2370000
+pU 0 6 <361
+pL 6 0 <255
+pL 6 0 <246
+pL 6 0 <251
+pL 6 0 <253
+pD 6 0 <366
+pD 6 0 <323
+pD 6 0 <223
+pD 6 0 <220
+pD 6 0 <206
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <200
+pD 6 0 <195
+pD 6 0 <193
+pD 6 0 <368
+#2375000
+pD 6 0 <361
+#2380000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <225
+pH 0 6 <259
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pU 0 6 <365
+#2385000
+pD 6 0 <361
+#2390000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <255
+pH 0 6 <227
+pL 6 0 <259
+pH 0 6 <253
+pH 0 6 <251
+pH 0 6 <225
+pL 6 0 <258
+pH 0 6 <226
+pH 0 6 <246
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <218
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <209
+pU 0 6 <206
+pU 0 6 <203
+pU 0 6 <200
+pU 0 6 <197
+pU 0 6 <195
+pU 0 6 <193
+#2395000
+pD 6 0 <361
+#2400000
+pU 0 6 <361
+pH 0 6 <289
+pH 0 6 <286
+pH 0 6 <288
+pH 0 6 <284
+pH 0 6 <283
+pH 0 6 <282
+pH 0 6 <281
+pH 0 6 <186
+pL 6 0 <187
+pL 6 0 <255
+pL 6 0 <253
+pL 6 0 <251
+pL 6 0 <246
+pD 6 0 <218
+pU 0 6 <215
+pD 6 0 <213
+pU 0 6 <212
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <199
+pD 6 0 <197
+pU 0 6 <196
+pD 6 0 <195
+#2405000
+pD 6 0 <361
+#2410000
+pU 0 6 <361
+pL 6 0 <188
+pL 6 0 <189
+pH 0 6 <187
+pU 0 6 <223
+pU 0 6 <218
+pU 0 6 <217
+pD 6 0 <211
+pD 6 0 <209
+pU 0 6 <204
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <196
+pD 6 0 <193
+#2415000
+pD 6 0 <361
+#2420000
+pU 0 6 <361
+pH 0 6 <189
+pD 6 0 <218
+pD 6 0 <217
+pU 0 6 <216
+pU 0 6 <214
+pU 0 6 <213
+pD 6 0 <212
+pU 0 6 <210
+pD 6 0 <206
+pU 0 6 <205
+pD 6 0 <204
+pU 0 6 <201
+pU 0 6 <195
+#2425000
+pD 6 0 <361
+#2430000
+pU 0 6 <361
+pL 6 0 <187
+pH 0 6 <188
+pH 0 6 <290
+pH 0 6 <287
+pH 0 6 <187
+pU 0 6 <218
+pU 0 6 <217
+pD 6 0 <216
+pD 6 0 <214
+pD 6 0 <210
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <199
+pD 6 0 <195
+#2435000
+pD 6 0 <361
+#2440000
+pU 0 6 <361
+pH 0 6 <185
+pL 6 0 <189
+pL 6 0 <187
+pL 6 0 <186
+pL 6 0 <188
+pD 6 0 <222
+pU 0 6 <220
+pU 0 6 <219
+pD 6 0 <218
+pU 0 6 <216
+pU 0 6 <214
+pU 0 6 <212
+pU 0 6 <211
+pU 0 6 <210
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <205
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <200
+pD 6 0 <199
+pU 0 6 <193
+#2445000
+pD 6 0 <361
+#2450000
+pU 0 6 <361
+pH 0 6 <189
+pD 6 0 <223
+pU 0 6 <221
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <210
+pU 0 6 <209
+pD 6 0 <208
+pU 0 6 <207
+pU 0 6 <205
+pU 0 6 <202
+pD 6 0 <200
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <195
+pD 6 0 <193
+#2455000
+pD 6 0 <361
+#2460000
+pU 0 6 <361
+pH 0 6 <372
+pL 6 0 <281
+pL 6 0 <282
+pL 6 0 <283
+pL 6 0 <284
+pL 6 0 <286
+pL 6 0 <287
+pL 6 0 <288
+pL 6 0 <289
+pL 6 0 <290
+pL 6 0 <189
+pH 0 6 <188
+pH 0 6 <246
+pH 0 6 <251
+pH 0 6 <253
+pH 0 6 <255
+pU 0 6 <367
+pU 0 6 <223
+pU 0 6 <222
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <219
+pU 0 6 <218
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <211
+pD 6 0 <209
+pU 0 6 <206
+pD 6 0 <204
+pD 6 0 <203
+pD 6 0 <201
+pD 6 0 <197
+pD 6 0 <195
+#2465000
+pD 6 0 <361
+#2470000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pH 0 6 <257
+pD 6 0 <365
+pD 6 0 <217
+pD 6 0 <213
+pD 6 0 <211
+pU 0 6 <210
+pU 0 6 <208
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <198
+pU 0 6 <368
+pU 0 6 <323
+#2475000
+pD 6 0 <361
+#2480000
+pU 0 6 <361
+pL 6 0 <372
+pH 0 6 <371
+pL 6 0 <246
+pL 6 0 <251
+pL 6 0 <253
+pL 6 0 <255
+pL 6 0 <257
+pU 0 6 <365
+pD 6 0 <367
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <218
+pD 6 0 <214
+pD 6 0 <210
+pD 6 0 <208
+pD 6 0 <205
+pD 6 0 <202
+pD 6 0 <199
+pD 6 0 <366
+pD 6 0 <323
+pU 0 6 <322
+pU 0 6 <319
+pU 0 6 <318
+pU 0 6 <317
+pU 0 6 <313
+#2485000
+pD 6 0 <361
+#2490000
+pU 0 6 <361
+pH 0 6 <281
+pH 0 6 <282
+pH 0 6 <283
+pH 0 6 <284
+pH 0 6 <285
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pH 0 6 <287
+pH 0 6 <286
+pD 6 0 <368
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <200
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <194
+pU 0 6 <192
+pD 6 0 <322
+pD 6 0 <319
+pD 6 0 <318
+pD 6 0 <317
+pD 6 0 <313
+#2495000
+pD 6 0 <361
+#2500000
+pU 0 6 <361
+pL 6 0 <285
+pL 6 0 <284
+pL 6 0 <283
+pL 6 0 <282
+pL 6 0 <281
+pH 0 6 <189
+pH 0 6 <373
+pH 0 6 <372
+pL 6 0 <287
+pL 6 0 <286
+pH 0 6 <246
+pH 0 6 <251
+pH 0 6 <253
+pH 0 6 <255
+pU 0 6 <367
+pD 6 0 <223
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pU 0 6 <212
+pD 6 0 <209
+pD 6 0 <208
+pU 0 6 <203
+pU 0 6 <202
+pD 6 0 <200
+pU 0 6 <199
+pU 0 6 <195
+pD 6 0 <194
+pD 6 0 <192
+#2505000
+pD 6 0 <361
+#2510000
+pU 0 6 <361
+pH 0 6 <282
+pH 0 6 <281
+pH 0 6 <283
+pH 0 6 <284
+pH 0 6 <288
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <372
+pL 6 0 <246
+pL 6 0 <251
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <283
+pL 6 0 <282
+pL 6 0 <281
+pL 6 0 <288
+pL 6 0 <284
+pL 6 0 <226
+pH 0 6 <267
+pH 0 6 <266
+pH 0 6 <265
+pH 0 6 <272
+pH 0 6 <271
+pH 0 6 <270
+pH 0 6 <268
+pH 0 6 <249
+pH 0 6 <254
+pD 6 0 <367
+pU 0 6 <368
+pU 0 6 <223
+pU 0 6 <222
+pD 6 0 <221
+pU 0 6 <220
+pU 0 6 <218
+pD 6 0 <216
+pU 0 6 <215
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <203
+pD 6 0 <202
+pU 0 6 <200
+pD 6 0 <197
+pU 0 6 <196
+pD 6 0 <195
+pU 0 6 <194
+pU 0 6 <192
+#2515000
+pD 6 0 <361
+#2520000
+pU 0 6 <361
+pL 6 0 <373
+pL 6 0 <266
+pL 6 0 <265
+pL 6 0 <267
+pL 6 0 <268
+pL 6 0 <272
+pH 0 6 <189
+pH 0 6 <372
+pL 6 0 <271
+pL 6 0 <270
+pH 0 6 <246
+pH 0 6 <257
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pL 6 0 <249
+pL 6 0 <254
+pH 0 6 <252
+pH 0 6 <250
+pU 0 6 <367
+pD 6 0 <368
+pD 6 0 <223
+pD 6 0 <222
+pU 0 6 <221
+pD 6 0 <220
+pD 6 0 <218
+pU 0 6 <217
+pD 6 0 <215
+pD 6 0 <206
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <201
+pD 6 0 <199
+pU 0 6 <197
+pD 6 0 <194
+#2525000
+pD 6 0 <361
+#2530000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <186
+pL 6 0 <187
+pL 6 0 <188
+pL 6 0 <372
+pL 6 0 <227
+pH 0 6 <259
+pL 6 0 <246
+pL 6 0 <257
+pL 6 0 <255
+pL 6 0 <250
+pL 6 0 <253
+pL 6 0 <252
+pD 6 0 <367
+pU 0 6 <368
+pU 0 6 <223
+pD 6 0 <221
+pU 0 6 <220
+pD 6 0 <217
+pU 0 6 <216
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <212
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <208
+pD 6 0 <207
+pU 0 6 <206
+pD 6 0 <204
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <201
+pU 0 6 <199
+pD 6 0 <196
+pU 0 6 <195
+pU 0 6 <322
+pU 0 6 <319
+pU 0 6 <318
+pU 0 6 <317
+pU 0 6 <313
+pD 6 0 <322
+pD 6 0 <319
+pD 6 0 <318
+pD 6 0 <317
+pD 6 0 <313
+#2535000
+pD 6 0 <361
+#2540000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pH 0 6 <372
+pH 0 6 <227
+pL 6 0 <259
+pH 0 6 <246
+pH 0 6 <251
+pH 0 6 <253
+pH 0 6 <255
+pD 6 0 <365
+pU 0 6 <367
+pD 6 0 <368
+pD 6 0 <223
+pU 0 6 <219
+pU 0 6 <217
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <210
+pD 6 0 <208
+pU 0 6 <207
+pD 6 0 <195
+pU 0 6 <194
+#2545000
+pD 6 0 <361
+#2550000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <372
+pL 6 0 <246
+pL 6 0 <255
+pL 6 0 <251
+pL 6 0 <253
+pL 6 0 <227
+pH 0 6 <259
+pU 0 6 <365
+pD 6 0 <367
+pD 6 0 <220
+pD 6 0 <219
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <209
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <194
+pD 6 0 <192
+pD 6 0 <366
+pU 0 6 <368
+#2555000
+pD 6 0 <361
+#2560000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <188
+pL 6 0 <189
+pH 0 6 <281
+pH 0 6 <282
+pH 0 6 <187
+pH 0 6 <371
+pL 6 0 <188
+pL 6 0 <183
+pL 6 0 <182
+pL 6 0 <184
+pH 0 6 <227
+pH 0 6 <283
+pH 0 6 <290
+pH 0 6 <289
+pH 0 6 <287
+pH 0 6 <286
+pH 0 6 <285
+pH 0 6 <284
+pL 6 0 <259
+pD 6 0 <368
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <220
+pU 0 6 <216
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <200
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <196
+pU 0 6 <195
+#2565000
+pD 6 0 <361
+#2570000
+pU 0 6 <361
+pL 6 0 <281
+pL 6 0 <282
+pL 6 0 <283
+pL 6 0 <284
+pL 6 0 <285
+pL 6 0 <286
+pL 6 0 <287
+pL 6 0 <289
+pL 6 0 <290
+pH 0 6 <189
+pH 0 6 <249
+pH 0 6 <250
+pH 0 6 <251
+pH 0 6 <252
+pH 0 6 <253
+pH 0 6 <254
+pD 6 0 <220
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <215
+pU 0 6 <214
+pD 6 0 <213
+pU 0 6 <212
+pU 0 6 <210
+pD 6 0 <206
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <200
+pU 0 6 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <196
+#2575000
+pD 6 0 <361
+#2580000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pU 0 6 <220
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <217
+pU 0 6 <213
+pD 6 0 <212
+pD 6 0 <211
+pU 0 6 <209
+pU 0 6 <204
+pU 0 6 <198
+pU 0 6 <197
+pD 6 0 <195
+pU 0 6 <194
+pU 0 6 <193
+#2585000
+pD 6 0 <361
+#2590000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <248
+pH 0 6 <245
+pL 6 0 <249
+pL 6 0 <253
+pL 6 0 <252
+pL 6 0 <251
+pL 6 0 <250
+pD 6 0 <223
+pU 0 6 <222
+pD 6 0 <220
+pU 0 6 <218
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <214
+pU 0 6 <212
+pD 6 0 <210
+pU 0 6 <208
+pU 0 6 <206
+pD 6 0 <204
+pU 0 6 <203
+pD 6 0 <194
+pD 6 0 <193
+#2595000
+pD 6 0 <361
+#2600000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <184
+pL 6 0 <186
+pL 6 0 <185
+pL 6 0 <187
+pL 6 0 <188
+pL 6 0 <371
+pL 6 0 <248
+pL 6 0 <245
+pH 0 6 <246
+pL 6 0 <254
+pD 6 0 <365
+pU 0 6 <223
+pU 0 6 <221
+pD 6 0 <218
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <199
+pD 6 0 <198
+pU 0 6 <192
+#2605000
+pD 6 0 <361
+#2610000
+pU 0 6 <361
+pH 0 6 <371
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <203
+pD 6 0 <197
+pD 6 0 <192
+pD 6 0 <366
+#2615000
+pD 6 0 <361
+#2620000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <373
+pH 0 6 <372
+pH 0 6 <283
+pH 0 6 <285
+pH 0 6 <278
+pH 0 6 <287
+pH 0 6 <245
+pH 0 6 <248
+pH 0 6 <254
+pH 0 6 <255
+pL 6 0 <246
+pH 0 6 <256
+pU 0 6 <367
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <207
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <197
+pU 0 6 <196
+pU 0 6 <192
+#2625000
+pD 6 0 <361
+#2630000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <372
+pL 6 0 <283
+pL 6 0 <285
+pL 6 0 <278
+pL 6 0 <287
+pL 6 0 <245
+pL 6 0 <248
+pL 6 0 <254
+pL 6 0 <255
+pL 6 0 <256
+pH 0 6 <246
+pD 6 0 <367
+pU 0 6 <368
+pD 6 0 <223
+pU 0 6 <218
+pU 0 6 <214
+pU 0 6 <212
+pU 0 6 <209
+pU 0 6 <208
+pD 6 0 <207
+pU 0 6 <206
+pD 6 0 <203
+pU 0 6 <201
+pD 6 0 <197
+pU 0 6 <193
+#2635000
+pD 6 0 <361
+#2640000
+pU 0 6 <361
+pL 6 0 <371
+pH 0 6 <189
+pD 6 0 <365
+pD 6 0 <368
+pU 0 6 <220
+pD 6 0 <218
+pU 0 6 <217
+pU 0 6 <213
+pD 6 0 <212
+pU 0 6 <205
+pD 6 0 <204
+pD 6 0 <201
+pU 0 6 <198
+pU 0 6 <197
+#2645000
+pD 6 0 <361
+#2650000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <246
+pH 0 6 <245
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <217
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <192
+pD 6 0 <366
+#2655000
+pD 6 0 <361
+#2660000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pH 0 6 <372
+pH 0 6 <283
+pL 6 0 <371
+pH 0 6 <285
+pH 0 6 <278
+pH 0 6 <288
+pH 0 6 <289
+pH 0 6 <255
+pH 0 6 <248
+pH 0 6 <254
+pH 0 6 <257
+pD 6 0 <365
+pU 0 6 <367
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <220
+pU 0 6 <213
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <200
+pU 0 6 <197
+pU 0 6 <193
+#2665000
+pD 6 0 <361
+#2670000
+pU 0 6 <361
+pL 6 0 <283
+pH 0 6 <371
+pL 6 0 <285
+pL 6 0 <278
+pL 6 0 <288
+pL 6 0 <289
+pL 6 0 <257
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <220
+pD 6 0 <213
+pD 6 0 <208
+pD 6 0 <207
+pD 6 0 <200
+pD 6 0 <197
+pD 6 0 <193
+pD 6 0 <366
+pU 0 6 <368
+#2675000
+pD 6 0 <361
+#2680000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <371
+pH 0 6 <278
+pL 6 0 <255
+pH 0 6 <256
+pH 0 6 <257
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <219
+pU 0 6 <215
+pU 0 6 <212
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <205
+#2685000
+pD 6 0 <361
+#2690000
+pU 0 6 <361
+pH 0 6 <285
+pH 0 6 <283
+pH 0 6 <282
+pH 0 6 <281
+pH 0 6 <284
+pH 0 6 <286
+pH 0 6 <371
+pL 6 0 <278
+pH 0 6 <255
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <219
+pD 6 0 <215
+pD 6 0 <212
+pD 6 0 <208
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <205
+pD 6 0 <366
+#2695000
+pD 6 0 <361
+#2700000
+pU 0 6 <361
+pL 6 0 <283
+pL 6 0 <282
+pL 6 0 <281
+pL 6 0 <284
+pL 6 0 <286
+pL 6 0 <285
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <372
+pL 6 0 <371
+pH 0 6 <249
+pL 6 0 <255
+pL 6 0 <256
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pL 6 0 <248
+pL 6 0 <254
+pL 6 0 <245
+pL 6 0 <257
+pD 6 0 <365
+pD 6 0 <367
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <212
+pU 0 6 <211
+pU 0 6 <209
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <199
+pU 0 6 <196
+pU 0 6 <195
+#2705000
+pD 6 0 <361
+#2710000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <249
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <209
+pD 6 0 <207
+pD 6 0 <206
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <199
+pD 6 0 <196
+pD 6 0 <195
+pD 6 0 <366
+pD 6 0 <368
+#2715000
+pD 6 0 <361
+#2720000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <246
+pU 0 6 <366
+pU 0 6 <221
+pU 0 6 <219
+pU 0 6 <216
+pU 0 6 <206
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <197
+pU 0 6 <193
+#2725000
+pD 6 0 <361
+#2730000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <186
+pL 6 0 <187
+pL 6 0 <188
+pH 0 6 <251
+pH 0 6 <252
+pH 0 6 <255
+pH 0 6 <257
+pH 0 6 <256
+pH 0 6 <249
+pH 0 6 <248
+pH 0 6 <247
+pH 0 6 <245
+pH 0 6 <244
+pH 0 6 <243
+pH 0 6 <254
+pH 0 6 <253
+pH 0 6 <242
+pH 0 6 <250
+pH 0 6 <239
+pH 0 6 <240
+pH 0 6 <241
+pH 0 6 <238
+pH 0 6 <237
+pH 0 6 <236
+pH 0 6 <235
+pH 0 6 <234
+pH 0 6 <233
+pH 0 6 <232
+pH 0 6 <231
+pH 0 6 <230
+pH 0 6 <229
+pH 0 6 <228
+pU 0 6 <222
+pD 6 0 <221
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <209
+pU 0 6 <203
+pD 6 0 <202
+pU 0 6 <200
+#2735000
+pD 6 0 <361
+#2740000
+pU 0 6 <361
+pH 0 6 <286
+pH 0 6 <288
+pH 0 6 <284
+pH 0 6 <281
+pL 6 0 <371
+pH 0 6 <189
+pL 6 0 <251
+pL 6 0 <252
+pL 6 0 <255
+pL 6 0 <257
+pL 6 0 <256
+pL 6 0 <249
+pL 6 0 <248
+pL 6 0 <247
+pL 6 0 <246
+pL 6 0 <245
+pL 6 0 <244
+pL 6 0 <243
+pL 6 0 <254
+pL 6 0 <253
+pL 6 0 <242
+pL 6 0 <250
+pL 6 0 <239
+pL 6 0 <240
+pL 6 0 <241
+pL 6 0 <238
+pL 6 0 <237
+pL 6 0 <236
+pL 6 0 <235
+pL 6 0 <234
+pL 6 0 <233
+pL 6 0 <232
+pL 6 0 <231
+pL 6 0 <230
+pL 6 0 <229
+pL 6 0 <228
+pD 6 0 <365
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <216
+pU 0 6 <215
+pU 0 6 <212
+pU 0 6 <202
+pD 6 0 <201
+pU 0 6 <199
+pD 6 0 <197
+pU 0 6 <196
+#2745000
+pD 6 0 <361
+#2750000
+pU 0 6 <361
+pL 6 0 <281
+pL 6 0 <284
+pL 6 0 <288
+pL 6 0 <286
+pL 6 0 <373
+pH 0 6 <372
+pH 0 6 <371
+pH 0 6 <248
+pH 0 6 <254
+pH 0 6 <245
+pH 0 6 <255
+pH 0 6 <256
+pU 0 6 <365
+pU 0 6 <367
+pD 6 0 <222
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <212
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <366
+#2755000
+pD 6 0 <361
+#2760000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <371
+pH 0 6 <257
+pD 6 0 <365
+pU 0 6 <368
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <221
+pU 0 6 <215
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <207
+pU 0 6 <205
+pU 0 6 <204
+pU 0 6 <203
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <195
+pU 0 6 <194
+pU 0 6 <192
+pU 0 6 <319
+pU 0 6 <317
+pU 0 6 <315
+pU 0 6 <310
+#2765000
+pD 6 0 <361
+#2770000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <256
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <221
+pD 6 0 <215
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <207
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <203
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <195
+pD 6 0 <194
+pD 6 0 <192
+pD 6 0 <366
+pD 6 0 <319
+pU 0 6 <318
+pU 0 6 <316
+pU 0 6 <314
+pU 0 6 <313
+pD 6 0 <310
+#2775000
+pD 6 0 <361
+#2780000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <371
+pL 6 0 <257
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <208
+pU 0 6 <205
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <321
+pU 0 6 <320
+pD 6 0 <318
+pD 6 0 <316
+pD 6 0 <314
+pD 6 0 <313
+pU 0 6 <310
+#2785000
+pD 6 0 <361
+#2790000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <257
+pL 6 0 <255
+pH 0 6 <256
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <208
+pD 6 0 <205
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <366
+pD 6 0 <321
+pD 6 0 <320
+pD 6 0 <317
+pD 6 0 <315
+pD 6 0 <310
+#2795000
+pD 6 0 <361
+#2800000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pL 6 0 <372
+pH 0 6 <188
+pL 6 0 <254
+pH 0 6 <253
+pL 6 0 <257
+pH 0 6 <183
+pH 0 6 <189
+pH 0 6 <185
+pL 6 0 <187
+pL 6 0 <181
+pL 6 0 <186
+pL 6 0 <256
+pD 6 0 <367
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <221
+pU 0 6 <216
+pU 0 6 <213
+pU 0 6 <206
+pU 0 6 <204
+pU 0 6 <201
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <195
+pU 0 6 <192
+pU 0 6 <310
+#2805000
+pD 6 0 <361
+#2810000
+pU 0 6 <361
+pH 0 6 <187
+pL 6 0 <189
+pL 6 0 <188
+pH 0 6 <254
+pL 6 0 <253
+pH 0 6 <256
+pH 0 6 <249
+pH 0 6 <252
+pL 6 0 <245
+pL 6 0 <248
+pD 6 0 <368
+pD 6 0 <223
+pU 0 6 <222
+pD 6 0 <221
+pD 6 0 <213
+pU 0 6 <208
+pU 0 6 <207
+pD 6 0 <206
+pD 6 0 <204
+pD 6 0 <200
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <192
+pD 6 0 <310
+#2815000
+pD 6 0 <361
+#2820000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <188
+pL 6 0 <187
+pH 0 6 <186
+pH 0 6 <181
+pL 6 0 <189
+pL 6 0 <188
+pH 0 6 <182
+pU 0 6 <221
+pD 6 0 <216
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <209
+pU 0 6 <205
+pU 0 6 <202
+pD 6 0 <201
+pD 6 0 <199
+pU 0 6 <197
+pU 0 6 <196
+pD 6 0 <195
+pU 0 6 <194
+#2825000
+pD 6 0 <361
+#2830000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pH 0 6 <257
+pL 6 0 <249
+pL 6 0 <254
+pH 0 6 <251
+pH 0 6 <253
+pD 6 0 <222
+pD 6 0 <221
+pU 0 6 <220
+pU 0 6 <219
+pU 0 6 <217
+pU 0 6 <216
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <208
+pU 0 6 <206
+pD 6 0 <205
+pD 6 0 <202
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pD 6 0 <196
+pU 0 6 <192
+#2835000
+pD 6 0 <361
+#2840000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pU 0 6 <223
+pD 6 0 <219
+pD 6 0 <217
+pU 0 6 <213
+pU 0 6 <211
+pD 6 0 <209
+pU 0 6 <202
+pU 0 6 <201
+pD 6 0 <199
+pU 0 6 <196
+pU 0 6 <195
+pD 6 0 <194
+pD 6 0 <192
+#2845000
+pD 6 0 <361
+#2850000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <372
+pH 0 6 <246
+pL 6 0 <252
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pL 6 0 <257
+pL 6 0 <256
+pH 0 6 <255
+pU 0 6 <367
+pU 0 6 <222
+pU 0 6 <221
+pD 6 0 <220
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <217
+pD 6 0 <216
+pU 0 6 <215
+pD 6 0 <213
+pU 0 6 <212
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <199
+pD 6 0 <196
+pD 6 0 <195
+pU 0 6 <192
+#2855000
+pD 6 0 <361
+#2860000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pH 0 6 <256
+pL 6 0 <255
+pD 6 0 <223
+pD 6 0 <222
+pU 0 6 <216
+pD 6 0 <215
+pU 0 6 <213
+pD 6 0 <206
+pU 0 6 <203
+pD 6 0 <202
+pD 6 0 <200
+pU 0 6 <196
+pU 0 6 <195
+pU 0 6 <194
+pU 0 6 <368
+pU 0 6 <310
+pD 6 0 <310
+#2865000
+pD 6 0 <361
+#2870000
+pU 0 6 <361
+pL 6 0 <372
+pH 0 6 <189
+pH 0 6 <281
+pH 0 6 <282
+pH 0 6 <283
+pH 0 6 <284
+pH 0 6 <290
+pL 6 0 <246
+pL 6 0 <256
+pL 6 0 <253
+pL 6 0 <251
+pD 6 0 <367
+pU 0 6 <223
+pU 0 6 <222
+pD 6 0 <221
+pD 6 0 <219
+pD 6 0 <217
+pD 6 0 <216
+pU 0 6 <214
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <207
+pU 0 6 <205
+pD 6 0 <203
+pD 6 0 <201
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <196
+pD 6 0 <195
+pD 6 0 <194
+pD 6 0 <192
+pU 0 6 <321
+pU 0 6 <320
+pU 0 6 <317
+pU 0 6 <315
+pU 0 6 <310
+#2875000
+pD 6 0 <361
+#2880000
+pU 0 6 <361
+pH 0 6 <287
+pH 0 6 <286
+pH 0 6 <288
+pL 6 0 <290
+pH 0 6 <188
+pL 6 0 <189
+pL 6 0 <185
+pH 0 6 <245
+pH 0 6 <256
+pH 0 6 <255
+pH 0 6 <252
+pH 0 6 <250
+pD 6 0 <368
+pD 6 0 <222
+pU 0 6 <217
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <213
+pU 0 6 <212
+pU 0 6 <211
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <206
+pD 6 0 <205
+pU 0 6 <200
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <194
+pU 0 6 <192
+pD 6 0 <321
+pD 6 0 <320
+pD 6 0 <317
+pD 6 0 <315
+pD 6 0 <310
+#2885000
+pD 6 0 <361
+#2890000
+pU 0 6 <361
+pH 0 6 <189
+pU 0 6 <221
+pU 0 6 <220
+pU 0 6 <219
+pD 6 0 <216
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <210
+pD 6 0 <208
+pD 6 0 <206
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <201
+pD 6 0 <200
+pD 6 0 <198
+pU 0 6 <195
+pD 6 0 <194
+pD 6 0 <192
+#2895000
+pD 6 0 <361
+#2900000
+pU 0 6 <361
+pL 6 0 <189
+pL 6 0 <188
+pL 6 0 <186
+pH 0 6 <185
+pL 6 0 <187
+pD 6 0 <221
+pD 6 0 <218
+pU 0 6 <216
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <210
+pU 0 6 <208
+pD 6 0 <207
+pU 0 6 <204
+pD 6 0 <202
+pU 0 6 <200
+pD 6 0 <197
+pD 6 0 <195
+pU 0 6 <193
+#2905000
+pD 6 0 <361
+#2910000
+pU 0 6 <361
+pL 6 0 <288
+pL 6 0 <287
+pL 6 0 <286
+pL 6 0 <284
+pL 6 0 <283
+pL 6 0 <282
+pL 6 0 <281
+pL 6 0 <371
+pH 0 6 <189
+pL 6 0 <225
+pH 0 6 <259
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pH 0 6 <254
+pH 0 6 <253
+pH 0 6 <251
+pH 0 6 <249
+pH 0 6 <248
+pH 0 6 <247
+pH 0 6 <257
+pH 0 6 <246
+pH 0 6 <239
+pH 0 6 <240
+pH 0 6 <241
+pH 0 6 <242
+pH 0 6 <243
+pH 0 6 <244
+pH 0 6 <238
+pH 0 6 <237
+pH 0 6 <235
+pH 0 6 <234
+pH 0 6 <232
+pH 0 6 <231
+pH 0 6 <230
+pH 0 6 <229
+pH 0 6 <228
+pH 0 6 <233
+pH 0 6 <236
+pD 6 0 <365
+pD 6 0 <223
+pU 0 6 <221
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <213
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <210
+pU 0 6 <209
+pD 6 0 <208
+pU 0 6 <207
+pU 0 6 <205
+pU 0 6 <202
+pD 6 0 <200
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <197
+pU 0 6 <195
+pD 6 0 <193
+#2915000
+pD 6 0 <361
+#2920000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <227
+pL 6 0 <259
+pH 0 6 <225
+pL 6 0 <258
+pH 0 6 <226
+pL 6 0 <255
+pL 6 0 <254
+pL 6 0 <252
+pL 6 0 <249
+pL 6 0 <250
+pL 6 0 <248
+pL 6 0 <247
+pL 6 0 <245
+pL 6 0 <241
+pL 6 0 <240
+pL 6 0 <239
+pL 6 0 <238
+pL 6 0 <237
+pL 6 0 <236
+pL 6 0 <235
+pL 6 0 <234
+pL 6 0 <233
+pL 6 0 <232
+pL 6 0 <231
+pL 6 0 <230
+pL 6 0 <228
+pL 6 0 <229
+pL 6 0 <243
+pL 6 0 <244
+pL 6 0 <242
+pH 0 6 <187
+pL 6 0 <189
+pL 6 0 <185
+pU 0 6 <365
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <219
+pD 6 0 <217
+pD 6 0 <209
+pD 6 0 <207
+pD 6 0 <205
+pD 6 0 <204
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <195
+pD 6 0 <366
+#2925000
+pD 6 0 <361
+#2930000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <255
+pH 0 6 <249
+pH 0 6 <250
+pH 0 6 <252
+pH 0 6 <254
+pL 6 0 <253
+pL 6 0 <246
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <221
+pU 0 6 <218
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <199
+pU 0 6 <197
+pU 0 6 <196
+pU 0 6 <195
+pU 0 6 <193
+#2935000
+pD 6 0 <361
+#2940000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pU 0 6 <223
+pD 6 0 <222
+pD 6 0 <221
+pU 0 6 <220
+pD 6 0 <218
+pD 6 0 <213
+pD 6 0 <211
+pD 6 0 <208
+pD 6 0 <207
+pU 0 6 <203
+pD 6 0 <201
+pU 0 6 <200
+pD 6 0 <199
+pD 6 0 <197
+pD 6 0 <196
+#2945000
+pD 6 0 <361
+#2950000
+pU 0 6 <361
+pH 0 6 <189
+pD 6 0 <223
+pU 0 6 <222
+pD 6 0 <220
+pU 0 6 <218
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <209
+pD 6 0 <202
+pU 0 6 <197
+#2955000
+pD 6 0 <361
+#2960000
+pU 0 6 <361
+pH 0 6 <268
+pH 0 6 <267
+pH 0 6 <266
+pH 0 6 <265
+pL 6 0 <371
+pL 6 0 <189
+pH 0 6 <186
+pL 6 0 <187
+pL 6 0 <188
+pH 0 6 <291
+pH 0 6 <290
+pH 0 6 <289
+pH 0 6 <264
+pH 0 6 <262
+pH 0 6 <260
+pL 6 0 <225
+pL 6 0 <267
+pL 6 0 <266
+pL 6 0 <268
+pH 0 6 <259
+pH 0 6 <245
+pH 0 6 <246
+pH 0 6 <247
+pH 0 6 <253
+pH 0 6 <239
+pH 0 6 <243
+pH 0 6 <244
+pH 0 6 <248
+pH 0 6 <242
+pH 0 6 <241
+pH 0 6 <240
+pH 0 6 <237
+pH 0 6 <238
+pH 0 6 <236
+pH 0 6 <233
+pH 0 6 <232
+pH 0 6 <231
+pH 0 6 <229
+pH 0 6 <228
+pH 0 6 <235
+pH 0 6 <234
+pH 0 6 <230
+pD 6 0 <365
+pD 6 0 <218
+pU 0 6 <215
+pD 6 0 <213
+pU 0 6 <212
+pU 0 6 <202
+pU 0 6 <201
+pU 0 6 <199
+pD 6 0 <197
+pU 0 6 <196
+pD 6 0 <195
+#2965000
+pD 6 0 <361
+#2970000
+pU 0 6 <361
+pL 6 0 <260
+pL 6 0 <291
+pL 6 0 <290
+pL 6 0 <289
+pH 0 6 <372
+pL 6 0 <262
+pL 6 0 <265
+pL 6 0 <264
+pH 0 6 <371
+pH 0 6 <227
+pL 6 0 <259
+pL 6 0 <246
+pL 6 0 <247
+pH 0 6 <225
+pL 6 0 <258
+pH 0 6 <226
+pL 6 0 <239
+pL 6 0 <243
+pL 6 0 <244
+pL 6 0 <255
+pL 6 0 <252
+pL 6 0 <251
+pL 6 0 <249
+pL 6 0 <250
+pL 6 0 <242
+pL 6 0 <241
+pL 6 0 <240
+pL 6 0 <238
+pL 6 0 <237
+pL 6 0 <236
+pL 6 0 <233
+pL 6 0 <232
+pL 6 0 <231
+pL 6 0 <229
+pL 6 0 <228
+pL 6 0 <235
+pL 6 0 <234
+pL 6 0 <230
+pU 0 6 <365
+pU 0 6 <367
+pD 6 0 <222
+pD 6 0 <215
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <201
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <366
+#2975000
+pD 6 0 <361
+#2980000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <371
+pL 6 0 <257
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <214
+pU 0 6 <212
+pU 0 6 <209
+pU 0 6 <206
+pU 0 6 <203
+pU 0 6 <201
+pU 0 6 <200
+pU 0 6 <198
+pU 0 6 <196
+pU 0 6 <193
+pU 0 6 <368
+pU 0 6 <321
+pU 0 6 <320
+pU 0 6 <317
+pU 0 6 <315
+pU 0 6 <310
+pD 6 0 <320
+pU 0 6 <318
+pD 6 0 <315
+pU 0 6 <313
+pD 6 0 <310
+#2985000
+pD 6 0 <361
+#2990000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <257
+pL 6 0 <256
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <218
+pD 6 0 <217
+pD 6 0 <214
+pD 6 0 <212
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <203
+pD 6 0 <201
+pD 6 0 <200
+pD 6 0 <198
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <366
+pD 6 0 <321
+pD 6 0 <318
+pD 6 0 <317
+pD 6 0 <313
+#2995000
+pD 6 0 <361
+#3000000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <371
+pL 6 0 <257
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <217
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <212
+pU 0 6 <209
+pU 0 6 <206
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pU 0 6 <196
+pU 0 6 <193
+#3005000
+pD 6 0 <361
+#3010000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <256
+pH 0 6 <255
+pL 6 0 <254
+pH 0 6 <257
+pU 0 6 <365
+pD 6 0 <222
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <212
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <200
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <196
+pD 6 0 <193
+pD 6 0 <366
+#3015000
+pD 6 0 <361
+#3020000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <371
+pL 6 0 <257
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <221
+pU 0 6 <217
+pU 0 6 <215
+pU 0 6 <210
+pU 0 6 <209
+pU 0 6 <206
+pU 0 6 <200
+pU 0 6 <192
+#3025000
+pD 6 0 <361
+#3030000
+pU 0 6 <361
+pH 0 6 <371
+pL 6 0 <256
+pH 0 6 <257
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <221
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <206
+pD 6 0 <200
+pD 6 0 <192
+pD 6 0 <366
+#3035000
+pD 6 0 <361
+#3040000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pL 6 0 <371
+pL 6 0 <257
+pD 6 0 <365
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <218
+pU 0 6 <217
+pU 0 6 <215
+pU 0 6 <212
+pU 0 6 <206
+pU 0 6 <204
+#3045000
+pD 6 0 <361
+#3050000
+pU 0 6 <361
+pH 0 6 <371
+pH 0 6 <257
+pL 6 0 <255
+pH 0 6 <256
+pU 0 6 <365
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <218
+pD 6 0 <217
+pD 6 0 <215
+pD 6 0 <212
+pD 6 0 <206
+pD 6 0 <204
+pD 6 0 <366
+#3055000
+pD 6 0 <361
+#3060000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <372
+pH 0 6 <254
+pL 6 0 <187
+pL 6 0 <257
+pH 0 6 <185
+pL 6 0 <183
+pL 6 0 <182
+pL 6 0 <184
+pH 0 6 <255
+pL 6 0 <256
+pD 6 0 <367
+pU 0 6 <366
+pU 0 6 <223
+pU 0 6 <222
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <210
+pU 0 6 <205
+pU 0 6 <201
+pU 0 6 <195
+#3065000
+pD 6 0 <361
+#3070000
+pU 0 6 <361
+pH 0 6 <188
+pL 6 0 <189
+pH 0 6 <256
+pH 0 6 <250
+pH 0 6 <251
+pH 0 6 <252
+pH 0 6 <257
+pH 0 6 <249
+pL 6 0 <245
+pL 6 0 <255
+pL 6 0 <248
+pL 6 0 <253
+pD 6 0 <368
+pD 6 0 <216
+pD 6 0 <214
+pU 0 6 <208
+pU 0 6 <207
+pD 6 0 <205
+pD 6 0 <201
+pU 0 6 <200
+pU 0 6 <199
+pU 0 6 <198
+pD 6 0 <195
+#3075000
+pD 6 0 <361
+#3080000
+pU 0 6 <361
+pH 0 6 <189
+pL 6 0 <188
+pH 0 6 <188
+pD 6 0 <223
+pD 6 0 <222
+pU 0 6 <221
+pU 0 6 <220
+pU 0 6 <219
+pU 0 6 <217
+pU 0 6 <212
+pU 0 6 <211
+pD 6 0 <210
+pU 0 6 <209
+pD 6 0 <208
+pU 0 6 <203
+pU 0 6 <193
+pU 0 6 <192
+#3085000
+pD 6 0 <361
+#3090000
+pU 0 6 <361
+pH 0 6 <372
+pL 6 0 <189
+pH 0 6 <187
+pL 6 0 <188
+pL 6 0 <257
+pH 0 6 <246
+pH 0 6 <248
+pL 6 0 <249
+pL 6 0 <250
+pL 6 0 <251
+pL 6 0 <252
+pH 0 6 <255
+pU 0 6 <367
+pU 0 6 <222
+pD 6 0 <221
+pD 6 0 <220
+pD 6 0 <219
+pD 6 0 <217
+pU 0 6 <216
+pU 0 6 <214
+pD 6 0 <212
+pD 6 0 <209
+pU 0 6 <208
+pD 6 0 <207
+pU 0 6 <206
+pD 6 0 <203
+pU 0 6 <202
+pD 6 0 <200
+pD 6 0 <198
+pU 0 6 <197
+pD 6 0 <193
+#3095000
+pD 6 0 <361
+#3100000
+pU 0 6 <361
+pL 6 0 <371
+pL 6 0 <372
+pH 0 6 <189
+pD 6 0 <365
+pD 6 0 <367
+pU 0 6 <223
+pD 6 0 <222
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <217
+pD 6 0 <213
+pU 0 6 <212
+pU 0 6 <210
+pD 6 0 <208
+pU 0 6 <207
+pD 6 0 <206
+pD 6 0 <202
+pD 6 0 <197
+pU 0 6 <195
+pD 6 0 <192
+pU 0 6 <368
+pU 0 6 <310
+#3105000
+pD 6 0 <361
+#3110000
+pU 0 6 <361
+pH 0 6 <372
+pL 6 0 <248
+pH 0 6 <257
+pU 0 6 <367
+pD 6 0 <368
+pD 6 0 <223
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <217
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <214
+pD 6 0 <212
+pD 6 0 <211
+pD 6 0 <210
+pD 6 0 <207
+pD 6 0 <199
+pD 6 0 <195
+pD 6 0 <310
+pD 6 0 <366
+#3115000
+pD 6 0 <361
+#3120000
+pU 0 6 <361
+pL 6 0 <372
+pD 6 0 <367
+pU 0 6 <368
+pU 0 6 <310
+pD 6 0 <310
+#3125000
+pD 6 0 <361
+#3130000
+pU 0 6 <361
+pH 0 6 <290
+pH 0 6 <288
+pH 0 6 <289
+pH 0 6 <286
+pH 0 6 <285
+pH 0 6 <281
+pL 6 0 <187
+pH 0 6 <371
+pL 6 0 <246
+pL 6 0 <256
+pL 6 0 <255
+pL 6 0 <254
+pL 6 0 <257
+pH 0 6 <188
+pU 0 6 <365
+pD 6 0 <368
+#3135000
+pD 6 0 <361
+#3140000
+pU 0 6 <361
+pL 6 0 <189
+pL 6 0 <188
+pH 0 6 <187
+pU 0 6 <366
+pU 0 6 <222
+pU 0 6 <216
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <213
+pU 0 6 <211
+pU 0 6 <208
+pU 0 6 <206
+pU 0 6 <202
+pU 0 6 <199
+pU 0 6 <197
+pU 0 6 <192
+#3145000
+pD 6 0 <361
+#3150000
+pU 0 6 <361
+pL 6 0 <181
+pL 6 0 <186
+pL 6 0 <185
+pH 0 6 <181
+pH 0 6 <189
+pH 0 6 <185
+pH 0 6 <186
+pU 0 6 <223
+pD 6 0 <222
+pU 0 6 <219
+pU 0 6 <218
+pU 0 6 <217
+pD 6 0 <213
+pU 0 6 <212
+pU 0 6 <210
+pD 6 0 <208
+pU 0 6 <207
+pD 6 0 <206
+pD 6 0 <202
+pD 6 0 <197
+pU 0 6 <195
+pD 6 0 <192
+#3155000
+pD 6 0 <361
+#3160000
+pU 0 6 <361
+pL 6 0 <290
+pL 6 0 <289
+pL 6 0 <288
+pL 6 0 <286
+pL 6 0 <285
+pL 6 0 <281
+pH 0 6 <188
+pH 0 6 <163
+pH 0 6 <160
+pH 0 6 <162
+pH 0 6 <161
+pH 0 6 <182
+pL 6 0 <187
+pL 6 0 <181
+pL 6 0 <186
+pL 6 0 <160
+pL 6 0 <163
+pL 6 0 <162
+pL 6 0 <161
+pU 0 6 <220
+pD 6 0 <219
+pD 6 0 <218
+pD 6 0 <217
+pU 0 6 <213
+pD 6 0 <212
+pD 6 0 <211
+pU 0 6 <209
+pU 0 6 <204
+pU 0 6 <198
+pU 0 6 <197
+pD 6 0 <195
+pU 0 6 <194
+pU 0 6 <193
+#3165000
+pD 6 0 <361
+#3170000
+pU 0 6 <361
+pH 0 6 <187
+pL 6 0 <189
+pL 6 0 <188
+pH 0 6 <255
+pH 0 6 <249
+pH 0 6 <253
+pH 0 6 <254
+pH 0 6 <258
+pL 6 0 <227
+pL 6 0 <226
+pU 0 6 <222
+pU 0 6 <221
+pD 6 0 <220
+pU 0 6 <219
+pU 0 6 <218
+pD 6 0 <210
+pD 6 0 <209
+pD 6 0 <207
+pD 6 0 <204
+pD 6 0 <199
+pD 6 0 <198
+pD 6 0 <197
+pD 6 0 <193
+#3175000
+pD 6 0 <361
+#3180000
+pU 0 6 <361
+pH 0 6 <189
+pD 6 0 <223
+pD 6 0 <222
+pD 6 0 <221
+pU 0 6 <220
+pD 6 0 <219
+pD 6 0 <218
+pU 0 6 <217
+pD 6 0 <213
+pU 0 6 <209
+pU 0 6 <208
+pU 0 6 <207
+pU 0 6 <206
+pU 0 6 <203
+pU 0 6 <202
+pU 0 6 <201
+pD 6 0 <194
+#3185000
+pD 6 0 <361
+#3190000
+pU 0 6 <361
+pL 6 0 <189
+pH 0 6 <188
+pL 6 0 <255
+pL 6 0 <253
+pL 6 0 <249
+pL 6 0 <254
+pL 6 0 <258
+pH 0 6 <227
+pH 0 6 <226
+pH 0 6 <230
+pD 6 0 <220
+pU 0 6 <219
+pD 6 0 <216
+pD 6 0 <215
+pD 6 0 <214
+pU 0 6 <211
+pD 6 0 <209
+pD 6 0 <208
+pD 6 0 <207
+pD 6 0 <203
+pD 6 0 <202
+pD 6 0 <201
+pU 0 6 <200
+pU 0 6 <192
+#3195000
+pD 6 0 <361
+#3200000
+pU 0 6 <361
+pH 0 6 <189
+pH 0 6 <373
+pH 0 6 <372
+pH 0 6 <257
+pU 0 6 <367
+pU 0 6 <223
+pU 0 6 <222
+pD 6 0 <217
+pU 0 6 <215
+pU 0 6 <214
+pU 0 6 <213
+pD 6 0 <211
+pD 6 0 <206
+pU 0 6 <199
+pU 0 6 <197
+pD 6 0 <192
+#3205000
+pD 6 0 <361
+#3210000
+pU 0 6 <361
+$vcdclose
+#3210000
+$end
