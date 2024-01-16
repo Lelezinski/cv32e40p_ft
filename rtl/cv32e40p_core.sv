@@ -357,6 +357,9 @@ module cv32e40p_core
   logic [             31:0]       instr_addr_pmp;
   logic                           instr_err_pmp;
 
+  // Fault Management
+  logic                           ex_stage_fault;
+
   // Mux selector for vectored IRQ PC
   assign m_exc_vec_pc_mux_id = (mtvec_mode == 2'b0) ? 5'h0 : exc_cause;
   assign u_exc_vec_pc_mux_id = (utvec_mode == 2'b0) ? 5'h0 : exc_cause;
@@ -870,7 +873,9 @@ module cv32e40p_core
 
       .ex_ready_o(ex_ready),
       .ex_valid_o(ex_valid),
-      .wb_ready_i(lsu_ready_wb)
+      .wb_ready_i(lsu_ready_wb),
+
+      .ex_fault_o(ex_stage_fault)
   );
 
 

@@ -161,9 +161,7 @@ module cv32e40p_ex_stage
 
     output logic ex_ready_o,  // EX stage ready for new data
     output logic ex_valid_o,  // EX stage gets new data
-    input  logic wb_ready_i,  // WB stage ready for new data
-
-    output logic ex_fault_o // Ex Stage Fault
+    input  logic wb_ready_i  // WB stage ready for new data
 );
 
   logic [                31:0] alu_result;
@@ -180,23 +178,6 @@ module cv32e40p_ex_stage
   logic                        mulh_active;
   logic                        mult_ready;
 
-  // MUL non voted
-  logic [                31:0] mult_result_1;
-  logic [                31:0] mult_result_2;
-  logic [                31:0] mult_result_3;
-  logic                        mult_multicycle_o_1;
-  logic                        mult_multicycle_o_2;
-  logic                        mult_multicycle_o_3;
-  logic                        mulh_active_1;
-  logic                        mult_ready_1;
-  logic                        mulh_active_2;
-  logic                        mult_ready_2;
-  logic                        mulh_active_3;
-  logic                        mult_ready_3;
-
-  // MUL fault
-  logic                        mult_fault;
-  
   // APU signals
   logic                        apu_valid;
   logic [                 5:0] apu_waddr;
@@ -212,54 +193,6 @@ module cv32e40p_ex_stage
   logic [                31:0] apu_result_q;
   logic [APU_NUSFLAGS_CPU-1:0] apu_flags_q;
 
-  // MUL voter
-  always_comb begin
-    mult_fault = 0;
-
-    if (mult_result_1 == mult_result_2) begin
-      mult_result = mult_result_1;
-      if (mult_result_1 != mult_result_3) begin
-        mult_fault = 1;
-      end
-    end else begin
-      mult_fault = 1;
-      mult_result = mult_result_3;
-    end
-
-    if (mult_multicycle_o_1 == mult_multicycle_o_2) begin
-      if (mult_multicycle_o_1 != mult_multicycle_o_3) begin
-        mult_fault = 1;
-      end
-      mult_multicycle_o = mult_multicycle_o_1;
-    end else begin
-      mult_fault = 1;
-      mult_multicycle_o = mult_multicycle_o_3;
-    end
-
-    if (mulh_active_1 == mulh_active_2) begin
-      if (mulh_active_1 != mulh_active_3) begin
-        mult_fault = 1;
-      end
-      mulh_active = mulh_active_1;
-    end else begin
-      mult_fault = 1;
-      mulh_active = mulh_active_3;
-    end
-
-    if (mult_ready_1 == mult_ready_2) begin
-      mult_ready = mult_ready_1;
-      if (mult_ready_1 != mult_ready_3) begin
-        mult_fault = 1;
-      end
-    end else begin
-      mult_fault = 1;
-      mult_ready = mult_ready_3;
-    end
-
-  end
-
-  assign ex_fault = mult_fault;
-  
   // ALU write port mux
   always_comb begin
     regfile_alu_wdata_fw_o    = '0;
@@ -362,7 +295,7 @@ module cv32e40p_ex_stage
   //                                                            //
   ////////////////////////////////////////////////////////////////
 
-  cv32e40p_mult mult_i_1 (
+  cv32e40p_mult mult_i (
       .clk  (clk),
       .rst_n(rst_n),
 
@@ -385,73 +318,11 @@ module cv32e40p_ex_stage
       .clpx_shift_i(mult_clpx_shift_i),
       .clpx_img_i  (mult_clpx_img_i),
 
-      .result_o(mult_result_1),
+      .result_o(mult_result),
 
-      .multicycle_o (mult_multicycle_o_1),
-      .mulh_active_o(mulh_active_1),
-      .ready_o      (mult_ready_1),
-      .ex_ready_i   (ex_ready_o)
-  );
-
-  cv32e40p_mult mult_i_2 (
-      .clk  (clk),
-      .rst_n(rst_n),
-
-      .enable_i  (mult_en_i),
-      .operator_i(mult_operator_i),
-
-      .short_subword_i(mult_sel_subword_i),
-      .short_signed_i (mult_signed_mode_i),
-
-      .op_a_i(mult_operand_a_i),
-      .op_b_i(mult_operand_b_i),
-      .op_c_i(mult_operand_c_i),
-      .imm_i (mult_imm_i),
-
-      .dot_op_a_i  (mult_dot_op_a_i),
-      .dot_op_b_i  (mult_dot_op_b_i),
-      .dot_op_c_i  (mult_dot_op_c_i),
-      .dot_signed_i(mult_dot_signed_i),
-      .is_clpx_i   (mult_is_clpx_i),
-      .clpx_shift_i(mult_clpx_shift_i),
-      .clpx_img_i  (mult_clpx_img_i),
-
-      .result_o(mult_result_2),
-
-      .multicycle_o (mult_multicycle_o_2),
-      .mulh_active_o(mulh_active_2),
-      .ready_o      (mult_ready_2),
-      .ex_ready_i   (ex_ready_o)
-  );
-
-cv32e40p_mult mult_i_3 (
-      .clk  (clk),
-      .rst_n(rst_n),
-
-      .enable_i  (mult_en_i),
-      .operator_i(mult_operator_i),
-
-      .short_subword_i(mult_sel_subword_i),
-      .short_signed_i (mult_signed_mode_i),
-
-      .op_a_i(mult_operand_a_i),
-      .op_b_i(mult_operand_b_i),
-      .op_c_i(mult_operand_c_i),
-      .imm_i (mult_imm_i),
-
-      .dot_op_a_i  (mult_dot_op_a_i),
-      .dot_op_b_i  (mult_dot_op_b_i),
-      .dot_op_c_i  (mult_dot_op_c_i),
-      .dot_signed_i(mult_dot_signed_i),
-      .is_clpx_i   (mult_is_clpx_i),
-      .clpx_shift_i(mult_clpx_shift_i),
-      .clpx_img_i  (mult_clpx_img_i),
-
-      .result_o(mult_result_3),
-
-      .multicycle_o (mult_multicycle_o_3),
-      .mulh_active_o(mulh_active_3),
-      .ready_o      (mult_ready_3),
+      .multicycle_o (mult_multicycle_o),
+      .mulh_active_o(mulh_active),
+      .ready_o      (mult_ready),
       .ex_ready_i   (ex_ready_o)
   );
 
