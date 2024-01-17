@@ -258,7 +258,7 @@ module cv32e40p_ex_stage
 
   end
 
-  assign ex_fault = mult_fault;
+  assign ex_fault_o = mult_fault;
   
   // ALU write port mux
   always_comb begin
