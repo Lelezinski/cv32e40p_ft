@@ -358,6 +358,7 @@ module cv32e40p_core
   logic                           instr_err_pmp;
 
   // Fault Management
+  logic                           id_stage_fault;
   logic                           ex_stage_fault;
 
   // Mux selector for vectored IRQ PC
@@ -734,7 +735,9 @@ module cv32e40p_core
       .mhpmevent_pipe_stall_o  (mhpmevent_pipe_stall),
 
       .perf_imiss_i(perf_imiss),
-      .mcounteren_i(mcounteren)
+      .mcounteren_i(mcounteren),
+      
+      .id_fault_o(id_stage_fault)
   );
 
 
