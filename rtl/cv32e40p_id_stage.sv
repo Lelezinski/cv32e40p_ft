@@ -253,7 +253,7 @@ module cv32e40p_id_stage
     input logic        perf_imiss_i,
     input logic [31:0] mcounteren_i,
 
-    output logic id_fault_o // Ex Stage Fault
+    output logic id_fault_o
 );
 
   // Source/Destination register instruction index
@@ -945,6 +945,8 @@ module cv32e40p_id_stage
   /////////////////////////////////////////////////////////
 
   always_comb begin
+    regfile_fault = 0;
+    
     if (regfile_data_ra_id_1 == regfile_data_ra_id_2) begin
       regfile_data_ra_id = regfile_data_ra_id_1;
       if (regfile_data_ra_id_1 != regfile_data_ra_id_3) begin

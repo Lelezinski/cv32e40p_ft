@@ -33,8 +33,10 @@ sources:
     - rtl/cv32e40p_controller.sv
     - rtl/cv32e40p_cs_registers.sv
     - rtl/cv32e40p_decoder.sv
+    - rtl/cv32e40p_3voter.sv
+    - rtl/cv32e40p_mult_hardened.sv
     - rtl/cv32e40p_int_controller.sv
-    - rtl/cv32e40p_ex_stage.sv
+    - rtl/cv32e40p_ex_stage_hardened.sv
     - rtl/cv32e40p_hwloop_controller.sv
     - rtl/cv32e40p_hwloop_regs.sv
     - rtl/cv32e40p_id_stage.sv
