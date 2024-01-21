@@ -84,7 +84,7 @@ module cv32e40p_mult_hardened
       .multicycle_o (mult_multicycle_o_1),
       .mulh_active_o(mulh_active_1),
       .ready_o      (mult_ready_1),
-      .ex_ready_i   (ex_ready_o)
+      .ex_ready_i   (ex_ready_i)
   );
 
   cv32e40p_mult mult_i_2 (
@@ -115,7 +115,7 @@ module cv32e40p_mult_hardened
       .multicycle_o (mult_multicycle_o_2),
       .mulh_active_o(mulh_active_2),
       .ready_o      (mult_ready_2),
-      .ex_ready_i   (ex_ready_o)
+      .ex_ready_i   (ex_ready_i)
   );
 
   cv32e40p_mult mult_i_3 (
@@ -146,7 +146,7 @@ module cv32e40p_mult_hardened
       .multicycle_o (mult_multicycle_o_3),
       .mulh_active_o(mulh_active_3),
       .ready_o      (mult_ready_3),
-      .ex_ready_i   (ex_ready_o)
+      .ex_ready_i   (ex_ready_i)
   );
 
   cv32e40p_3voter #(
