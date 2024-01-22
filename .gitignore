@@ -3,6 +3,7 @@ run/*
 
 # Ignore synthesis directory
 syn/*
+!syn/bin/syn_nangate.tcl
 
 # Ignore all backup directories and files
 bak/
