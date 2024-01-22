@@ -20,8 +20,34 @@ test1:
 	sw s11, 8(sp)
 	addi s0, sp, 112     # set up s0 to point to start of stack frame
 
-
     # You can write your code here 
+
+    addi s2, s2, 12
+    sw s2, 80(sp)
+    addi s3, s3, -45
+    sw s3, 72(sp)
+    xori s4, s4, 125
+    sw s4, 64(sp)
+    ori s5, s5, 255
+    sw s5, 56(sp)
+    srai s6, s5, 2
+    sw s6, 48(sp)
+    andi s7, s7, 1
+    sw s7, 40(sp)
+    add s10, s4, s5
+    sw s10, 16(sp)
+
+    mul s1, s2, s3
+    sw s1, 88(sp) 
+    mul s2, s4, s1
+    sw s2, 80(sp)
+    mul s3, s5, s6
+    sw s3, 72(sp)
+
+    div s8, s6, s7
+    sw s8, 32(sp)
+    div s9, s10, s6
+    sw s9, 24(sp)
 
     li a0, 0xCAFECAFE    # return value
 
