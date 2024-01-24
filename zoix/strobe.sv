@@ -38,7 +38,18 @@ initial begin
                 $fs_strobe(`TOPLEVEL.data_wdata_o);
                 $fs_strobe(`TOPLEVEL.data_be_o);
 
+		$fs_strobe(`TOPLEVEL.core_i.ex_stage_i.mult_i.mult_fault_o);	
+		$fs_strobe(`TOPLEVEL.core_i.ex_stage_i.alu_i.alu_fault_o);
 
+		// strobe all no voter
+		// $fs_strobe(`TOPLEVEL.core_i.ex_stage_i.mult_i.mult_i_1);
+		// $fs_strobe(`TOPLEVEL.core_i.ex_stage_i.mult_i.mult_i_2);
+		// $fs_strobe(`TOPLEVEL.core_i.ex_stage_i.mult_i.mult_i_3);
+
+		//$fs_strobe(`TOPLEVEL.core_i.ex_stage_i.mult_i.voter_result.fault_o);
+		//$fs_strobe(`TOPLEVEL.core_i.ex_stage_i.mult_i.voter_mulh_active.fault_o);
+		//$fs_strobe(`TOPLEVEL.core_i.ex_stage_i.mult_i.voter_multicycle.fault_o);
+		//$fs_strobe(`TOPLEVEL.core_i.ex_stage_i.mult_i.voter_ready.fault_o);
 
                 #10000; // TMAX Strobe period
         end
