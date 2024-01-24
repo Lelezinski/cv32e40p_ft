@@ -1,31 +1,35 @@
 module cv32e40p_3voter
-  import cv32e40p_pkg::*;
 # (
-    parameter NBIT = 32
+    parameter DATA_WIDTH = 32
 )
 (
-    input logic [NBIT - 1:0] a,
-    input logic [NBIT - 1:0] b,
-    input logic [NBIT - 1:0] c,
-    output logic fault,
-    output logic [NBIT - 1:0] winner
+    input logic [DATA_WIDTH - 1:0] a_i,
+    input logic [DATA_WIDTH - 1:0] b_i,
+    input logic [DATA_WIDTH - 1:0] c_i,
+
+    output logic fault_o,
+    output logic [DATA_WIDTH - 1:0] winner_o
 );
 
-  logic fault_i;
-
   always_comb begin
-    fault_i = 0;
+    fault_o = 1;
+    winner_o = a_i;
 
-    if (a == b) begin
-      if (a != c) begin
-        fault_i = 1;
+    if (a_i == b_i) begin
+      if (a_i == c_i) begin
+        winner_o = a_i;
+        fault_o = 0;
       end
-      winner = a;
-    end else begin
-      fault_i = 1;
-      winner = c;
+      else begin
+        winner_o = a_i;
+      end
+    end else begin // a_i != b_i
+      if (a_i == c_i) begin
+        winner_o = a_i;
+      end else if (b_i == c_i) begin
+        winner_o = b_i;
+      end
     end
   end
 
-  assign fault = fault_i;
 endmodule

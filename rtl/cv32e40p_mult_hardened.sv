@@ -34,7 +34,7 @@ module cv32e40p_mult_hardened
     output logic ready_o,
     input  logic ex_ready_i,
 
-    output logic mult_fault
+    output logic mult_fault_o
 );
 
   logic [31:0] mult_result_1;
@@ -56,7 +56,7 @@ module cv32e40p_mult_hardened
   logic        mult_fault_3;
   logic        mult_fault_4;
 
-  cv32e40p_mult mult_i_1 (
+  cv32e40p_mult mult_1_i (
       .clk  (clk),
       .rst_n(rst_n),
 
@@ -87,7 +87,7 @@ module cv32e40p_mult_hardened
       .ex_ready_i   (ex_ready_i)
   );
 
-  cv32e40p_mult mult_i_2 (
+  cv32e40p_mult mult_2_i (
       .clk  (clk),
       .rst_n(rst_n),
 
@@ -118,7 +118,7 @@ module cv32e40p_mult_hardened
       .ex_ready_i   (ex_ready_i)
   );
 
-  cv32e40p_mult mult_i_3 (
+  cv32e40p_mult mult_3_i (
       .clk  (clk),
       .rst_n(rst_n),
 
@@ -150,46 +150,45 @@ module cv32e40p_mult_hardened
   );
 
   cv32e40p_3voter #(
-      .NBIT(1)
-  ) voter_1 (
-      .a(mult_multicycle_o_1),
-      .b(mult_multicycle_o_2),
-      .c(mult_multicycle_o_3),
-      .fault(mult_fault_1),
-      .winner(multicycle_o)
+      .DATA_WIDTH(1)
+  ) mult_voter_multicycle (
+      .a_i(mult_multicycle_o_1),
+      .b_i(mult_multicycle_o_2),
+      .c_i(mult_multicycle_o_3),
+      .fault_o(mult_fault_1),
+      .winner_o(multicycle_o)
   );
 
   cv32e40p_3voter #(
-      .NBIT(1)
-  ) voter_2 (
-      .a(mulh_active_1),
-      .b(mulh_active_2),
-      .c(mulh_active_3),
-      .fault(mult_fault_2),
-      .winner(mulh_active_o)
+      .DATA_WIDTH(1)
+  ) mult_voter_mulh_active (
+      .a_i(mulh_active_1),
+      .b_i(mulh_active_2),
+      .c_i(mulh_active_3),
+      .fault_o(mult_fault_2),
+      .winner_o(mulh_active_o)
   );
 
   cv32e40p_3voter #(
-      .NBIT(1)
-  ) voter_3 (
-      .a(mult_ready_1),
-      .b(mult_ready_2),
-      .c(mult_ready_3),
-      .fault(mult_fault_3),
-      .winner(mult_ready_o)
+      .DATA_WIDTH(1)
+  ) mult_voter_ready (
+      .a_i(mult_ready_1),
+      .b_i(mult_ready_2),
+      .c_i(mult_ready_3),
+      .fault_o(mult_fault_3),
+      .winner_o(ready_o)
   );
 
   cv32e40p_3voter #(
-      .NBIT(32)
-  ) voter_4 (
-      .a(mult_result_1),
-      .b(mult_result_2),
-      .c(mult_result_3),
-      .fault(mult_fault_4),
-      .winner(result_o)
+      .DATA_WIDTH(32)
+  ) mult_voter_result (
+      .a_i(mult_result_1),
+      .b_i(mult_result_2),
+      .c_i(mult_result_3),
+      .fault_o(mult_fault_4),
+      .winner_o(result_o)
   );
 
-
-  assign mult_fault = mult_fault_1 || mult_fault_2 || mult_fault_3 || mult_fault_4;
+  assign mult_fault_o = mult_fault_1 || mult_fault_2 || mult_fault_3 || mult_fault_4;
 
 endmodule
