@@ -161,10 +161,11 @@ module cv32e40p_ex_stage
 
     output logic ex_ready_o,  // EX stage ready for new data
     output logic ex_valid_o,  // EX stage gets new data
-    input  logic wb_ready_i   // WB stage ready for new data
+    input  logic wb_ready_i,  // WB stage ready for new data
 
     // Fault
-    // output logic ex_fault_o
+    output logic mult_fault_o,
+    output logic alu_fault_o
 );
 
   logic [                31:0] alu_result;
@@ -197,7 +198,7 @@ module cv32e40p_ex_stage
   logic [APU_NUSFLAGS_CPU-1:0] apu_flags_q;
 
   // Fault signals
-  logic                        mult_fault_o, alu_fault_o;
+  logic                        mult_fault_s, alu_fault_s;
 
   // ALU write port mux
   always_comb begin
@@ -295,7 +296,7 @@ module cv32e40p_ex_stage
 
       .alu_fault_o(alu_fault_o)
   );
-
+   
 
   ////////////////////////////////////////////////////////////////
   //  __  __ _   _ _   _____ ___ ____  _     ___ _____ ____     //

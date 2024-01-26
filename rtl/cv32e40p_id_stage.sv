@@ -251,7 +251,9 @@ module cv32e40p_id_stage
     output logic mhpmevent_pipe_stall_o,
 
     input logic        perf_imiss_i,
-    input logic [31:0] mcounteren_i
+    input logic [31:0] mcounteren_i,
+
+    output logic rf_fault_o
 );
 
   // Source/Destination register instruction index
@@ -482,6 +484,9 @@ module cv32e40p_id_stage
   logic id_valid_q;
   logic minstret;
   logic perf_pipeline_stall;
+
+  // Fault
+  logic rf_fault;
 
   assign instr = instr_rdata_i;
 
@@ -928,7 +933,7 @@ module cv32e40p_id_stage
   //                                                     //
   /////////////////////////////////////////////////////////
 
-  cv32e40p_register_file #(
+  cv32e40p_register_file_hardened #(
       .ADDR_WIDTH(6),
       .DATA_WIDTH(32),
       .FPU       (FPU),
@@ -959,7 +964,10 @@ module cv32e40p_id_stage
       // Write port b
       .waddr_b_i(regfile_alu_waddr_fw_i),
       .wdata_b_i(regfile_alu_wdata_fw_i),
-      .we_b_i   (regfile_alu_we_fw_power_i)
+      .we_b_i   (regfile_alu_we_fw_power_i),
+
+      // Fault
+      .rf_fault_o(rf_fault_o)
   );
 
 
