@@ -1,12 +1,13 @@
 #!/bin/sh
 
 ROOT_DIR="/home/s313207/cv32e40p_ft/"
+SYN_LOG_DIR="/home/s313207/cv32e40p_ft/syn/log/"
 
 BASELINE_EVCD_FILE="./results/cv32e40p_top.evcd"
 EVCD_FILE="./run/questasim/cv32e40p_top.evcd"
-#BASELINE_SAF_LIST_FILE="./results/baseline/cv32e40p_top_saf.rpt"
+BASELINE_SAF_LIST_FILE="./results/baseline/cv32e40p_top_saf.rpt"
 SAF_LIST_FILE="./run/zoix/cv32e40p_top_saf.rpt"
-REPORT_FILE="./results/hardened/report.rpt"
+REPORT_DIR="./results/hardened/"
 
 RUN_RPT_FILE=$SAF_LIST_FILE".fsim"
 
@@ -57,11 +58,16 @@ fi
 # Fault Simulation
 print_green "\nStarting Fault Simulation"
 make zoix/fgen/saf
-make zoix/fsim FAULT_LIST=$SAF_LIST_FILE
+make zoix/fsim FAULT_LIST="$SAF_LIST_FILE"
 
 # Generate Report
 print_green "\nGenerating Report"
-grep '^#' "$RUN_RPT_FILE" >"$REPORT_FILE"
+grep '^#' "$RUN_RPT_FILE" >"$REPORT_DIR"report.rpt
+
+# Copy PPA Reports
+mv "$SYN_LOG_DIR"report_timing.log "$REPORT_DIR"report_timing.rpt 
+mv "$SYN_LOG_DIR"report_area.log "$REPORT_DIR"report_area.rpt 
+mv "$SYN_LOG_DIR"report_power.log "$REPORT_DIR"report_power.rpt 
 
 # Print Relevant Results
 awk '/# Total Faults/ { faults=$NF } /# Fault Coverage/ { coverage=$(NF-1) } END { printf "• Number of faults: \033[1;35m%s\033[0m\n", faults; printf "• Test coverage: \033[1;35m%s\033[0m\n", coverage }' "$RUN_RPT_FILE"
