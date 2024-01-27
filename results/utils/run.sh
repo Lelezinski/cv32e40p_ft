@@ -26,9 +26,14 @@ print_red() {
 }
 
 ## RUN ##
+if [ -z "$1" ] || [ "$1" == "-syn" ]; then
+	print_red "USAGE: run.sh PREFIX [-syn]"
+ 	exit
+fi
+PREFIX="$1"
 
-# Check for the -nosyn argument
-if [ "$1" != "-nosyn" ]; then
+# Check for the -syn argument
+if [ "$2" == "-syn" ]; then
     # Synthesis
     make clean
     print_green "\nStarting Synthesis"
@@ -62,12 +67,14 @@ make zoix/fsim FAULT_LIST="$SAF_LIST_FILE"
 
 # Generate Report
 print_green "\nGenerating Report"
-grep '^#' "$RUN_RPT_FILE" >"$REPORT_DIR"report.rpt
+grep '^#' "$RUN_RPT_FILE" >"$REPORT_DIR""$PREFIX"_report_fc.rpt
 
 # Copy PPA Reports
-mv "$SYN_LOG_DIR"report_timing.log "$REPORT_DIR"report_timing.rpt 
-mv "$SYN_LOG_DIR"report_area.log "$REPORT_DIR"report_area.rpt 
-mv "$SYN_LOG_DIR"report_power.log "$REPORT_DIR"report_power.rpt 
+if [ "$2" == "-syn" ]; then
+    mv "$SYN_LOG_DIR"report_timing.log "$REPORT_DIR"report_timing.rpt 
+    mv "$SYN_LOG_DIR"report_area.log "$REPORT_DIR"report_area.rpt 
+    mv "$SYN_LOG_DIR"report_power.log "$REPORT_DIR"report_power.rpt 
+fi
 
 # Print Relevant Results
 awk '/# Total Faults/ { faults=$NF } /# Fault Coverage/ { coverage=$(NF-1) } END { printf "• Number of faults: \033[1;35m%s\033[0m\n", faults; printf "• Test coverage: \033[1;35m%s\033[0m\n", coverage }' "$RUN_RPT_FILE"
