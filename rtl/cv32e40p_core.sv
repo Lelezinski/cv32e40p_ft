@@ -96,7 +96,11 @@ module cv32e40p_core
 
     // CPU Control Signals
     input  logic fetch_enable_i,
-    output logic core_sleep_o
+    output logic core_sleep_o,
+
+    output logic rf_fault_o,
+    output logic mult_fault_o,
+    output logic alu_fault_o
 );
 
   import cv32e40p_pkg::*;
@@ -736,8 +740,8 @@ module cv32e40p_core
 
       .perf_imiss_i(perf_imiss),
       .mcounteren_i(mcounteren),
-      
-      .id_fault_o(id_stage_fault)
+
+      .rf_fault_o(rf_fault_o)
   );
 
 
@@ -878,7 +882,8 @@ module cv32e40p_core
       .ex_valid_o(ex_valid),
       .wb_ready_i(lsu_ready_wb),
 
-      .ex_fault_o(ex_stage_fault)
+      .mult_fault_o(mult_fault_o),
+      .alu_fault_o(alu_fault_o)
   );
 
 

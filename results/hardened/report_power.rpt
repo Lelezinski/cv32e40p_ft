@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : cv32e40p_top
+Version: U-2022.12
+Date   : Fri Jan 26 20:34:11 2024
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/s313207/cv32e40p_ft/syn/techlib/NangateOpenCellLibrary_typical_ccs_scan.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+cv32e40p_top           5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   6.2664 mW   (96%)
+  Net Switching Power  = 258.4001 uW    (4%)
+                         ---------
+Total Dynamic Power    =   6.5248 mW  (100%)
+
+Cell Leakage Power     =   1.4368 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  6.1227e+03            0.0000            0.0000        6.1227e+03  (  76.90%)  i
+register          48.4165           24.6699        3.4789e+05          420.8930  (   5.29%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     95.3460          233.7294        1.0890e+06        1.4180e+03  (  17.81%)
+--------------------------------------------------------------------------------------------------
+Total          6.2665e+03 uW       258.3992 uW     1.4368e+06 nW     7.9616e+03 uW
+1

@@ -25,9 +25,11 @@ analyze -format sverilog -work work ${TECHLIB_PATH}/NangateOpenCellLibrary_cv32e
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/include/cv32e40p_apu_core_pkg.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/include/cv32e40p_fpu_pkg.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/include/cv32e40p_pkg.sv
+analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_3voter.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_if_stage.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_cs_registers.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_register_file_ff.sv
+analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_register_file_ff_hardened.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_load_store_unit.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_id_stage.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_aligner.sv
@@ -37,13 +39,12 @@ analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_fifo.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_prefetch_buffer.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_hwloop_regs.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_mult.sv
-analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_3voter.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_mult_hardened.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_int_controller.sv
-# analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_ex_stage.sv
-analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_ex_stage_hardened.sv
+analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_ex_stage.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_alu_div.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_alu.sv
+analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_alu_hardened.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_ff_one.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_popcnt.sv
 analyze -format sverilog -work work ${DESIGN_RTL_DIR}/cv32e40p_apu_disp.sv
@@ -98,7 +99,11 @@ uniquify -force
 #-gate_clock -no_boundary_optimization -timing
 compile_ultra -no_autoungroup 
 
+# REPORTS
 report_timing > ${LOG_PATH}/report_timing.log
+report_area > ${LOG_PATH}/report_area.log
+report_power > ${LOG_PATH}/report_power.log
+
 change_names -hierarchy -rules verilog
 write -hierarchy -format verilog -output "${GATE_PATH}/${TOPLEVEL}.v"
 write -hierarchy -format ddc     -output "${GATE_PATH}/${TOPLEVEL}.ddc"

@@ -251,9 +251,7 @@ module cv32e40p_id_stage
     output logic mhpmevent_pipe_stall_o,
 
     input logic        perf_imiss_i,
-    input logic [31:0] mcounteren_i,
-
-    output logic rf_fault_o
+    input logic [31:0] mcounteren_i
 );
 
   // Source/Destination register instruction index
@@ -351,17 +349,6 @@ module cv32e40p_id_stage
   logic [31:0] regfile_data_ra_id;
   logic [31:0] regfile_data_rb_id;
   logic [31:0] regfile_data_rc_id;
-
-
-  logic [31:0] regfile_data_ra_id_1;
-  logic [31:0] regfile_data_rb_id_1;
-  logic [31:0] regfile_data_rc_id_1;
-  logic [31:0] regfile_data_ra_id_2;
-  logic [31:0] regfile_data_rb_id_2;
-  logic [31:0] regfile_data_rc_id_2;
-  logic [31:0] regfile_data_ra_id_3;
-  logic [31:0] regfile_data_rb_id_3;
-  logic [31:0] regfile_data_rc_id_3;
 
   // ALU Control
   logic alu_en;
@@ -495,9 +482,6 @@ module cv32e40p_id_stage
   logic id_valid_q;
   logic minstret;
   logic perf_pipeline_stall;
-
-  // Fault
-  logic rf_fault;
 
   assign instr = instr_rdata_i;
 
@@ -944,117 +928,12 @@ module cv32e40p_id_stage
   //                                                     //
   /////////////////////////////////////////////////////////
 
-  always_comb begin
-    regfile_fault = 0;
-    
-    if (regfile_data_ra_id_1 == regfile_data_ra_id_2) begin
-      regfile_data_ra_id = regfile_data_ra_id_1;
-      if (regfile_data_ra_id_1 != regfile_data_ra_id_3) begin
-        regfile_fault = 1;
-      end
-    end else begin
-      regfile_data_ra_id = regfile_data_ra_id_3;
-      regfile_fault = 1;
-    end
-
-    if (regfile_data_rb_id_1 == regfile_data_rb_id_2) begin
-      regfile_data_rb_id = regfile_data_rb_id_1;
-      if (regfile_data_rb_id_1 != regfile_data_rb_id_3) begin
-        regfile_fault = 1;
-      end
-    end else begin
-      regfile_data_rb_id = regfile_data_rb_id_3;
-      regfile_fault = 1;
-    end
-
-    if ( regfile_data_rc_id_1 == regfile_data_rc_id_2) begin
-      regfile_data_rc_id = regfile_data_rc_id_1;
-      if (regfile_data_rc_id_1 != regfile_data_rc_id_3) begin
-        regfile_fault = 1;
-      end
-    end else begin
-      regfile_data_rc_id = regfile_data_rc_id_3;
-      regfile_fault = 1;
-    end
-
-  end
-
-  assign id_fault_o = regfile_fault;
-
-  cv32e40p_register_file_hardened #(
-      .ADDR_WIDTH(6),
-      .DATA_WIDTH(32),
-      .FPU       (FPU),
-      .ZFINX     (ZFINX)
-  ) register_file_i_1 (
-      .clk  (clk),
-      .rst_n(rst_n),
-
-      .scan_cg_en_i(scan_cg_en_i),
-
-      // Read port a
-      .raddr_a_i(regfile_addr_ra_id),
-      .rdata_a_o(regfile_data_ra_id_1),
-
-      // Read port b
-      .raddr_b_i(regfile_addr_rb_id),
-      .rdata_b_o(regfile_data_rb_id_1),
-
-      // Read port c
-      .raddr_c_i(regfile_addr_rc_id),
-      .rdata_c_o(regfile_data_rc_id_1),
-
-      // Write port a
-      .waddr_a_i(regfile_waddr_wb_i),
-      .wdata_a_i(regfile_wdata_wb_i),
-      .we_a_i   (regfile_we_wb_power_i),
-
-      // Write port b
-      .waddr_b_i(regfile_alu_waddr_fw_i),
-      .wdata_b_i(regfile_alu_wdata_fw_i),
-      .we_b_i   (regfile_alu_we_fw_power_i)
-  );
-
-  cv32e40p_register_file#(
-      .ADDR_WIDTH(6),
-      .DATA_WIDTH(32),
-      .FPU       (FPU),
-      .ZFINX     (ZFINX)
-  ) register_file_i_2 (
-      .clk  (clk),
-      .rst_n(rst_n),
-
-      .scan_cg_en_i(scan_cg_en_i),
-
-      // Read port a
-      .raddr_a_i(regfile_addr_ra_id),
-      .rdata_a_o(regfile_data_ra_id_2),
-
-      // Read port b
-      .raddr_b_i(regfile_addr_rb_id),
-      .rdata_b_o(regfile_data_rb_id_2),
-
-      // Read port c
-      .raddr_c_i(regfile_addr_rc_id),
-      .rdata_c_o(regfile_data_rc_id_2),
-
-      // Write port a
-      .waddr_a_i(regfile_waddr_wb_i),
-      .wdata_a_i(regfile_wdata_wb_i),
-      .we_a_i   (regfile_we_wb_power_i),
-
-      // Write port b
-      .waddr_b_i(regfile_alu_waddr_fw_i),
-      .wdata_b_i(regfile_alu_wdata_fw_i),
-      .we_b_i   (regfile_alu_we_fw_power_i)
-  );
-
   cv32e40p_register_file #(
       .ADDR_WIDTH(6),
       .DATA_WIDTH(32),
       .FPU       (FPU),
       .ZFINX     (ZFINX)
-  ) register_file_i_3 (
+  ) register_file_i (
       .clk  (clk),
       .rst_n(rst_n),
 
@@ -1062,15 +941,15 @@ module cv32e40p_id_stage
 
       // Read port a
       .raddr_a_i(regfile_addr_ra_id),
-      .rdata_a_o(regfile_data_ra_id_3),
+      .rdata_a_o(regfile_data_ra_id),
 
       // Read port b
       .raddr_b_i(regfile_addr_rb_id),
-      .rdata_b_o(regfile_data_rb_id_3),
+      .rdata_b_o(regfile_data_rb_id),
 
       // Read port c
       .raddr_c_i(regfile_addr_rc_id),
-      .rdata_c_o(regfile_data_rc_id_3),
+      .rdata_c_o(regfile_data_rc_id),
 
       // Write port a
       .waddr_a_i(regfile_waddr_wb_i),
@@ -1080,10 +959,7 @@ module cv32e40p_id_stage
       // Write port b
       .waddr_b_i(regfile_alu_waddr_fw_i),
       .wdata_b_i(regfile_alu_wdata_fw_i),
-      .we_b_i   (regfile_alu_we_fw_power_i),
-
-      // Fault
-      .rf_fault_o(rf_fault_o)
+      .we_b_i   (regfile_alu_we_fw_power_i)
   );
 
 

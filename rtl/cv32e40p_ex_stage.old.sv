@@ -161,11 +161,7 @@ module cv32e40p_ex_stage
 
     output logic ex_ready_o,  // EX stage ready for new data
     output logic ex_valid_o,  // EX stage gets new data
-    input  logic wb_ready_i,  // WB stage ready for new data
-
-    // Fault
-    output logic mult_fault_o,
-    output logic alu_fault_o
+    input  logic wb_ready_i  // WB stage ready for new data
 );
 
   logic [                31:0] alu_result;
@@ -182,23 +178,6 @@ module cv32e40p_ex_stage
   logic                        mulh_active;
   logic                        mult_ready;
 
-  // MUL non voted
-  logic [                31:0] mult_result_1;
-  logic [                31:0] mult_result_2;
-  logic [                31:0] mult_result_3;
-  logic                        mult_multicycle_o_1;
-  logic                        mult_multicycle_o_2;
-  logic                        mult_multicycle_o_3;
-  logic                        mulh_active_1;
-  logic                        mult_ready_1;
-  logic                        mulh_active_2;
-  logic                        mult_ready_2;
-  logic                        mulh_active_3;
-  logic                        mult_ready_3;
-
-  // MUL fault
-  logic                        mult_fault;
-  
   // APU signals
   logic                        apu_valid;
   logic [                 5:0] apu_waddr;
@@ -213,9 +192,6 @@ module cv32e40p_ex_stage
   logic                        apu_rvalid_q;
   logic [                31:0] apu_result_q;
   logic [APU_NUSFLAGS_CPU-1:0] apu_flags_q;
-
-  // Fault signals
-  logic                        mult_fault_s, alu_fault_s;
 
   // ALU write port mux
   always_comb begin
@@ -274,9 +250,6 @@ module cv32e40p_ex_stage
   assign branch_decision_o = alu_cmp_result;
   assign jump_target_o     = alu_operand_c_i;
 
-  // Fault
-  // assign ex_fault_o = mult_fault;
-
 
   ////////////////////////////
   //     _    _    _   _    //
@@ -287,7 +260,7 @@ module cv32e40p_ex_stage
   //                        //
   ////////////////////////////
 
-  cv32e40p_alu_hardened alu_i (
+  cv32e40p_alu alu_i (
       .clk        (clk),
       .rst_n      (rst_n),
       .enable_i   (alu_en_i),
@@ -309,11 +282,9 @@ module cv32e40p_ex_stage
       .comparison_result_o(alu_cmp_result),
 
       .ready_o   (alu_ready),
-      .ex_ready_i(ex_ready_o),
-
-      .alu_fault_o(alu_fault_o)
+      .ex_ready_i(ex_ready_o)
   );
-   
+
 
   ////////////////////////////////////////////////////////////////
   //  __  __ _   _ _   _____ ___ ____  _     ___ _____ ____     //
@@ -324,7 +295,7 @@ module cv32e40p_ex_stage
   //                                                            //
   ////////////////////////////////////////////////////////////////
 
-  cv32e40p_mult_hardened mult_i (
+  cv32e40p_mult mult_i (
       .clk  (clk),
       .rst_n(rst_n),
 
@@ -347,14 +318,12 @@ module cv32e40p_ex_stage
       .clpx_shift_i(mult_clpx_shift_i),
       .clpx_img_i  (mult_clpx_img_i),
 
-      .result_o(mult_result_1),
+      .result_o(mult_result),
 
       .multicycle_o (mult_multicycle_o),
       .mulh_active_o(mulh_active),
       .ready_o      (mult_ready),
-      .ex_ready_i   (ex_ready_o),
-      
-      .mult_fault_o(mult_fault_o)
+      .ex_ready_i   (ex_ready_o)
   );
 
   generate

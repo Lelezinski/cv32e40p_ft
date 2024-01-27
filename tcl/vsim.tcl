@@ -27,6 +27,12 @@ if { $env(RUN_GATE) == 1 } {
 	vcd dumpports -file cv32e40p_top.evcd sim:/tb_top/wrapper_i/top_i/*
 }
 
+#force -freeze sim:tb_top/wrapper_i/top_i/core_i/ex_stage_i/mult_i/mult_i_1/result_o 0 
+# when {sim:tb_top/wrapper_i/top_i/core_i/ex_stage_i/mult_i/mult_fault_o == 1} {
+# 	puts "FAULT"
+# 	exit
+# }
+
 run -all
 
 if { $env(RUN_GUI) != 1 } {
