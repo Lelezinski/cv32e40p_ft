@@ -1,12 +1,13 @@
 #ifndef TESTS_H
 #define TESTS_H
 
-#define TEST1 0
-#define NUMTESTS 1
-
-typedef unsigned int signature_t;
-
-extern signature_t test1(void);
-
+extern int test_alu(void);
+extern int test_compressed(void);
+extern int test_csr(void);
+extern int test_hwloop(void);
+extern int test_jumps(void);
+extern int test_lsu(void);
+extern int test_rf(void);
 
 #endif /*TESTS_H */
+

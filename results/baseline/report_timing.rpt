@@ -1,0 +1,86 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'cv32e40p_top' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cv32e40p_top
+Version: U-2022.12
+Date   : Fri Jan 26 20:10:03 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: data_rvalid_i
+              (input port clocked by clk_i)
+  Endpoint: core_i/id_stage_i/mult_operand_c_ex_o_reg[0]
+            (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cv32e40p_top       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.00       4.00 f
+  data_rvalid_i (in)                                      0.00       4.00 f
+  core_i/data_rvalid_i (cv32e40p_core_1_0)                0.00       4.00 f
+  core_i/load_store_unit_i/data_rvalid_i (cv32e40p_load_store_unit_1_0)
+                                                          0.00       4.00 f
+  core_i/load_store_unit_i/data_obi_i/obi_rvalid_i (cv32e40p_obi_interface_1_0)
+                                                          0.00       4.00 f
+  core_i/load_store_unit_i/data_obi_i/resp_valid_o (cv32e40p_obi_interface_1_0)
+                                                          0.00       4.00 f
+  core_i/load_store_unit_i/U205/ZN (INV_X1)               0.04       4.04 r
+  core_i/load_store_unit_i/U44/ZN (OAI21_X1)              0.05       4.09 f
+  core_i/load_store_unit_i/U481/ZN (AOI22_X1)             0.09       4.17 r
+  core_i/load_store_unit_i/U748/ZN (NAND2_X1)             0.04       4.21 f
+  core_i/load_store_unit_i/lsu_ready_ex_o (cv32e40p_load_store_unit_1_0)
+                                                          0.00       4.21 f
+  core_i/ex_stage_i/lsu_ready_ex_i (cv32e40p_ex_stage_1_0)
+                                                          0.00       4.21 f
+  core_i/ex_stage_i/U37/ZN (NAND4_X1)                     0.04       4.25 r
+  core_i/ex_stage_i/U38/ZN (NAND2_X1)                     0.04       4.29 f
+  core_i/ex_stage_i/ex_ready_o (cv32e40p_ex_stage_1_0)
+                                                          0.00       4.29 f
+  core_i/id_stage_i/ex_ready_i (cv32e40p_id_stage_1_0)
+                                                          0.00       4.29 f
+  core_i/id_stage_i/U50/ZN (NAND2_X1)                     0.04       4.33 r
+  core_i/id_stage_i/U72/ZN (NOR3_X1)                      0.03       4.36 f
+  core_i/id_stage_i/U168/ZN (AND2_X1)                     0.04       4.41 f
+  core_i/id_stage_i/U70/ZN (AND2_X1)                      0.05       4.45 f
+  core_i/id_stage_i/U97/ZN (AND2_X1)                      0.04       4.50 f
+  core_i/id_stage_i/U96/ZN (INV_X1)                       0.07       4.57 r
+  core_i/id_stage_i/U8/ZN (INV_X2)                        0.07       4.64 f
+  core_i/id_stage_i/U533/ZN (AOI21_X1)                    0.08       4.72 r
+  core_i/id_stage_i/U28/Z (BUF_X1)                        0.11       4.83 r
+  core_i/id_stage_i/U540/ZN (AOI22_X1)                    0.05       4.88 f
+  core_i/id_stage_i/U10/ZN (AND2_X1)                      0.05       4.93 f
+  core_i/id_stage_i/U9/ZN (NAND2_X1)                      0.03       4.96 r
+  core_i/id_stage_i/mult_operand_c_ex_o_reg[0]/D (DFFR_X1)
+                                                          0.01       4.97 r
+  data arrival time                                                  4.97
+
+  clock clk_i (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  core_i/id_stage_i/mult_operand_c_ex_o_reg[0]/CK (DFFR_X1)
+                                                          0.00       5.00 r
+  library setup time                                     -0.03       4.97
+  data required time                                                 4.97
+  --------------------------------------------------------------------------
+  data required time                                                 4.97
+  data arrival time                                                 -4.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
