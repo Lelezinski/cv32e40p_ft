@@ -1,0 +1,138 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'cv32e40p_top' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : cv32e40p_top
+Version: U-2022.12
+Date   : Fri Jan 26 20:34:11 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: core_i/if_stage_i/instr_rdata_id_o_reg[16]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: instr_addr_o[31]
+            (output port clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  cv32e40p_top       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  core_i/if_stage_i/instr_rdata_id_o_reg[16]/CK (DFFR_X2)
+                                                          0.00 #     0.00 r
+  core_i/if_stage_i/instr_rdata_id_o_reg[16]/Q (DFFR_X2)
+                                                          0.15       0.15 r
+  core_i/if_stage_i/instr_rdata_id_o[16] (cv32e40p_if_stage_1_0)
+                                                          0.00       0.15 r
+  core_i/id_stage_i/instr_rdata_i[16] (cv32e40p_id_stage_1_0)
+                                                          0.00       0.15 r
+  core_i/id_stage_i/register_file_i/raddr_a_i[1] (cv32e40p_register_file_hardened_1_0)
+                                                          0.00       0.15 r
+  core_i/id_stage_i/register_file_i/register_file_2_i/raddr_a_i[1] (cv32e40p_register_file_1_5)
+                                                          0.00       0.15 r
+  core_i/id_stage_i/register_file_i/register_file_2_i/U166/ZN (INV_X1)
+                                                          0.04       0.19 f
+  core_i/id_stage_i/register_file_i/register_file_2_i/U1800/ZN (OR2_X1)
+                                                          0.06       0.25 f
+  core_i/id_stage_i/register_file_i/register_file_2_i/U158/ZN (INV_X1)
+                                                          0.05       0.30 r
+  core_i/id_stage_i/register_file_i/register_file_2_i/U1828/ZN (AND2_X1)
+                                                          0.06       0.36 r
+  core_i/id_stage_i/register_file_i/register_file_2_i/U8/Z (BUF_X1)
+                                                          0.10       0.46 r
+  core_i/id_stage_i/register_file_i/register_file_2_i/U5660/ZN (AOI22_X1)
+                                                          0.05       0.52 f
+  core_i/id_stage_i/register_file_i/register_file_2_i/U5663/ZN (AND4_X1)
+                                                          0.05       0.57 f
+  core_i/id_stage_i/register_file_i/register_file_2_i/U5674/ZN (NAND4_X1)
+                                                          0.05       0.61 r
+  core_i/id_stage_i/register_file_i/register_file_2_i/rdata_a_o[3] (cv32e40p_register_file_1_5)
+                                                          0.00       0.61 r
+  core_i/id_stage_i/register_file_i/rf_voter_a/b_i[3] (cv32e40p_3voter_1_5)
+                                                          0.00       0.61 r
+  core_i/id_stage_i/register_file_i/rf_voter_a/U11/ZN (XNOR2_X1)
+                                                          0.07       0.68 r
+  core_i/id_stage_i/register_file_i/rf_voter_a/U10/ZN (NAND4_X1)
+                                                          0.05       0.73 f
+  core_i/id_stage_i/register_file_i/rf_voter_a/U187/ZN (NOR4_X1)
+                                                          0.10       0.83 r
+  core_i/id_stage_i/register_file_i/rf_voter_a/U199/ZN (NAND4_X1)
+                                                          0.07       0.91 f
+  core_i/id_stage_i/register_file_i/rf_voter_a/U204/Z (BUF_X2)
+                                                          0.07       0.97 f
+  core_i/id_stage_i/register_file_i/rf_voter_a/U211/Z (MUX2_X1)
+                                                          0.09       1.06 r
+  core_i/id_stage_i/register_file_i/rf_voter_a/winner_o[8] (cv32e40p_3voter_1_5)
+                                                          0.00       1.06 r
+  core_i/id_stage_i/register_file_i/rdata_a_o[8] (cv32e40p_register_file_hardened_1_0)
+                                                          0.00       1.06 r
+  core_i/id_stage_i/U488/ZN (NAND2_X1)                    0.03       1.09 f
+  core_i/id_stage_i/U489/ZN (NAND2_X1)                    0.04       1.14 r
+  core_i/id_stage_i/U596/ZN (NAND2_X1)                    0.04       1.18 f
+  core_i/id_stage_i/U598/ZN (OAI21_X1)                    0.08       1.26 r
+  core_i/id_stage_i/U601/ZN (AOI21_X1)                    0.04       1.30 f
+  core_i/id_stage_i/U609/ZN (OAI21_X1)                    0.04       1.35 r
+  core_i/id_stage_i/U200/ZN (INV_X1)                      0.03       1.37 f
+  core_i/id_stage_i/U199/ZN (OR2_X1)                      0.06       1.43 f
+  core_i/id_stage_i/U146/ZN (OAI211_X1)                   0.05       1.48 r
+  core_i/id_stage_i/U244/ZN (OAI211_X1)                   0.05       1.52 f
+  core_i/id_stage_i/U243/ZN (NAND2_X1)                    0.04       1.56 r
+  core_i/id_stage_i/U673/ZN (NAND2_X1)                    0.04       1.60 f
+  core_i/id_stage_i/U394/ZN (OAI211_X1)                   0.06       1.66 r
+  core_i/id_stage_i/U686/CO (FA_X1)                       0.08       1.74 r
+  core_i/id_stage_i/U685/Z (XOR2_X1)                      0.08       1.82 r
+  core_i/id_stage_i/jump_target_o[31] (cv32e40p_id_stage_1_0)
+                                                          0.00       1.82 r
+  core_i/if_stage_i/jump_target_id_i[31] (cv32e40p_if_stage_1_0)
+                                                          0.00       1.82 r
+  core_i/if_stage_i/U164/ZN (NAND2_X1)                    0.03       1.85 f
+  core_i/if_stage_i/U48/ZN (NAND2_X1)                     0.04       1.89 r
+  core_i/if_stage_i/prefetch_buffer_i/branch_addr_i[31] (cv32e40p_prefetch_buffer_1_0)
+                                                          0.00       1.89 r
+  core_i/if_stage_i/prefetch_buffer_i/prefetch_controller_i/branch_addr_i[31] (cv32e40p_prefetch_controller_1_0)
+                                                          0.00       1.89 r
+  core_i/if_stage_i/prefetch_buffer_i/prefetch_controller_i/U73/ZN (NAND2_X1)
+                                                          0.03       1.92 f
+  core_i/if_stage_i/prefetch_buffer_i/prefetch_controller_i/U87/ZN (NAND2_X1)
+                                                          0.04       1.95 r
+  core_i/if_stage_i/prefetch_buffer_i/prefetch_controller_i/trans_addr_o[31] (cv32e40p_prefetch_controller_1_0)
+                                                          0.00       1.95 r
+  core_i/if_stage_i/prefetch_buffer_i/instruction_obi_i/trans_addr_i[31] (cv32e40p_obi_interface_2_0)
+                                                          0.00       1.95 r
+  core_i/if_stage_i/prefetch_buffer_i/instruction_obi_i/U5/Z (MUX2_X1)
+                                                          0.04       2.00 r
+  core_i/if_stage_i/prefetch_buffer_i/instruction_obi_i/obi_addr_o[31] (cv32e40p_obi_interface_2_0)
+                                                          0.00       2.00 r
+  core_i/if_stage_i/prefetch_buffer_i/instr_addr_o[31] (cv32e40p_prefetch_buffer_1_0)
+                                                          0.00       2.00 r
+  core_i/if_stage_i/instr_addr_o[31] (cv32e40p_if_stage_1_0)
+                                                          0.00       2.00 r
+  core_i/instr_addr_o[31] (cv32e40p_core_1_0)             0.00       2.00 r
+  instr_addr_o[31] (out)                                  0.00       2.00 r
+  data arrival time                                                  2.00
+
+  clock clk_i (rise edge)                                 5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  output external delay                                  -3.00       2.00
+  data required time                                                 2.00
+  --------------------------------------------------------------------------
+  data required time                                                 2.00
+  data arrival time                                                 -2.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

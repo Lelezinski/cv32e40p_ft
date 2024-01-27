@@ -1,0 +1,30 @@
+#------------------------------------------------------------------------------
+# Faults listed:       Prime: 16124        Total: 16124
+#------------------------------------------------------------------------------
+# Fault Coverage Summary
+#
+#                                        Prime             Total
+#------------------------------------------------------------------------------
+# Total Faults:                          16124             16124
+#
+# Dropped Detected                 DD    12900  80.00%     12900  80.00%
+# Dropped Potential                PD        1   0.01%         1   0.01%
+# Not Detected                     ND     2425  15.04%      2425  15.04%
+# Not Strobed                      NS       10   0.06%        10   0.06%
+# Not Observed                     NO      488   3.03%       488   3.03%
+# Not Controlled                   NC      300   1.86%       300   1.86%
+#
+# Faults not detected yet:
+#   Not simulated yet:                     798   4.95%       798   4.95%
+#   Simulated 1 to 5 times:               2426  15.05%      2426  15.05%
+#   Simulated 6 to 10 times:                 0   0.00%         0   0.00%
+#   Simulated > 10 times:                    0   0.00%         0   0.00%
+#
+# Faults potentially detected:
+#   Possible 1 to 5 times:                   1   0.01%         1   0.01%
+#   Possible 6 to 10 times:                  0   0.00%         0   0.00%
+#   Possible > 10 times:                     0   0.00%         0   0.00%
+#
+# Test Coverage                                 80.01%            80.01%
+# Fault Coverage                                80.01%            80.01%
+#------------------------------------------------------------------------------
